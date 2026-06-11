@@ -422,16 +422,15 @@ export default function Footer() {
 
   const quickLinks = [
     { name: "Home", href: "/" },
-    { name: "Why Choose Us", href: "/why-choose-us" },
-    { name: "Our Products", href: "/products" },
-    { name: "Testimonials", href: "/testimonials" },
+    { name: "Latest News", href: "/latest-news" },
+    { name: "About Us", href: "/about" },
+    { name: "FAQ", href: "/faq" },
     { name: "Contact", href: "/contact-us" },
   ];
 
   const services = [
     { name: "Privacy Policy", href: "/privacy-policy" },
     { name: "Terms & Conditions", href: "/terms-conditions" },
-    { name: "Shipping Policy", href: "/shipping-policy" },
   ];
 
   return (
@@ -458,7 +457,7 @@ export default function Footer() {
             <div className="flex items-center justify-center md:justify-start gap-2">
               <Droplets className="h-7 w-7 md:h-8 md:w-8 text-sky-400" />
               <span className="text-xl md:text-2xl font-bold text-white">
-                W<span className="text-sky-400">a</span>ther
+                Warrior<span className="text-sky-400">B</span>everages
               </span>
             </div>
             <p className="text-xs md:text-sm text-white/60 leading-relaxed">

@@ -225,7 +225,7 @@ export default function LatestNewsPage() {
                   {featuredArticle.excerpt}
                 </p>
                 <Link
-                  href={`/news/${featuredArticle.id}`}
+                  href={`/latest-news/${featuredArticle.id}`}
                   className="mt-6 inline-flex items-center gap-2 font-medium text-[#861981] transition-all hover:gap-3 hover:text-[#861981]/80"
                 >
                   Read full story <ChevronRight className="h-4 w-4" />
@@ -278,7 +278,7 @@ export default function LatestNewsPage() {
                   <p className="mt-2 text-gray-600 line-clamp-3">{article.excerpt}</p>
                   <div className="mt-4 flex items-center justify-between pt-4 border-t border-gray-100">
                     <Link
-                      href={`/news/${article.id}`}
+                      href={`/latest-news/${article.id}`}
                       className="inline-flex items-center gap-1 text-sm font-medium text-[#861981] transition-all hover:gap-2"
                     >
                       Read more <ArrowRight className="h-3 w-3" />

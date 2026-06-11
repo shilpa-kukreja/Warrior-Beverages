@@ -154,6 +154,7 @@ const CloseIcon = () => (
   </svg>
 );
 
+
 export default function QuoteModal({ isOpen, onClose, productName, productVolume }) {
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", message: "" });
   const [isSubmitting, setIsSubmitting] = useState(false);

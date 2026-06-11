@@ -333,10 +333,10 @@ export default function AboutPage() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: false, margin: "-50px" }}
             transition={{ duration: 0.5 }}
-            className="text-center bg-black border border-gray-100 rounded-xl p-8 md:p-12 shadow-lg"
+            className="text-center  border border-gray-200 rounded-xl p-8 md:p-12 shadow-lg"
           >
-            <h3 className="text-2xl md:text-3xl font-bold text-white">Ready to make a splash?</h3>
-            <p className="text-white mt-2 max-w-lg mx-auto">
+            <h3 className="text-2xl md:text-3xl font-bold text-black">Ready to make a splash?</h3>
+            <p className="text-gray-600 mt-2 max-w-lg mx-auto">
               Join hundreds of brands that trust Wather for premium branded hydration.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">

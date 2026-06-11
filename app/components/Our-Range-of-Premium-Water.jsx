@@ -9,6 +9,7 @@ import {
   ShoppingBag,
 } from "lucide-react";
 import QuoteModal from "./QuoteModal";   // <-- import the shared modal
+import Link from "next/link";
 
 const products = [
   {
@@ -157,7 +158,7 @@ export default function ProductShowcase() {
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-[35%_65%] lg:gap-16">
+        <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-[30%_70%] lg:gap-16">
           {/* LEFT COLUMN */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -233,10 +234,16 @@ export default function ProductShowcase() {
                           onClick={() => openQuoteModalForProduct(product)}
                           className="group/btn flex items-center gap-1 rounded-md bg-[#861981] px-3 py-1.5 text-xs font-semibold text-white shadow-md transition-all hover:shadow-lg active:scale-95 sm:px-4 sm:py-2"
                         >
-                          <ShoppingBag className="h-3 w-3" />
+                          {/* <ShoppingBag className="h-3 w-3" /> */}
                           Enquiry Now
-                          <ArrowRight className="h-3 w-3 transition-transform group-hover/btn:translate-x-1" />
+                          {/* <ArrowRight className="h-3 w-3 transition-transform group-hover/btn:translate-x-1" /> */}
                         </button>
+                        <Link href={`/products/${product.id}`}>
+                          <button className="group/btn flex items-center gap-1 rounded-md bg-white/20 px-3 py-1.5 text-xs font-semibold text-[#861981] shadow-md transition-all hover:shadow-lg active:scale-95 sm:px-4 sm:py-2">
+                            View Details
+                            {/* <ArrowRight className="h-3 w-3 transition-transform group-hover/btn:translate-x-1" /> */}
+                          </button>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -244,36 +251,38 @@ export default function ProductShowcase() {
               </div>
             </div>
 
-            {/* Navigation Arrows (hidden on mobile) */}
             {products.length > visibleCount && visibleCount > 1 && (
               <>
                 <button
                   onClick={prevSlide}
                   disabled={!canScrollLeft}
-                  className="absolute left-0 top-1/2 -translate-y-1/2 rounded-full bg-black/30 p-2 backdrop-blur-md transition-all sm:bg-white/20 hidden sm:flex ..."
+                  className="absolute left-0 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center rounded-full bg-black/40 p-1.5 backdrop-blur-md transition-all hover:bg-black/60 disabled:opacity-30 disabled:cursor-not-allowed sm:p-2"
+                  aria-label="Previous product"
                 >
-                  <ChevronLeft className="h-5 w-5 text-white sm:h-6 sm:w-6" />
+                  <ChevronLeft className="h-4 w-4 text-white sm:h-5 sm:w-5" />
                 </button>
                 <button
                   onClick={nextSlide}
                   disabled={!canScrollRight}
-                  className="absolute right-0 top-1/2 -translate-y-1/2 rounded-full bg-black/30 p-2 backdrop-blur-md transition-all sm:bg-white/20 hidden sm:flex ..."
+                  className="absolute right-0 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center rounded-full bg-black/40 p-1.5 backdrop-blur-md transition-all hover:bg-black/60 disabled:opacity-30 disabled:cursor-not-allowed sm:p-2"
+                  aria-label="Next product"
                 >
-                  <ChevronRight className="h-5 w-5 text-white sm:h-6 sm:w-6" />
+                  <ChevronRight className="h-4 w-4 text-white sm:h-5 sm:w-5" />
                 </button>
               </>
             )}
 
-            {/* Dots indicator */}
+            {/* Dots indicator remains unchanged */}
             {maxStartIndex > 0 && (
               <div className="mt-4 flex justify-center gap-2">
                 {Array.from({ length: maxStartIndex + 1 }).map((_, idx) => (
                   <button
                     key={idx}
                     onClick={() => setCurrentStartIndex(idx)}
-                    className={`h-1.5 rounded-full transition-all ${
-                      idx === currentStartIndex ? "w-5 bg-[#FFB347]" : "w-1.5 bg-white/50 hover:bg-white/80"
-                    }`}
+                    className={`h-1.5 rounded-full transition-all ${idx === currentStartIndex
+                      ? "w-5 bg-[#FFB347]"
+                      : "w-1.5 bg-white/50 hover:bg-white/80"
+                      }`}
                   />
                 ))}
               </div>
