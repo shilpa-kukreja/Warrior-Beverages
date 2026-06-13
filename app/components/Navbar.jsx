@@ -317,8 +317,7 @@ export default function Navbar() {
           <div className="flex flex-col h-full overflow-y-auto">
             <div className="flex items-center justify-between p-5 border-b border-gray-100">
               <div className="flex flex-col">
-                <span className="text-xl font-bold text-gray-800">Warrior Beverages</span>
-                <span className="text-[10px] text-gray-400 tracking-wider">PREMIUM SPRING WATER</span>
+                <img src="/lOgos/lOGO4.png" alt="Warrior Beverages Logo" className="w-8 h-8 mb-1" />
               </div>
               <button
                 onClick={closeMobileMenu}
@@ -339,8 +338,8 @@ export default function Navbar() {
                         onClick={closeMobileMenu}
                         className={`block py-2 text-lg font-semibold transition-colors ${
                           active
-                            ? "text-[#861981] border-r-4 border-[#861981] pr-4"
-                            : "text-gray-700 hover:text-[#861981]"
+                            ? "text-[#304869] border-r-4 border-[#304869] pr-4"
+                            : "text-gray-700 hover:text-[#304869]"
                         }`}
                       >
                         {item.name}
@@ -350,9 +349,9 @@ export default function Navbar() {
                 })}
               </ul>
               <div className="mt-10 pt-6 border-t border-gray-100">
-                <div className="bg-gradient-to-br from-[#861981]/5 to-[#861981]/10 rounded-2xl p-5">
+                <div className="bg-gradient-to-br from-[#304869]/5 to-[#304869]/10 rounded-2xl p-5">
                   <div className="flex items-center gap-4">
-                    <div className="bg-[#861981] p-3 rounded-full text-white shadow-md">
+                    <div className="bg-[#304869] p-3 rounded-full text-white shadow-md">
                       <PhoneIcon />
                     </div>
                     <div>
@@ -360,7 +359,7 @@ export default function Navbar() {
                       <a
                         href="tel:+917528875288"
                         onClick={closeMobileMenu}
-                        className="text-lg font-bold text-[#861981] hover:underline"
+                        className="text-lg font-bold text-[#304869] hover:underline"
                       >
                         +91 75288 75288
                       </a>
@@ -376,7 +375,7 @@ export default function Navbar() {
               <div className="mt-6">
                 <button
                   onClick={openQuoteModal}
-                  className="flex w-full items-center justify-center gap-2 rounded-xl bg-[#861981] px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-[#861981]/30 transition-all hover:scale-[1.02] active:scale-95"
+                  className="flex w-full items-center justify-center gap-2 rounded-xl bg-[#304869] px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-[#304869]/30 transition-all hover:scale-[1.02] active:scale-95"
                 >
                   Get a Quote
                 </button>
@@ -404,13 +403,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
             <Link href="/" className="flex flex-col leading-tight">
-              <span className="text-xl md:text-2xl lg:text-3xl font-black tracking-tight text-gray-800">
-                Warrior
-                <span className="text-[#861981]"> Beverages</span>
-              </span>
-              <span className="hidden sm:block text-[9px] md:text-[10px] text-gray-400 tracking-wider -mt-1">
-                PREMIUM SPRING WATER
-              </span>
+                <img src="/lOgos/lOGO4.png" alt="Warrior Beverages Logo" className="w-28  mb-1" />
             </Link>
 
             {/* Desktop Navigation */}
@@ -424,8 +417,8 @@ export default function Navbar() {
                         href={item.href}
                         className={`block px-4 py-2 text-sm font-semibold rounded-xl transition-all duration-200 ${
                           active
-                            ? "text-[#861981] bg-[#861981]/10"
-                            : "text-gray-700 hover:text-[#861981] hover:bg-gray-50"
+                            ? "text-[#304869] bg-[#304869]/10"
+                            : "text-gray-700 hover:text-[#304869] hover:bg-gray-50"
                         }`}
                       >
                         {item.name}
@@ -439,7 +432,7 @@ export default function Navbar() {
             {/* Desktop CTA Button - opens modal */}
             <button
               onClick={openQuoteModal}
-              className="hidden lg:flex items-center gap-2 rounded-md bg-[#861981] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#861981]/30 transition-all duration-300 hover:scale-105 relative overflow-hidden group"
+              className="hidden lg:flex items-center gap-2 rounded-md bg-[#304869] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#304869]/30 transition-all duration-300 hover:scale-105 relative overflow-hidden group"
             >
               <span className="relative z-10">Get Quote</span>
               <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12"></span>
@@ -449,7 +442,7 @@ export default function Navbar() {
             <div className="flex items-center gap-2 lg:hidden">
               <button
                 onClick={toggleMobileMenu}
-                className="inline-flex items-center justify-center p-2 rounded-lg text-gray-600 hover:text-[#861981] hover:bg-[#861981]/10 transition-colors duration-200"
+                className="inline-flex items-center justify-center p-2 rounded-lg text-gray-600 hover:text-[#304869] hover:bg-[#304869]/10 transition-colors duration-200"
                 aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
                 aria-expanded={mobileMenuOpen}
               >

@@ -36,7 +36,7 @@ export default function FloatingEnquiryButton() {
       >
         <button
           onClick={openModal}
-          className="group relative flex items-center justify-center rounded-full bg-gradient-to-r from-[#861981] to-[#730a6f] p-4 shadow-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-[#861981]/50"
+          className="group relative flex items-center justify-center rounded-full bg-gradient-to-r from-[#304869] to-[#304869] p-4 shadow-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-[#304869]/50"
           aria-label="Enquiry Now"
         >
           <HelpCircle className="h-6 w-6 text-white" />
@@ -44,7 +44,7 @@ export default function FloatingEnquiryButton() {
             Enquiry Now
           </span>
           {/* Pulsing ring animation */}
-          <span className="absolute inset-0 animate-ping rounded-full bg-[#861981]/50 opacity-75"></span>
+          <span className="absolute inset-0 animate-ping rounded-full bg-[#304869]/50 opacity-75"></span>
         </button>
       </div>
       <QuoteModal

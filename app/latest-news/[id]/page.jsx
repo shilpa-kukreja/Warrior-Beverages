@@ -106,7 +106,7 @@ export default function NewsDetailPage() {
     return (
       <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#861981] mx-auto"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#304869] mx-auto"></div>
           <p className="mt-4 text-gray-600">Loading article...</p>
         </div>
       </div>
@@ -119,7 +119,7 @@ export default function NewsDetailPage() {
       <main className="min-h-screen bg-white">
         {/* Reading Progress Bar */}
         <motion.div
-          className="fixed top-0 left-0 right-0 h-1 bg-[#861981] z-50 origin-left"
+          className="fixed top-0 left-0 right-0 h-1 bg-[#304869] z-50 origin-left"
           style={{ scaleX: progressBar }}
         />
 
@@ -128,7 +128,7 @@ export default function NewsDetailPage() {
           <div className="px-4 py-3">
             <Link
               href="/news"
-              className="inline-flex items-center gap-2 text-sm font-medium text-[#861981]"
+              className="inline-flex items-center gap-2 text-sm font-medium text-[#304869]"
             >
               <ArrowLeft className="h-4 w-4" />
               Back to all news
@@ -155,7 +155,7 @@ export default function NewsDetailPage() {
             />
             {/* Category badge overlay */}
             <div className="absolute top-4 left-4 z-10">
-              <span className="inline-flex items-center gap-1 rounded-full bg-[#861981] px-3 py-1 text-xs font-semibold text-white shadow-md">
+              <span className="inline-flex items-center gap-1 rounded-full bg-[#304869] px-3 py-1 text-xs font-semibold text-white shadow-md">
                 {article.category}
               </span>
             </div>
@@ -198,7 +198,7 @@ export default function NewsDetailPage() {
             <div className="md:hidden mt-6">
               <button
                 onClick={() => setShowToc(!showToc)}
-                className="flex items-center gap-2 text-sm text-[#861981] bg-[#861981]/10 px-4 py-2 rounded-full"
+                className="flex items-center gap-2 text-sm text-[#304869] bg-[#304869]/10 px-4 py-2 rounded-full"
               >
                 <List className="h-4 w-4" />
                 Table of Contents
@@ -215,7 +215,7 @@ export default function NewsDetailPage() {
                           heading.level === "h2"
                             ? "font-semibold text-gray-800"
                             : "ml-4 text-gray-600"
-                        } hover:text-[#861981] transition`}
+                        } hover:text-[#304869] transition`}
                         onClick={() => setShowToc(false)}
                       >
                         {heading.text}
@@ -240,7 +240,7 @@ export default function NewsDetailPage() {
                   variants={fadeInUp}
                   className="flex items-center gap-4 p-5 bg-gradient-to-r from-gray-50 to-white rounded-2xl border border-gray-100 shadow-sm"
                 >
-                  <div className="h-14 w-14 rounded-full bg-gradient-to-br from-[#861981] to-[#5a0f56] flex items-center justify-center text-white font-bold text-xl shadow-md">
+                  <div className="h-14 w-14 rounded-full bg-gradient-to-br from-[#304869] to-[#304869] flex items-center justify-center text-white font-bold text-xl shadow-md">
                     {article.author.name.charAt(0)}
                   </div>
                   <div>

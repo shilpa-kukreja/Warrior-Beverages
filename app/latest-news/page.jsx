@@ -137,7 +137,7 @@ export default function LatestNewsPage() {
     <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
       {/* Hero Section */}
       <section className="relative overflow-hidden  py-20 md:py-28">
-        <div className="absolute inset-0 bg-[#861981]  bg-cover bg-center " />
+        <div className="absolute inset-0 bg-[#304869]  bg-cover bg-center " />
         {/* <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/50 to-transparent" /> */}
         <div className="relative z-10 mx-auto max-w-7xl px-6 text-center text-white">
           <motion.div
@@ -175,8 +175,8 @@ export default function LatestNewsPage() {
               onClick={() => setActiveCategory(cat)}
               className={`rounded-lg px-5 py-2 text-sm font-medium transition-all duration-300 ${
                 activeCategory === cat
-                  ? "bg-[#861981] text-white shadow-md"
-                  : "bg-white text-gray-700 shadow-sm hover:bg-[#861981]/10 hover:text-[#861981]/80 hover:shadow-md"
+                  ? "bg-[#304869] text-white shadow-md"
+                  : "bg-white text-gray-700 shadow-sm hover:bg-[#304869]/10 hover:text-[#304869]/80 hover:shadow-md"
               }`}
             >
               {cat}
@@ -208,7 +208,7 @@ export default function LatestNewsPage() {
               </div>
               <div className="p-8 md:p-12">
                 <div className="mb-3 flex flex-wrap items-center gap-3 text-sm">
-                  <span className="inline-flex items-center gap-1 rounded-full bg-[#861981]/10 px-3 py-1 text-[#861981]">
+                  <span className="inline-flex items-center gap-1 rounded-full bg-[#304869]/10 px-3 py-1 text-[#304869]">
                     <TrendingUp className="h-3 w-3" />
                     Featured
                   </span>
@@ -226,7 +226,7 @@ export default function LatestNewsPage() {
                 </p>
                 <Link
                   href={`/latest-news/${featuredArticle.id}`}
-                  className="mt-6 inline-flex items-center gap-2 font-medium text-[#861981] transition-all hover:gap-3 hover:text-[#861981]/80"
+                  className="mt-6 inline-flex items-center gap-2 font-medium text-[#304869] transition-all hover:gap-3 hover:text-[#304869]/80"
                 >
                   Read full story <ChevronRight className="h-4 w-4" />
                 </Link>
@@ -272,14 +272,14 @@ export default function LatestNewsPage() {
                     <span className="mx-1">•</span>
                     {article.readTime}
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 transition-colors group-hover:text-[#861981]">
+                  <h3 className="text-xl font-bold text-gray-900 transition-colors group-hover:text-[#304869]">
                     {article.title}
                   </h3>
                   <p className="mt-2 text-gray-600 line-clamp-3">{article.excerpt}</p>
                   <div className="mt-4 flex items-center justify-between pt-4 border-t border-gray-100">
                     <Link
                       href={`/latest-news/${article.id}`}
-                      className="inline-flex items-center gap-1 text-sm font-medium text-[#861981] transition-all hover:gap-2"
+                      className="inline-flex items-center gap-1 text-sm font-medium text-[#304869] transition-all hover:gap-2"
                     >
                       Read more <ArrowRight className="h-3 w-3" />
                     </Link>

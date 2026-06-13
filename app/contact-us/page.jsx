@@ -76,7 +76,7 @@ export default function ContactPage() {
       <Navbar />
       <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-[#861981] py-20 md:py-28">
+        <section className="relative overflow-hidden bg-[#304869] py-20 md:py-28">
           <div className="relative z-10 mx-auto max-w-7xl px-6 text-center text-white">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -120,7 +120,7 @@ export default function ContactPage() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="mt-1 block w-full rounded-xl border border-gray-300 px-4 py-3 transition focus:border-[#861981] focus:outline-none focus:ring-2 focus:ring-[#861981]/20"
+                    className="mt-1 block w-full rounded-xl border border-gray-300 px-4 py-3 transition focus:border-[#304869] focus:outline-none focus:ring-2 focus:ring-[#304869]/20"
                     placeholder="John Doe"
                   />
                 </div>
@@ -136,7 +136,7 @@ export default function ContactPage() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="mt-1 block w-full rounded-xl border border-gray-300 px-4 py-3 transition focus:border-[#861981]/50 focus:outline-none focus:ring-2 focus:ring-[#861981]/20"
+                    className="mt-1 block w-full rounded-xl border border-gray-300 px-4 py-3 transition focus:border-[#304869]/50 focus:outline-none focus:ring-2 focus:ring-[#304869]/20"
                     placeholder="john@company.com"
                   />
                 </div>
@@ -151,7 +151,7 @@ export default function ContactPage() {
                     id="company"
                     value={formData.company}
                     onChange={handleChange}
-                    className="mt-1 block w-full rounded-xl border border-gray-300 px-4 py-3 transition focus:border-[#861981]/50 focus:outline-none focus:ring-2 focus:ring-[#861981]/20"
+                    className="mt-1 block w-full rounded-xl border border-gray-300 px-4 py-3 transition focus:border-[#304869]/50 focus:outline-none focus:ring-2 focus:ring-[#304869]/20"
                     placeholder="Your brand"
                   />
                 </div>
@@ -167,7 +167,7 @@ export default function ContactPage() {
                     required
                     value={formData.message}
                     onChange={handleChange}
-                    className="mt-1 block w-full rounded-xl border border-gray-300 px-4 py-3 transition focus:border-[#861981]/50 focus:outline-none focus:ring-2 focus:ring-[#861981]/20"
+                    className="mt-1 block w-full rounded-xl border border-gray-300 px-4 py-3 transition focus:border-[#304869]/50 focus:outline-none focus:ring-2 focus:ring-[#304869]/20"
                     placeholder="Tell us about your project..."
                   />
                 </div>
@@ -175,7 +175,7 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={formStatus === "sending"}
-                  className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#861981] to-[#730a6f] px-6 py-3 font-semibold text-white transition-all hover:from-[#861981] hover:to-[#730a6f] disabled:opacity-70"
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#304869] to-[#304869] px-6 py-3 font-semibold text-white transition-all hover:from-[#304869] hover:to-[#304869] disabled:opacity-70"
                 >
                   {formStatus === "sending" && (
                     <div className="h-5 w-5 animate-spin rounded-full border-2 border-white border-t-transparent" />
@@ -214,7 +214,7 @@ export default function ContactPage() {
                 <h3 className="text-xl font-bold text-gray-900">Visit us</h3>
                 <div className="mt-6 space-y-4">
                   <div className="flex items-start gap-4">
-                    <MapPin className="h-5 w-5 text-[#861981] mt-0.5" />
+                    <MapPin className="h-5 w-5 text-[#304869] mt-0.5" />
                     <div>
                       <p className="font-medium text-gray-900">Headquarters</p>
                       <p className="text-gray-600">
@@ -224,7 +224,7 @@ export default function ContactPage() {
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
-                    <Phone className="h-5 w-5 text-[#861981] mt-0.5" />
+                    <Phone className="h-5 w-5 text-[#304869] mt-0.5" />
                     <div>
                       <p className="font-medium text-gray-900">Phone</p>
                       <p className="text-gray-600">+1 (555) 123-4567</p>
@@ -232,7 +232,7 @@ export default function ContactPage() {
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
-                    <Mail className="h-5 w-5 text-[#861981] mt-0.5" />
+                    <Mail className="h-5 w-5 text-[#304869] mt-0.5" />
                     <div>
                       <p className="font-medium text-gray-900">Email</p>
                       <p className="text-gray-600">hello@wather.com</p>
@@ -240,7 +240,7 @@ export default function ContactPage() {
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
-                    <Clock className="h-5 w-5 text-[#861981] mt-0.5" />
+                    <Clock className="h-5 w-5 text-[#304869] mt-0.5" />
                     <div>
                       <p className="font-medium text-gray-900">Business Hours</p>
                       <p className="text-gray-600">Monday – Friday: 9:00 AM – 6:00 PM</p>
@@ -258,7 +258,7 @@ export default function ContactPage() {
                     href="#"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="rounded-full bg-gray-100 p-3 text-gray-600 transition-all hover:bg-[#861981] hover:text-white"
+                    className="rounded-full bg-gray-100 p-3 text-gray-600 transition-all hover:bg-[#304869] hover:text-white"
                     aria-label="Facebook"
                   >
                     <FaFacebook className="h-5 w-5" />
@@ -267,7 +267,7 @@ export default function ContactPage() {
                     href="#"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="rounded-full bg-gray-100 p-3 text-gray-600 transition-all hover:bg-[#861981] hover:text-white"
+                    className="rounded-full bg-gray-100 p-3 text-gray-600 transition-all hover:bg-[#304869] hover:text-white"
                     aria-label="Twitter"
                   >
                     <FaTwitter className="h-5 w-5" />
@@ -276,7 +276,7 @@ export default function ContactPage() {
                     href="#"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="rounded-full bg-gray-100 p-3 text-gray-600 transition-all hover:bg-[#861981] hover:text-white"
+                    className="rounded-full bg-gray-100 p-3 text-gray-600 transition-all hover:bg-[#304869] hover:text-white"
                     aria-label="Instagram"
                   >
                     <FaInstagram className="h-5 w-5" />
@@ -285,7 +285,7 @@ export default function ContactPage() {
                     href="#"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="rounded-full bg-gray-100 p-3 text-gray-600 transition-all hover:bg-[#861981] hover:text-white"
+                    className="rounded-full bg-gray-100 p-3 text-gray-600 transition-all hover:bg-[#304869] hover:text-white"
                     aria-label="LinkedIn"
                   >
                     <FaLinkedin className="h-5 w-5" />

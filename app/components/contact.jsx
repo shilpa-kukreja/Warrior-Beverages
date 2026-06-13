@@ -78,7 +78,7 @@ export default function ContactSection() {
           transition={{ duration: 0.8 }}
           className="mb-10 text-center"
         >
-          <h2 className="text-3xl font-bold text-[#8A1D8F] md:text-5xl">
+          <h2 className="text-3xl font-bold text-[#304869] md:text-5xl">
             Put Your Logo Where It Matters – On AQTIVE Water
           </h2>
         </motion.div>
@@ -116,7 +116,7 @@ export default function ContactSection() {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full border border-[#8A1D8F] bg-white px-5 py-4 outline-none transition-all duration-300 focus:ring-2 focus:ring-[#8A1D8F]/20"
+                  className="w-full border border-[#304869] bg-white px-5 py-4 outline-none transition-all duration-300 focus:ring-2 focus:ring-[#304869]/20"
                 />
 
                 <input
@@ -126,7 +126,7 @@ export default function ContactSection() {
                   required
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full border border-[#8A1D8F] bg-white px-5 py-4 outline-none transition-all duration-300 focus:ring-2 focus:ring-[#8A1D8F]/20"
+                  className="w-full border border-[#304869] bg-white px-5 py-4 outline-none transition-all duration-300 focus:ring-2 focus:ring-[#304869]/20"
                 />
 
                 <input
@@ -136,7 +136,7 @@ export default function ContactSection() {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full border border-[#8A1D8F] bg-white px-5 py-4 outline-none transition-all duration-300 focus:ring-2 focus:ring-[#8A1D8F]/20"
+                  className="w-full border border-[#304869] bg-white px-5 py-4 outline-none transition-all duration-300 focus:ring-2 focus:ring-[#304869]/20"
                 />
 
                 <div className="grid gap-4 md:grid-cols-2">
@@ -146,7 +146,7 @@ export default function ContactSection() {
                     placeholder="City"
                     value={formData.city}
                     onChange={handleChange}
-                    className="border border-[#8A1D8F] bg-white px-5 py-4 outline-none transition-all duration-300 focus:ring-2 focus:ring-[#8A1D8F]/20"
+                    className="border border-[#304869] bg-white px-5 py-4 outline-none transition-all duration-300 focus:ring-2 focus:ring-[#304869]/20"
                   />
                   <input
                     type="text"
@@ -154,7 +154,7 @@ export default function ContactSection() {
                     placeholder="State"
                     value={formData.state}
                     onChange={handleChange}
-                    className="border border-[#8A1D8F] bg-white px-5 py-4 outline-none transition-all duration-300 focus:ring-2 focus:ring-[#8A1D8F]/20"
+                    className="border border-[#304869] bg-white px-5 py-4 outline-none transition-all duration-300 focus:ring-2 focus:ring-[#304869]/20"
                   />
                 </div>
 
@@ -165,13 +165,13 @@ export default function ContactSection() {
                   required
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full resize-none border border-[#8A1D8F] bg-white px-5 py-4 outline-none transition-all duration-300 focus:ring-2 focus:ring-[#8A1D8F]/20"
+                  className="w-full resize-none border border-[#304869] bg-white px-5 py-4 outline-none transition-all duration-300 focus:ring-2 focus:ring-[#304869]/20"
                 />
 
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="bg-[#8A1D8F] px-14 py-4 text-lg font-bold uppercase tracking-wider text-white transition-all duration-300 hover:scale-105 hover:bg-[#73187A] active:scale-95 disabled:cursor-not-allowed disabled:opacity-70"
+                  className="bg-[#304869] px-14 py-4 text-lg font-bold uppercase tracking-wider text-white transition-all duration-300 hover:scale-105 hover:bg-[#304869] active:scale-95 disabled:cursor-not-allowed disabled:opacity-70"
                 >
                   {isSubmitting ? "Submitting..." : submitted ? "Submitted ✓" : "Submit"}
                 </button>

@@ -154,7 +154,7 @@ export default function FAQPage() {
     <Navbar />
     <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-[#861981] py-20 md:py-28">
+      <section className="relative overflow-hidden bg-[#304869] py-20 md:py-28">
         {/* <div className="absolute inset-0 bg-[url('/news/about.webp')] bg-cover bg-center opacity-20 mix-blend-overlay" /> */}
         {/* <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/50 to-transparent" /> */}
         <div className="relative z-10 mx-auto max-w-7xl px-6 text-center text-white">
@@ -193,7 +193,7 @@ export default function FAQPage() {
               placeholder="Search for answers..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full rounded-xl border border-gray-200 bg-white py-3 pl-12 pr-4 text-gray-900 shadow-sm focus:border-emerald-400 focus:outline-none focus:ring-2 focus:ring-[#861981]/50 transition-all duration-300"
+              className="w-full rounded-xl border border-gray-200 bg-white py-3 pl-12 pr-4 text-gray-900 shadow-sm focus:border-emerald-400 focus:outline-none focus:ring-2 focus:ring-[#304869]/50 transition-all duration-300"
             />
           </div>
         </motion.div>
@@ -246,7 +246,7 @@ export default function FAQPage() {
                     {faq.question}
                   </span>
                   <ChevronDown
-                    className={`h-5 w-5 flex-shrink-0 text-[#861981] transition-transform duration-300 ${
+                    className={`h-5 w-5 flex-shrink-0 text-[#304869] transition-transform duration-300 ${
                       openFaqs.has(faq.id) ? "rotate-180" : ""
                     }`}
                   />

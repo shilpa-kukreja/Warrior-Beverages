@@ -178,8 +178,8 @@ export default function ManufacturingPage() {
           variants={fadeUp}
           className="relative mb-12 overflow-hidden rounded-xl bg-white shadow-2xl ring-1 ring-black/5"
         >
-          <div className="absolute inset-x-0 top-0 h-1.5 bg-[#861981]" />
-          <div className="bg-[#861981] px-8 py-5">
+          <div className="absolute inset-x-0 top-0 h-1.5 bg-[#304869]" />
+          <div className="bg-[#304869] px-8 py-5">
             <div className="flex items-center gap-2">
               <Building2 className="h-6 w-6 text-white" />
               <h2 className="text-xl font-semibold tracking-tight text-white sm:text-2xl">
@@ -193,7 +193,7 @@ export default function ManufacturingPage() {
           <div className="grid gap-8 p-6 sm:p-8 md:grid-cols-2 lg:gap-12">
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="rounded-lg bg-[#861981]/10 p-2 text-[#861981]">
+                <div className="rounded-lg bg-[#304869]/10 p-2 text-[#304869]">
                   <BadgeCheck className="h-5 w-5" />
                 </div>
                 <div>
@@ -206,7 +206,7 @@ export default function ManufacturingPage() {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="rounded-lg bg-[#861981]/10 p-2 text-[#861981]">
+                <div className="rounded-lg bg-[#304869]/10 p-2 text-[#304869]">
                   <MapPin className="h-5 w-5" />
                 </div>
                 <div>
@@ -219,7 +219,7 @@ export default function ManufacturingPage() {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="rounded-lg bg-[#861981]/10 p-2 text-[#861981]">
+                <div className="rounded-lg bg-[#304869]/10 p-2 text-[#304869]">
                   <Calendar className="h-5 w-5" />
                 </div>
                 <div>
@@ -234,7 +234,7 @@ export default function ManufacturingPage() {
             </div>
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="rounded-lg bg-[#861981]/10 p-2 text-[#861981]">
+                <div className="rounded-lg bg-[#304869]/10 p-2 text-[#304869]">
                   <Users className="h-5 w-5" />
                 </div>
                 <div>
@@ -247,7 +247,7 @@ export default function ManufacturingPage() {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="rounded-lg bg-[#861981]/10 p-2 text-[#861981]">
+                <div className="rounded-lg bg-[#304869]/10 p-2 text-[#304869]">
                   <Globe className="h-5 w-5" />
                 </div>
                 <div>
@@ -260,7 +260,7 @@ export default function ManufacturingPage() {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="rounded-lg bg-[#861981]/10 p-2 text-[#861981]">
+                <div className="rounded-lg bg-[#304869]/10 p-2 text-[#304869]">
                   <Award className="h-5 w-5" />
                 </div>
                 <div>
@@ -296,13 +296,13 @@ export default function ManufacturingPage() {
               whileHover={{ y: -8, transition: { duration: 0.2 } }}
               className="group relative rounded-xl border border-gray-100 bg-white p-6 text-center shadow-lg transition-all hover:shadow-xl ring-1 ring-gray-100"
             >
-              <div className="absolute inset-x-0 -top-px mx-auto h-px w-12 rounded-full bg-[#861981] opacity-0 transition-all group-hover:opacity-100" />
-              <div className="inline-flex rounded-xl bg-[#861981]/10 p-3 text-[#861981]">
+              <div className="absolute inset-x-0 -top-px mx-auto h-px w-12 rounded-full bg-[#304869] opacity-0 transition-all group-hover:opacity-100" />
+              <div className="inline-flex rounded-xl bg-[#304869]/10 p-3 text-[#304869]">
                 <stat.icon className="h-6 w-6" />
               </div>
               <p className="mt-4 text-3xl font-bold tracking-tight text-gray-900">{stat.value}</p>
               <p className="text-sm font-medium text-gray-500">{stat.label}</p>
-              <p className="mt-1 text-xs font-medium text-[#861981]">{stat.trend}</p>
+              <p className="mt-1 text-xs font-medium text-[#304869]">{stat.trend}</p>
             </motion.div>
           ))}
         </motion.div>
@@ -316,13 +316,13 @@ export default function ManufacturingPage() {
           className="mb-12"
         >
           <div className="mb-10 text-center">
-            <span className="rounded-full bg-[#861981]/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-[#861981]">
+            <span className="rounded-full bg-[#304869]/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-[#304869]">
               Core Strengths
             </span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Advanced Manufacturing Capabilities
             </h2>
-            <div className="mx-auto mt-4 h-1 w-20 rounded-full bg-gradient-to-r from-[#861981] to-[#861981]" />
+            <div className="mx-auto mt-4 h-1 w-20 rounded-full bg-gradient-to-r from-[#304869] to-[#304869]" />
             <p className="mx-auto mt-5 max-w-2xl text-gray-600">
               State-of-the-art infrastructure and industry-leading expertise
             </p>
@@ -336,7 +336,7 @@ export default function ManufacturingPage() {
                 whileHover={{ scale: 1.02 }}
                 className="rounded-xl border border-gray-100 bg-white p-6 text-center shadow-sm transition-all hover:shadow-md"
               >
-                <div className="mx-auto rounded-full bg-[#861981]/10 p-3 text-[#861981] w-fit">
+                <div className="mx-auto rounded-full bg-[#304869]/10 p-3 text-[#304869] w-fit">
                   <cap.icon className="h-6 w-6" />
                 </div>
                 <p className="mt-4 text-2xl font-bold text-gray-900">{cap.value}</p>
@@ -355,13 +355,13 @@ export default function ManufacturingPage() {
           className="mb-12"
         >
           <div className="mb-10 text-center">
-            <span className="rounded-full bg-[#861981]/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-[#861981]">
+            <span className="rounded-full bg-[#304869]/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-[#304869]">
               Made in India
             </span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Our Indian Manufacturing Hubs
             </h2>
-            <div className="mx-auto mt-4 h-1 w-20 rounded-full bg-[#861981]" />
+            <div className="mx-auto mt-4 h-1 w-20 rounded-full bg-[#304869]" />
             <p className="mx-auto mt-5 max-w-2xl text-gray-600">
               Strategic facilities across Delhi NCR, Mumbai, and Gujarat – delivering excellence locally
             </p>
@@ -377,7 +377,7 @@ export default function ManufacturingPage() {
               >
                 <div className={`absolute inset-0 bg-gradient-to-br ${facility.imageBg} opacity-0 transition-opacity group-hover:opacity-30`} />
                 <div className="relative p-6">
-                  <div className="inline-flex rounded-xl bg-[#861981]/10 p-3 text-[#861981]">
+                  <div className="inline-flex rounded-xl bg-[#304869]/10 p-3 text-[#304869]">
                     <facility.icon className="h-7 w-7" />
                   </div>
                   <h3 className="mt-4 text-xl font-bold text-gray-900">{facility.name}</h3>
@@ -396,13 +396,13 @@ export default function ManufacturingPage() {
                     </div>
                     <div className="flex justify-between text-sm">
                       <span className="text-gray-500">Certifications</span>
-                      <span className="font-semibold text-[#861981]">{facility.cert}</span>
+                      <span className="font-semibold text-[#304869]">{facility.cert}</span>
                     </div>
                   </div>
                   <div className="mt-4 h-px w-full bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
                   <div className="mt-4 flex items-center justify-between">
-                    <span className="text-xs font-medium text-[#861981]">✓ Partner Facility</span>
-                    <BadgeCheck className="h-4 w-4 text-[#861981]" />
+                    <span className="text-xs font-medium text-[#304869]">✓ Partner Facility</span>
+                    <BadgeCheck className="h-4 w-4 text-[#304869]" />
                   </div>
                 </div>
               </motion.div>
@@ -420,13 +420,13 @@ export default function ManufacturingPage() {
           className="mb-12"
         >
           <div className="mb-12 text-center">
-            <span className="rounded-full bg-[#861981]/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-[#861981]">
+            <span className="rounded-full bg-[#304869]/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-[#304869]">
               From Vision to Reality
             </span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               The Wather Manufacturing Process
             </h2>
-            <div className="mx-auto mt-4 h-1 w-20 rounded-full bg-[#861981]" />
+            <div className="mx-auto mt-4 h-1 w-20 rounded-full bg-[#304869]" />
             <p className="mx-auto mt-5 max-w-2xl text-gray-600">
               Six precision-driven steps ensuring uncompromising quality at every stage
             </p>
@@ -443,15 +443,15 @@ export default function ManufacturingPage() {
                 {/* <div className="absolute -top-3 -left-3 flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-emerald-500 to-teal-600 text-sm font-bold text-white shadow-lg">
                   {step.id}
                 </div> */}
-                <div className="absolute top-4 right-4 rounded-full bg-[#861981]/10 px-2 py-0.5 text-xs font-medium text-[#861981]">
+                <div className="absolute top-4 right-4 rounded-full bg-[#304869]/10 px-2 py-0.5 text-xs font-medium text-[#304869]">
                   {step.qualityMetric}
                 </div>
-                <div className="mb-4 mt-2 inline-flex rounded-xl bg-[#861981]/10 p-3 text-[#861981]">
+                <div className="mb-4 mt-2 inline-flex rounded-xl bg-[#304869]/10 p-3 text-[#304869]">
                   <step.icon className="h-6 w-6" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900">{step.title}</h3>
                 <p className="mt-2 leading-relaxed text-gray-600">{step.description}</p>
-                <div className="mt-4 h-0.5 w-12 rounded-full bg-[#861981]/10 transition-all group-hover:w-16" />
+                <div className="mt-4 h-0.5 w-12 rounded-full bg-[#304869]/10 transition-all group-hover:w-16" />
               </motion.div>
             ))}
           </div>
@@ -476,7 +476,7 @@ export default function ManufacturingPage() {
               <p className="mx-auto mt-3 max-w-2xl text-gray-600">
                 Meeting the highest global standards for quality, safety, and sustainability
               </p>
-              <div className="mx-auto mt-4 h-1 w-20 rounded-full bg-[#861981]" />
+              <div className="mx-auto mt-4 h-1 w-20 rounded-full bg-[#304869]" />
             </div>
 
             <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -489,7 +489,7 @@ export default function ManufacturingPage() {
                 >
                   {/* Ribbon / Badge */}
                   <div className="absolute -top-3 right-4">
-                    <div className="flex items-center gap-1 rounded-full bg-[#861981] px-2 py-0.5 text-[10px] font-bold text-white shadow-sm">
+                    <div className="flex items-center gap-1 rounded-full bg-[#304869] px-2 py-0.5 text-[10px] font-bold text-white shadow-sm">
                       <Verified className="h-3 w-3" />
                       <span>{cert.badge}</span>
                     </div>
@@ -565,7 +565,7 @@ export default function ManufacturingPage() {
             whileHover={{ y: -5 }}
             className="rounded-xl bg-white border border-gray-200 p-8 shadow-lg transition-all hover:shadow-xl ring-1 ring-gray-100"
           >
-            <div className="mb-4 inline-flex rounded-xl bg-[#861981]/10 p-3 text-[#861981]">
+            <div className="mb-4 inline-flex rounded-xl bg-[#861981]/10 p-3 text-[#304869]">
               <Droplets className="h-7 w-7" />
             </div>
             <h3 className="text-2xl font-bold text-gray-900">Premium Materials</h3>
@@ -580,7 +580,7 @@ export default function ManufacturingPage() {
                 "UV-cured inks (VOC-free, non-toxic)",
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-[#861981]" />
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-[#304869]" />
                   <span className="text-gray-700">{item}</span>
                 </li>
               ))}
@@ -592,7 +592,7 @@ export default function ManufacturingPage() {
             whileHover={{ y: -5 }}
             className="rounded-2xl bg-white p-8 shadow-lg transition-all hover:shadow-xl ring-1 ring-gray-100"
           >
-            <div className="mb-4 inline-flex rounded-xl bg-[#861981]/10 p-3 text-[#861981]">
+            <div className="mb-4 inline-flex rounded-xl bg-[#304869]/10 p-3 text-[#304869]">
               <Leaf className="h-7 w-7" />
             </div>
             <h3 className="text-2xl font-bold text-gray-900">Sustainability Commitments</h3>
@@ -607,7 +607,7 @@ export default function ManufacturingPage() {
                 "Carbon offset program for all shipments",
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-[#861981]" />
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-[#304869]" />
                   <span className="text-gray-700">{item}</span>
                 </li>
               ))}

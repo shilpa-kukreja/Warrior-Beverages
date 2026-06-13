@@ -168,21 +168,21 @@ export default function ProductShowcase() {
           >
             <h2 className="mt-2 text-3xl font-bold tracking-tight leading-tight text-white sm:text-4xl md:text-5xl">
               Our Range of <br />
-              <span className="text-[#861981]">Premium Water</span>
+              <span className="text-[#304869]">Premium Water</span>
             </h2>
             <p className="mt-3 text-sm text-white/90 sm:text-base md:text-lg">
               Thoughtfully Packaged to Keep You Revitalised Throughout the Day.
             </p>
-            <div className="mx-auto mt-3 h-1 w-20 rounded-full bg-[#861981] lg:mx-0" />
+            <div className="mx-auto mt-3 h-1 w-20 rounded-full bg-[#304869] lg:mx-0" />
             <p className="mt-5 text-xs italic text-white/80 sm:text-sm">
               Choose Purity, Choose Quality –{" "}
-              <strong className="text-[#861981]">Choose AQTIVE Water</strong>
+              <strong className="text-[#304869]">Choose AQTIVE Water</strong>
             </p>
             <motion.button
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.6, duration: 0.5 }}
-              className="group mt-6 flex w-full items-center justify-center gap-2 rounded-md bg-[#861981] px-6 py-3 text-base font-semibold text-white shadow-lg transition-all hover:shadow-xl active:scale-95 sm:w-auto sm:px-8 lg:inline-flex"
+              className="group mt-6 flex w-full items-center justify-center gap-2 rounded-md bg-[#304869] px-6 py-3 text-base font-semibold text-white shadow-lg transition-all hover:shadow-xl active:scale-95 sm:w-auto sm:px-8 lg:inline-flex"
             >
               Contact Us
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -225,21 +225,21 @@ export default function ProductShowcase() {
                         {product.name}
                       </h3>
                       <div className="mb-3 flex justify-center sm:mb-4">
-                        <span className="rounded-full bg-[#861981]/10 px-2 py-0.5 text-xs font-semibold text-[#861981] sm:px-3">
+                        <span className="rounded-full bg-[#304869]/10 px-2 py-0.5 text-xs font-semibold text-[#304869] sm:px-3">
                           {product.volume}
                         </span>
                       </div>
                       <div className="flex justify-center">
                         <button
                           onClick={() => openQuoteModalForProduct(product)}
-                          className="group/btn flex items-center gap-1 rounded-md bg-[#861981] px-3 py-1.5 text-xs font-semibold text-white shadow-md transition-all hover:shadow-lg active:scale-95 sm:px-4 sm:py-2"
+                          className="group/btn flex items-center gap-1 rounded-md bg-[#304869] px-3 py-1.5 text-xs font-semibold text-white shadow-md transition-all hover:shadow-lg active:scale-95 sm:px-4 sm:py-2"
                         >
                           {/* <ShoppingBag className="h-3 w-3" /> */}
                           Enquiry Now
                           {/* <ArrowRight className="h-3 w-3 transition-transform group-hover/btn:translate-x-1" /> */}
                         </button>
                         <Link href={`/products/${product.id}`}>
-                          <button className="group/btn flex items-center gap-1 rounded-md bg-white/20 px-3 py-1.5 text-xs font-semibold text-[#861981] shadow-md transition-all hover:shadow-lg active:scale-95 sm:px-4 sm:py-2">
+                          <button className="group/btn flex items-center gap-1 rounded-md bg-white/20 px-3 py-1.5 text-xs font-semibold text-[#304869] shadow-md transition-all hover:shadow-lg active:scale-95 sm:px-4 sm:py-2">
                             View Details
                             {/* <ArrowRight className="h-3 w-3 transition-transform group-hover/btn:translate-x-1" /> */}
                           </button>
@@ -280,7 +280,7 @@ export default function ProductShowcase() {
                     key={idx}
                     onClick={() => setCurrentStartIndex(idx)}
                     className={`h-1.5 rounded-full transition-all ${idx === currentStartIndex
-                      ? "w-5 bg-[#FFB347]"
+                      ? "w-5 bg-[#304869]"
                       : "w-1.5 bg-white/50 hover:bg-white/80"
                       }`}
                   />

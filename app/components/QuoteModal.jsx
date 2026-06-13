@@ -237,7 +237,7 @@ export default function QuoteModal({ isOpen, onClose, productName, productVolume
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#861981] focus:border-transparent outline-none"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#304869] focus:border-transparent outline-none"
               placeholder="John Doe"
             />
           </div>
@@ -249,7 +249,7 @@ export default function QuoteModal({ isOpen, onClose, productName, productVolume
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#861981] focus:border-transparent outline-none"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#304869] focus:border-transparent outline-none"
               placeholder="john@example.com"
             />
           </div>
@@ -260,7 +260,7 @@ export default function QuoteModal({ isOpen, onClose, productName, productVolume
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#861981] focus:border-transparent outline-none"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#304869] focus:border-transparent outline-none"
               placeholder="+91 98765 43210"
             />
           </div>
@@ -272,7 +272,7 @@ export default function QuoteModal({ isOpen, onClose, productName, productVolume
               onChange={handleChange}
               required
               rows="4"
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#861981] focus:border-transparent outline-none resize-none"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#304869] focus:border-transparent outline-none resize-none"
             />
           </div>
 
@@ -290,7 +290,7 @@ export default function QuoteModal({ isOpen, onClose, productName, productVolume
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-[#861981] text-white font-semibold py-3 rounded-lg hover:bg-[#6e1569] transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+            className="w-full bg-[#304869] text-white font-semibold py-3 rounded-lg hover:bg-[#304869] transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
           >
             {isSubmitting ? (
               <>

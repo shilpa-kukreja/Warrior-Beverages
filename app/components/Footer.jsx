@@ -506,7 +506,7 @@ export default function Footer() {
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="group flex items-center gap-1 text-xs md:text-sm text-white/60 transition-all hover:text-[#861981] py-1"
+                    className="group flex items-center gap-1 text-xs md:text-sm text-white/60 transition-all hover:text-[#18BDCD] py-1"
                   >
                     <ChevronRight className="h-3 w-3 transition-transform group-hover:translate-x-1" />
                     {item.name}
@@ -540,7 +540,7 @@ export default function Footer() {
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="group flex items-center gap-1 text-xs md:text-sm text-white/60 transition-all hover:text-[#861981] py-1"
+                    className="group flex items-center gap-1 text-xs md:text-sm text-white/60 transition-all hover:text-[#18BDCD] py-1"
                   >
                     <ChevronRight className="h-3 w-3 transition-transform group-hover:translate-x-1" />
                     {item.name}
@@ -569,7 +569,7 @@ export default function Footer() {
               <button
                 type="submit"
                 disabled={isSubscribing}
-                className="rounded-full bg-[#861981] p-3 text-white transition-all hover:scale-105 active:scale-95 disabled:opacity-50 disabled:hover:scale-100"
+                className="rounded-full bg-[#18BDCD] p-3 text-white transition-all hover:scale-105 active:scale-95 disabled:opacity-50 disabled:hover:scale-100"
               >
                 {isSubscribing ? (
                   <Loader2 className="h-4 w-4 animate-spin" />
@@ -601,15 +601,15 @@ export default function Footer() {
             
             <div className="pt-2 space-y-2">
               <div className="flex items-center justify-center md:justify-start gap-2 text-xs md:text-sm text-white/60">
-                <Phone className="h-3 w-3 text-sky-400" />
+                <Phone className="h-3 w-3 text-[#18BDCD]" />
                 <span>+1 (800) 123-4567</span>
               </div>
               <div className="flex items-center justify-center md:justify-start gap-2 text-xs md:text-sm text-white/60">
-                <Mail className="h-3 w-3 text-sky-400" />
+                <Mail className="h-3 w-3 text-[#18BDCD]" />
                 <span>hello@wather.com</span>
               </div>
               <div className="flex items-center justify-center md:justify-start gap-2 text-xs md:text-sm text-white/60">
-                <MapPin className="h-3 w-3 text-sky-400" />
+                <MapPin className="h-3 w-3 text-[#18BDCD]" />
                 <span>123 Water Ave, Eco-City</span>
               </div>
             </div>

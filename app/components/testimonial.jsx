@@ -140,7 +140,7 @@ export default function Testimonials() {
           </motion.h2>
 
           <motion.div
-            className="mx-auto mt-4 h-1 w-24 rounded-full bg-[#861981]"
+            className="mx-auto mt-4 h-1 w-24 rounded-full bg-[#304869]"
             initial={{ width: 0, opacity: 0 }}
             animate={isInView ? { width: "6rem", opacity: 1 } : {}}
             transition={{ delay: 0.3, duration: 0.8 }}
@@ -192,7 +192,7 @@ export default function Testimonials() {
                       <img
                         src={testimonial.image}
                         alt={testimonial.name}
-                        className="h-14 w-14 rounded-full object-cover ring-2 ring-[#861981] ring-offset-400/50"
+                        className="h-14 w-14 rounded-full object-cover ring-2 ring-[#304869] ring-offset-400/50"
                       />
                       <div>
                         <h3 className="text-lg font-bold text-gray-800">
@@ -229,24 +229,24 @@ export default function Testimonials() {
                 disabled={!canScrollLeft}
                 className={`absolute left-0 top-1/2 -translate-y-1/2 rounded-full bg-white/20 p-2 backdrop-blur-sm transition-all duration-200 ${
                   canScrollLeft
-                    ? "hover:bg-white/40 hover:scale-110 cursor-pointer border-2 border-[#861981]"
+                    ? "hover:bg-white/40 hover:scale-110 cursor-pointer border-2 border-[#304869]"
                     : "opacity-30 cursor-not-allowed"
                 }`}
                 aria-label="Previous"
               >
-                <ChevronLeft className="h-6 w-6 text-[#861981]" />
+                <ChevronLeft className="h-6 w-6 text-[#304869]" />
               </button>
               <button
                 onClick={nextSlide}
                 disabled={!canScrollRight}
                 className={`absolute right-0 top-1/2 -translate-y-1/2 rounded-full bg-white/50 p-2 backdrop-blur-sm transition-all duration-200 ${
                   canScrollRight
-                    ? "hover:bg-white/40 hover:scale-110 cursor-pointer border-2 border-[#861981]"
+                    ? "hover:bg-white/40 hover:scale-110 cursor-pointer border-2 border-[#304869]"
                     : "opacity-30 cursor-not-allowed"
                 }`}
                 aria-label="Next"
               >
-                <ChevronRight className="h-6 w-6 text-[#861981]" />
+                <ChevronRight className="h-6 w-6 text-[#304869]" />
               </button>
             </>
           )}
@@ -260,8 +260,8 @@ export default function Testimonials() {
                   onClick={() => setCurrentIndex(idx)}
                   className={`transition-all duration-300 rounded-full ${
                     idx === currentIndex
-                      ? "w-8 h-2 bg-[#861981]"
-                      : "w-2 h-2 bg-[#861981]/50 hover:bg-white/70"
+                      ? "w-8 h-2 bg-[#304869]"
+                      : "w-2 h-2 bg-[#304869]/50 hover:bg-white/70"
                   }`}
                   aria-label={`Go to slide ${idx + 1}`}
                 />

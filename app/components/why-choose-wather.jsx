@@ -137,7 +137,7 @@ export default function WhyChooseWather() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            Why Choose <span className="text-[#861981]">Wather</span>
+            Why Choose <span className="text-[#304869]">Wather</span>
           </motion.h1>
 
           {/* <motion.h2
@@ -150,7 +150,7 @@ export default function WhyChooseWather() {
           </motion.h2> */}
 
           <motion.div
-            className="mx-auto mt-4 h-1 w-32 rounded-full bg-gradient-to-r from-sky-400 to-[#861981]"
+            className="mx-auto mt-4 h-1 w-32 rounded-full bg-gradient-to-r from-sky-400 to-[#304869]"
             initial={{ width: 0, opacity: 0 }}
             animate={isInView ? { width: "8rem", opacity: 1 } : {}}
             transition={{ delay: 0.4, duration: 0.8 }}

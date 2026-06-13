@@ -314,7 +314,7 @@ export default function IntroSection() {
                     {/* Heading - mobile optimized */}
                     <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
                         Introducing{" "}
-                        <span className="inline-flex flex-wrap items-center gap-1 text-[#861981]">
+                        <span className="inline-flex flex-wrap items-center gap-1 text-[#304869]">
                             <span className="inline-block min-w-[120px] sm:min-w-[150px] md:min-w-[180px]">
                                 {displayText}
                             </span>
@@ -325,13 +325,13 @@ export default function IntroSection() {
                     {/* Description - better readability on mobile */}
                     <p className="mt-3 sm:mt-4 text-sm sm:text-base text-gray-700 leading-relaxed">
                         Wahter is founded by{" "}
-                        <strong className="text-[#861981] font-semibold">
+                        <strong className="text-[#304869] font-semibold">
                             Mrs. Kashish A Nenwani & Mr. Amitt Nenwani
                         </strong>
                         , Global Indian of the Year 2020-21 recognised by AsiaOne Magazine.
                         Wahter is a division of the renowned Shiva Group, originally founded
                         in 1987 by{" "}
-                        <strong className="text-[#861981] font-semibold">
+                        <strong className="text-[#304869] font-semibold">
                             Mr. Shiv Kumar Nenwani
                         </strong>
                         , a 1972 Electrical Engineer from MACT Bhopal and double Post
@@ -349,16 +349,16 @@ export default function IntroSection() {
                                     rounded-xl
                                     border border-gray-100
                                     bg-white/80 backdrop-blur-sm
-                                    hover:bg-[#861981]/10
+                                    hover:bg-[#304869]/10
                                     px-3 sm:px-4 py-2 sm:py-2.5
                                     transition-all duration-300
                                     active:scale-95 md:hover:-translate-y-1 md:hover:shadow-lg
                                     cursor-pointer
                                 "
                             >
-                                <div className="flex-shrink-0 flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-[#861981]/10">
+                                <div className="flex-shrink-0 flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-[#304869]/10">
                                     <svg
-                                        className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#861981]"
+                                        className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#304869]"
                                         fill="none"
                                         stroke="currentColor"
                                         viewBox="0 0 24 24"
@@ -385,11 +385,11 @@ export default function IntroSection() {
                                 w-full sm:w-auto
                                 px-6 sm:px-7 py-3 sm:py-3.5
                                 rounded-xl
-                                bg-[#861981]
+                                bg-[#304869]
                                 text-white
                                 font-semibold
                                 text-sm sm:text-base
-                                hover:bg-[#861981]/80
+                                hover:bg-[#304869]/80
                                 active:scale-95
                                 transition-all duration-300
                                 shadow-md

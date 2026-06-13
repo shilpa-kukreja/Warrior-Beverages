@@ -111,10 +111,10 @@ export default function AboutPage() {
       transition={{ duration: 0.8 }}
       className="text-5xl md:text-7xl font-bold text-white"
     >
-      About <span className="text-[#861981]">Wather</span>
+      About <span className="text-[#304869]">Wather</span>
     </motion.h1>
 
-    <div className="mx-auto mt-5 h-1 w-24 rounded-full bg-[#861981]" />
+    <div className="mx-auto mt-5 h-1 w-24 rounded-full bg-[#304869]" />
 
     <p className="mx-auto mt-6 max-w-3xl text-lg md:text-xl text-white/90">
       Pure hydration. Sustainable innovation. Powerful branding
@@ -133,7 +133,7 @@ export default function AboutPage() {
               variants={fadeLeft}
               className="group relative overflow-hidden rounded-xl  bg-white p-8 shadow-lg hover:shadow-xl transition-all border border-gray-200"
             >
-              <Target className="h-12 w-12 text-[#861981] mb-4" />
+              <Target className="h-12 w-12 text-[#304869] mb-4" />
               <h3 className="text-2xl font-bold text-gray-900">Our Mission</h3>
               <p className="mt-3 text-gray-600 leading-relaxed">
                 To empower brands with sustainable, high-quality water bottles that leave a positive impact on the planet while delivering unforgettable marketing experiences.
@@ -146,7 +146,7 @@ export default function AboutPage() {
               variants={fadeRight}
               className="group relative overflow-hidden rounded-2xl bg-white p-8 shadow-lg hover:shadow-xl transition-all border border-gray-200"
             >
-              <Eye className="h-12 w-12 text-[#861981] mb-4" />
+              <Eye className="h-12 w-12 text-[#304869] mb-4" />
               <h3 className="text-2xl font-bold text-gray-900">Our Vision</h3>
               <p className="mt-3 text-gray-600 leading-relaxed">
                 A world where every brand chooses eco-friendly promotional products, and every bottle tells a story of purity, quality, and responsibility.
@@ -180,7 +180,7 @@ export default function AboutPage() {
               variants={fadeRight}
               className="space-y-4"
             >
-              <Clock className="h-10 w-10 text-[#861981]" />
+              <Clock className="h-10 w-10 text-[#304869]" />
               <h2 className="text-3xl font-bold text-gray-900">Our Journey</h2>
               <p className="text-gray-600 leading-relaxed text-justify">
                 Founded in 2020, Wather was born from a simple idea: combine premium reusable water bottles with powerful branding solutions. We saw an opportunity to help businesses stand out while reducing single‑use plastic waste.
@@ -188,7 +188,7 @@ export default function AboutPage() {
               <p className="text-gray-600 leading-relaxed text-justify">
                 Today, we partner with eco‑conscious startups and global enterprises alike. Every bottle we produce is BPA‑free, durable, and fully customisable. Our mission is to make sustainable branding effortless and impactful.
               </p>
-              <div className="flex items-center gap-2 pt-2 text-[#861981]">
+              <div className="flex items-center gap-2 pt-2 text-[#304869]">
                 <Heart className="h-5 w-5 fill-sky-100" />
                 <span className="font-semibold">Certified B Corp & Carbon Neutral</span>
               </div>
@@ -213,7 +213,7 @@ export default function AboutPage() {
                 variants={fadeUp}
                 className="text-center p-6 rounded-xl bg-white shadow-md border border-gray-200 hover:shadow-lg transition-all group"
               >
-                <stat.icon className="h-10 w-10 text-[#861981] mx-auto mb-3 group-hover:scale-110 transition" />
+                <stat.icon className="h-10 w-10 text-[#304869] mx-auto mb-3 group-hover:scale-110 transition" />
                 <div className="text-3xl font-bold text-gray-900">{stat.value}</div>
                 <div className="text-sm text-gray-500">{stat.label}</div>
               </motion.div>
@@ -227,7 +227,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900">Why Choose Wather</h2>
-            <div className="mx-auto mt-2 h-0.5 w-16 rounded-full bg-[#861981]" />
+            <div className="mx-auto mt-2 h-0.5 w-16 rounded-full bg-[#304869]" />
             <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
               What makes us the trusted partner for brands worldwide.
             </p>
@@ -246,7 +246,7 @@ export default function AboutPage() {
                 whileHover={{ y: -8 }}
                 className="group relative overflow-hidden rounded-xl bg-white p-6 shadow-md hover:shadow-xl transition-all border border-gray-100"
               >
-                <item.icon className="h-10 w-10 text-[#861981] mb-4" />
+                <item.icon className="h-10 w-10 text-[#304869] mb-4" />
                 <h3 className="text-lg font-bold text-gray-800">{item.title}</h3>
                 <p className="text-sm text-gray-600 mt-2">{item.description}</p>
               </motion.div>
@@ -260,7 +260,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900">Our Core Values</h2>
-            <div className="mx-auto mt-2 h-0.5 w-16 rounded-full bg-[#861981]" />
+            <div className="mx-auto mt-2 h-0.5 w-16 rounded-full bg-[#304869]" />
           </div>
           <motion.div
             variants={staggerContainer}
@@ -276,7 +276,7 @@ export default function AboutPage() {
                 whileHover={{ y: -8 }}
                 className="group relative overflow-hidden rounded-xl bg-white p-6 shadow-md hover:shadow-xl transition-all border border-gray-100"
               >
-                <value.icon className="h-10 w-10 text-[#861981] mb-4" />
+                <value.icon className="h-10 w-10 text-[#304869] mb-4" />
                 <h3 className="text-xl font-bold text-gray-800">{value.title}</h3>
                 <p className="text-gray-600 mt-2">{value.description}</p>
               </motion.div>
@@ -290,7 +290,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900">Meet the Team</h2>
-            <div className="mx-auto mt-2 h-0.5 w-16 rounded-full bg-[#861981]" />
+            <div className="mx-auto mt-2 h-0.5 w-16 rounded-full bg-[#304869]" />
             <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
               Passionate people behind Wather – dedicated to your brand’s success.
             </p>
@@ -313,11 +313,11 @@ export default function AboutPage() {
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="h-32 w-32 rounded-full object-cover mx-auto ring-4 ring-[#861981]/10 group-hover:ring-[#861981]/20 transition"
+                    className="h-32 w-32 rounded-full object-cover mx-auto ring-4 ring-[#304869]/10 group-hover:ring-[#304869]/20 transition"
                   />
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mt-4">{member.name}</h3>
-                <p className="text-[#861981] text-sm mb-2">{member.role}</p>
+                <p className="text-[#304869] text-sm mb-2">{member.role}</p>
                 <p className="text-gray-500 text-sm">{member.bio}</p>
               </motion.div>
             ))}
@@ -340,7 +340,7 @@ export default function AboutPage() {
               Join hundreds of brands that trust Wather for premium branded hydration.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-              <button className="inline-flex items-center gap-2 rounded-lg bg-[#861981] px-8 py-3 text-white font-semibold shadow-md hover:shadow-lg hover:scale-100 transition-all">
+              <button className="inline-flex items-center gap-2 rounded-lg bg-[#304869] px-8 py-3 text-white font-semibold shadow-md hover:shadow-lg hover:scale-100 transition-all">
                 Start Your Journey
                 <ChevronRight className="h-4 w-4" />
               </button>
