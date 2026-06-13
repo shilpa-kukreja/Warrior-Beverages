@@ -317,7 +317,7 @@ export default function Navbar() {
           <div className="flex flex-col h-full overflow-y-auto">
             <div className="flex items-center justify-between p-5 border-b border-gray-100">
               <div className="flex flex-col">
-                <img src="/lOgos/lOGO4.png" alt="Warrior Beverages Logo" className="w-8 h-8 mb-1" />
+                <img src="/logos/lOGO4.png" alt="Warrior Beverages Logo" className="w-8 h-8 mb-1" />
               </div>
               <button
                 onClick={closeMobileMenu}
