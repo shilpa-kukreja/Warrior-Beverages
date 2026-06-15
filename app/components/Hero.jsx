@@ -14,7 +14,7 @@ export default function Hero() {
         playsInline
         className="absolute inset-0 h-full w-full object-cover"
       >
-        <source src="/video/Aqtive-Water-28-02-2025.mp4" type="video/mp4" />
+        <source src="/video/Sequence3.mp4" type="video/mp4" />
       </video>
 
     

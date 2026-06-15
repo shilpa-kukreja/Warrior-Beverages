@@ -20,22 +20,22 @@ import Footer from "../components/Footer";
 const newsArticles = [
   {
     id: 1,
-    title: "Wather Launches 100% Ocean-Bound Plastic Bottle",
+    title: "How to Choose Safe Packaged Drinking Water in India",
     excerpt:
-      "Our new EcoCollect series turns ocean waste into premium branded bottles, reducing marine plastic by 2 million kg annually.",
-    date: "May 28, 2025",
+      "When purchasing packaged drinking water, most consumers focus on convenience and availability. However, not every bottle offers the same level of quality, purification, and consistency. With numerous options available in the market, understanding what makes a reliable drinking water brand can help you make a more informed choice.",
+    date: "jun 2026",
     category: "Sustainability",
     image:
       "/news/2.webp",
-    readTime: "4 min read",
+    readTime: "5 Min Read",
     featured: true,
   },
   {
     id: 2,
-    title: "How Hydration Branding Boosts Employee Wellness",
+    title: "Latest study shows companies using custom water bottles see 34% higher engagement in wellnessWhy Premium Packaging Influences Consumer Trust.",
     excerpt:
-      "Latest study shows companies using custom water bottles see 34% higher engagement in wellness programs.",
-    date: "May 22, 2025",
+      "In today's competitive market, packaging plays a much larger role than many people realize. Long before consumers experience a product, they form opinions based on appearance, design, and presentation.",
+    date: "june 2026",
     category: "Insights",
     image:
       "/news/3.webp",
@@ -44,34 +44,34 @@ const newsArticles = [
   },
   {
     id: 3,
-    title: "Wather Partners with Global Climate Summit 2025",
+    title: "The Importance of Staying Hydrated Throughout the Day",
     excerpt:
       "Providing 50,000 reusable bottles to delegates, eliminating single-use plastic at the world's largest climate event.",
-    date: "May 18, 2025",
+    date: "June 2026",
     category: "Partnership",
     image:
       "/news/4.webp",
-    readTime: "5 min read",
+    readTime: "4 Min Read",
     featured: false,
   },
   {
     id: 4,
-    title: "New Customization Tech: Full-Color Wrap Printing",
+    title: "Why Offices Need a Reliable Drinking Water Partner",
     excerpt:
-      "Revolutionary 360° printing allows unlimited color designs with zero waste – perfect for complex brand identities.",
-    date: "May 10, 2025",
+      "Every workplace depends on reliable essentials, and drinking water is among the most important. From employee comfort to visitor experience, access to quality drinking water contributes significantly to a professional environment.",
+    date: "June 2026",
     category: "Innovation",
     image:
       "/news/6.webp",
-    readTime: "3 min read",
+    readTime: "5 min read",
     featured: false,
   },
   {
     id: 5,
-    title: "Case Study: How a Startup Gained 10k Instagram Followers",
+    title: "What Hotels and Restaurants Look for in a Water Brand",
     excerpt:
-      "One branded bottle campaign generated over 5,000 user-generated posts and a 240% ROI for a fitness brand.",
-    date: "May 5, 2025",
+      "In the hospitality industry, every detail contributes to the guest experience. From service quality to presentation standards, businesses strive to create memorable experiences that reflect their brand values.",
+    date: "june 2026",
     category: "Success Stories",
     image:
       "/news/marketing-case-study.webp",
@@ -80,10 +80,10 @@ const newsArticles = [
   },
   {
     id: 6,
-    title: "Wather Receives B Corp Certification",
+    title: "Packaged Drinking Water vs Ordinary Drinking Water: Understanding the Difference",
     excerpt:
-      "Recognized for meeting highest standards of social and environmental performance, transparency, and accountability.",
-    date: "April 28, 2025",
+      "Many consumers use the terms drinking water and packaged drinking water interchangeably. However, there are important differences in how packaged drinking water is processed, monitored, and delivered.",
+    date: "june 2026",
     category: "Company News",
     image:
       "/news/2.webp",

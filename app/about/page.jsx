@@ -50,25 +50,25 @@ export default function AboutPage() {
 
   // Stats data
   const stats = [
-    { icon: Users, value: "50K+", label: "Happy Clients" },
-    { icon: Award, value: "15+", label: "Industry Awards" },
-    { icon: Globe, value: "30+", label: "Countries Served" },
-    { icon: Heart, value: "100%", label: "Eco-Friendly" },
+    { icon: Users, value: "50,000+", label: "Bottles Delivered Daily" },
+    { icon: Award, value: "100+", label: "Retail & Business Partners" },
+    { icon: Globe, value: "3+", label: "Pack Sizes Available" },
+    { icon: Heart, value: "100%", label: "Quality Focused" },
   ];
 
   // Why Choose Us data
   const whyChoose = [
-    { icon: Leaf, title: "Sustainable Materials", description: "100% BPA-free, recyclable, and reusable bottles." },
-    { icon: TrendingUp, title: "High ROI", description: "Cost-effective branding with long-term visibility." },
-    { icon: Sparkles, title: "Custom Designs", description: "Full customization to match your brand identity." },
-    { icon: Shield, title: "Premium Quality", description: "Durable, leak-proof, and built to last." },
+    { icon: Leaf, title: "Premium Experience", description: "Thoughtfully designed packaging that complements today's lifestyle while reflecting the quality inside." },
+    { icon: TrendingUp, title: "Consistent Quality", description: "Every bottle is produced with a focus on maintaining the same refreshing taste and dependable standards." },
+    { icon: Sparkles, title: "Trusted Purity", description: "Carefully purified water that delivers confidence, freshness, and peace of mind with every sip." },
+    { icon: Shield, title: "Customer First", description: "Driven by a commitment to reliability, service excellence, and long-term relationships." },
   ];
 
   // Core Values data
   const values = [
-    { icon: Shield, title: "Premium Quality", description: "Every bottle meets strict standards for durability and safety." },
-    { icon: Sparkles, title: "Sustainable Impact", description: "Committed to reducing plastic waste, one bottle at a time." },
-    { icon: Users, title: "Client First", description: "Your vision is our mission – tailored solutions guaranteed." },
+    { icon: Shield, title: "Quality Without Compromise", description: "We believe every bottle should deliver the same standard of purity, freshness, and reliability. Quality is not just a promise, it's the foundation of everything we do." },
+    { icon: Sparkles, title: "Trust in Every Drop", description: "From purification to packaging, every step is guided by transparency, consistency, and a commitment to earning consumer confidence every day." },
+    { icon: Users, title: "Customer-Centric Approach", description: "Whether serving individuals, retailers, hospitality partners, or businesses, we focus on understanding needs and delivering an experience that exceeds expectations." },
   ];
 
   // Team data
@@ -81,30 +81,30 @@ export default function AboutPage() {
   return (
     <>
     <Navbar/>
-       <img
-          src="/about/about.webp"
+       {/* <img
+          src="/about/Aboutsus.png"
           alt="Background"
           className="absolute inset-0 w-full h-full object-cover "
-        />
+        /> */}
  
-    <main className="bg-white overflow-hidden">
+    <main className="bg-white overflow-hidden sm:my-20 my-16">
      
       {/* ========== HERO SECTION ========== */}
-  <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+  <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden">
   {/* Background Image */}
   <div className="absolute inset-0">
     <img
-      src="/home/about.png"
+      src="/about/Aboutsus.png"
       alt="About Wather"
       className="w-full h-full object-cover"
     />
   </div>
 
   {/* Dark Overlay */}
-  <div className="absolute inset-0 bg-black/50" />
+  <div className="absolute inset-0 bg-black/10" />
 
   {/* Content */}
-  <div className="relative z-10 mx-auto max-w-7xl px-6 text-center">
+  {/* <div className="relative z-10 mx-auto max-w-7xl px-6 text-center">
     <motion.h1
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
@@ -120,7 +120,7 @@ export default function AboutPage() {
       Pure hydration. Sustainable innovation. Powerful branding
       solutions that help businesses leave a lasting impression.
     </p>
-  </div>
+  </div> */}
 </section>
       {/* ========== MISSION & VISION ========== */}
       <section className="relative py-12 md:py-12 bg-gray-50">
@@ -135,8 +135,8 @@ export default function AboutPage() {
             >
               <Target className="h-12 w-12 text-[#304869] mb-4" />
               <h3 className="text-2xl font-bold text-gray-900">Our Mission</h3>
-              <p className="mt-3 text-gray-600 leading-relaxed">
-                To empower brands with sustainable, high-quality water bottles that leave a positive impact on the planet while delivering unforgettable marketing experiences.
+              <p className="mt-3 text-gray-600 leading-relaxed text-justify">
+               To make premium-quality packaged drinking water accessible to everyone by delivering trusted purity, consistent standards, and a refreshing experience in every bottle. We are committed to combining modern manufacturing practices, dependable quality control, and customer-focused service to keep individuals, businesses, and communities confidently hydrated every day.
               </p>
             </motion.div>
             <motion.div
@@ -148,8 +148,8 @@ export default function AboutPage() {
             >
               <Eye className="h-12 w-12 text-[#304869] mb-4" />
               <h3 className="text-2xl font-bold text-gray-900">Our Vision</h3>
-              <p className="mt-3 text-gray-600 leading-relaxed">
-                A world where every brand chooses eco-friendly promotional products, and every bottle tells a story of purity, quality, and responsibility.
+              <p className="mt-3 text-gray-600 leading-relaxed text-justify">
+                To become one of India's most trusted premium water brands by setting new benchmarks in quality, reliability, and consumer experience. We envision a future where every bottle of Neysa represents confidence, freshness, and a commitment to better hydration for modern lifestyles.
               </p>
             </motion.div>
           </div>
@@ -168,7 +168,7 @@ export default function AboutPage() {
               className="rounded-xl overflow-hidden shadow-xl group"
             >
               <img
-                src="/about/about-page-3.jpg"
+                src="/about/ourjourney.jpeg"
                 alt="Wather team"
                 className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
               />
@@ -180,17 +180,17 @@ export default function AboutPage() {
               variants={fadeRight}
               className="space-y-4"
             >
-              <Clock className="h-10 w-10 text-[#304869]" />
+              {/* <Clock className="h-10 w-10 text-[#304869]" /> */}
               <h2 className="text-3xl font-bold text-gray-900">Our Journey</h2>
               <p className="text-gray-600 leading-relaxed text-justify">
-                Founded in 2020, Wather was born from a simple idea: combine premium reusable water bottles with powerful branding solutions. We saw an opportunity to help businesses stand out while reducing single‑use plastic waste.
+                Neysa Premium Water began with a clear purpose: to redefine everyday hydration through quality, trust, and accessibility.Recognizing the growing demand for drinking water that delivers both dependable standards and a premium experience, we set out to create a brand that consumers could confidently choose every day. From the beginning, our focus has been on combining advanced purification, modern packaging, and consistent quality in every bottle.
               </p>
               <p className="text-gray-600 leading-relaxed text-justify">
-                Today, we partner with eco‑conscious startups and global enterprises alike. Every bottle we produce is BPA‑free, durable, and fully customisable. Our mission is to make sustainable branding effortless and impactful.
+                Today, Neysa serves homes, businesses, retailers, hospitality establishments, and events with the same commitment that inspired our journey. Every bottle reflects our dedication to purity, reliability, and customer satisfaction.
               </p>
               <div className="flex items-center gap-2 pt-2 text-[#304869]">
                 <Heart className="h-5 w-5 fill-sky-100" />
-                <span className="font-semibold">Certified B Corp & Carbon Neutral</span>
+                <span className="font-semibold"> Built on Quality, Driven by Trust</span>
               </div>
             </motion.div>
           </div>
@@ -229,7 +229,7 @@ export default function AboutPage() {
             <h2 className="text-3xl font-bold text-gray-900">Why Choose Wather</h2>
             <div className="mx-auto mt-2 h-0.5 w-16 rounded-full bg-[#304869]" />
             <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-              What makes us the trusted partner for brands worldwide.
+              Crafted for Quality. Trusted for Consistency.
             </p>
           </div>
           <motion.div
@@ -278,7 +278,7 @@ export default function AboutPage() {
               >
                 <value.icon className="h-10 w-10 text-[#304869] mb-4" />
                 <h3 className="text-xl font-bold text-gray-800">{value.title}</h3>
-                <p className="text-gray-600 mt-2">{value.description}</p>
+                <p className="text-gray-600 mt-2 text-justify">{value.description}</p>
               </motion.div>
             ))}
           </motion.div>
@@ -335,17 +335,17 @@ export default function AboutPage() {
             transition={{ duration: 0.5 }}
             className="text-center  border border-gray-200 rounded-xl p-8 md:p-12 shadow-lg"
           >
-            <h3 className="text-2xl md:text-3xl font-bold text-black">Ready to make a splash?</h3>
-            <p className="text-gray-600 mt-2 max-w-lg mx-auto">
-              Join hundreds of brands that trust Wather for premium branded hydration.
+            <h3 className="text-2xl md:text-3xl font-bold text-black">Stay Refreshed with Neysa</h3>
+            <p className="text-gray-600 mt-2 max-w-lg mx-auto text-justify">
+                Experience premium-quality packaged drinking water crafted for modern lifestyles. Whether you're a retailer, distributor, business, or individual consumer, we're here to deliver trusted hydration you can rely on.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
               <button className="inline-flex items-center gap-2 rounded-lg bg-[#304869] px-8 py-3 text-white font-semibold shadow-md hover:shadow-lg hover:scale-100 transition-all">
-                Start Your Journey
+                Get in Touch
                 <ChevronRight className="h-4 w-4" />
               </button>
               <button className="inline-flex items-center gap-2 rounded-lg border border-gray-300 bg-white px-8 py-3 text-gray-700 font-semibold shadow-sm hover:shadow-md hover:bg-gray-50 transition-all">
-                Contact Sales
+               Contact Our Team
               </button>
             </div>
           </motion.div>

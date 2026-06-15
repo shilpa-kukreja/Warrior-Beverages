@@ -1,8 +1,8 @@
 export const newsArticles = [
   {
     id: 1,
-    title: "Wather Launches 100% Ocean-Bound Plastic Bottle",
-    slug: "wather-launches-ocean-bound-plastic-bottle",
+    title: "How to Choose Safe Packaged Drinking Water in India",
+    slug: "how-to-choose-safe-packaged-drinking-water-in-india",
     excerpt:
       "Our new EcoCollect series turns ocean waste into premium branded bottles, reducing marine plastic by 2 million kg annually.",
     fullContent: `

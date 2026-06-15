@@ -14,33 +14,24 @@ import Link from "next/link";
 const products = [
   {
     id: 1,
-    name: "Water Bottle 1L Round",
+    name: "Premium Water 1L",
     volume: "1L",
-    image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=600&q=80",
+    price: "₹30",
+    image: "/productimage/1.png",
   },
   {
     id: 2,
-    name: "Water Bottle 250ML",
+    name: "Premium Water 250ML",
     volume: "250ML",
-    image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=400&h=500&q=80",
+    price: "₹10",
+    image: "/productimage/1.png",
   },
   {
     id: 3,
-    name: "Water Bottle 500ML",
+    name: "Premium Water 500ML",
     volume: "500ML",
-    image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=500&h=600&q=80",
-  },
-  {
-    id: 4,
-    name: "Water Bottle 750ML",
-    volume: "750ML",
-    image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=600&q=80",
-  },
-  {
-    id: 5,
-    name: "Water Bottle 1.5L",
-    volume: "1.5L",
-    image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=600&q=80",
+    price: "₹20",
+    image: "/productimage/1.png",
   },
 ];
 
@@ -152,9 +143,9 @@ export default function ProductShowcase() {
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
         <video autoPlay loop muted playsInline className="h-full w-full object-cover" poster="...">
-          <source src="/video/Water-Drop-video.mp4" type="video/mp4" />
+          <source src="/video/Sequence 02.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-black/30 md:bg-black/20" />
+        {/* <div className="absolute inset-0 bg-black/30 md:bg-black/20" /> */}
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -167,16 +158,16 @@ export default function ProductShowcase() {
             className="text-center lg:text-left"
           >
             <h2 className="mt-2 text-3xl font-bold tracking-tight leading-tight text-white sm:text-4xl md:text-5xl">
-              Our Range of <br />
+              Our  Range of <br />
               <span className="text-[#304869]">Premium Water</span>
             </h2>
-            <p className="mt-3 text-sm text-white/90 sm:text-base md:text-lg">
-              Thoughtfully Packaged to Keep You Revitalised Throughout the Day.
+            <p className="mt-3 text-sm text-white/90 text-justify sm:text-base md:text-lg">
+              From quick refreshment on the go to everyday hydration at home, Neysa offers thoughtfully sized bottles designed to suit different lifestyles, occasions, and consumption needs. Every pack delivers the same trusted quality, refreshing taste, and premium experience.
             </p>
             <div className="mx-auto mt-3 h-1 w-20 rounded-full bg-[#304869] lg:mx-0" />
             <p className="mt-5 text-xs italic text-white/80 sm:text-sm">
               Choose Purity, Choose Quality –{" "}
-              <strong className="text-[#304869]">Choose AQTIVE Water</strong>
+              <strong className="text-[#304869]">Choose Neysa Water</strong>
             </p>
             <motion.button
               initial={{ opacity: 0, y: 20 }}
@@ -228,6 +219,17 @@ export default function ProductShowcase() {
                         <span className="rounded-full bg-[#304869]/10 px-2 py-0.5 text-xs font-semibold text-[#304869] sm:px-3">
                           {product.volume}
                         </span>
+
+
+                      </div>
+
+                      <div className="mb-4 text-center">
+                        <span className="text-2xl font-bold text-[#304869]">
+                          {product.price}
+                        </span>
+                        <p className="text-xs text-gray-500">
+                          Starting Price
+                        </p>
                       </div>
                       <div className="flex justify-center">
                         <button
@@ -297,6 +299,7 @@ export default function ProductShowcase() {
         onClose={closeQuoteModal}
         productName={selectedProduct?.name}
         productVolume={selectedProduct?.volume}
+
       />
     </section>
   );

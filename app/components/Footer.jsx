@@ -455,13 +455,11 @@ export default function Footer() {
           {/* Brand Column */}
           <motion.div variants={fadeUpVariants} className="space-y-4 text-center md:text-left">
             <div className="flex items-center justify-center md:justify-start gap-2">
-              <Droplets className="h-7 w-7 md:h-8 md:w-8 text-sky-400" />
-              <span className="text-xl md:text-2xl font-bold text-white">
-                Warrior<span className="text-sky-400">B</span>everages
-              </span>
+              {/* <Droplets className="h-7 w-7 md:h-8 md:w-8 text-sky-400" /> */}
+             <img src="/logos/Untitled-1.png" alt="Wather Logo" className="h-8 w-auto md:h-10" />
             </div>
             <p className="text-xs md:text-sm text-white/60 leading-relaxed">
-              Pure hydration, powerful branding. Sustainable bottles that make your brand unforgettable.
+              Pure. Refreshing. Trusted.Crafted for modern lifestyles with dependable quality, thoughtful packaging, and a refreshing experience in every bottle.
             </p>
             <div className="flex justify-center md:justify-start gap-3 pt-2">
               {[
@@ -624,10 +622,10 @@ export default function Footer() {
           className="mt-10 md:mt-12 border-t border-white/10 pt-6 text-center"
         >
           <p className="text-[10px] md:text-xs text-white/40">
-            &copy; {new Date().getFullYear()} Wather. All rights reserved. Made with{" "}
+            &copy; {new Date().getFullYear()} Neysa. All rights reserved. Made with{" "}
             <Heart className="inline h-2.5 w-2.5 md:h-3 md:w-3 text-rose-400" /> for a sustainable future.
           </p>
-          <div className="mt-2 flex flex-wrap justify-center gap-3 md:gap-4 text-[10px] md:text-xs text-white/30">
+          {/* <div className="mt-2 flex flex-wrap justify-center gap-3 md:gap-4 text-[10px] md:text-xs text-white/30">
             <Link href="/privacy-policy" className="hover:text-white/60 transition">
               Privacy Policy
             </Link>
@@ -637,7 +635,7 @@ export default function Footer() {
             <Link href="/shipping-policy" className="hover:text-white/60 transition">
               Shipping Policy
             </Link>
-          </div>
+          </div> */}
         </motion.div>
       </div>
 

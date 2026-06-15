@@ -7,43 +7,43 @@ import { Star, Quote, ChevronLeft, ChevronRight, Droplets } from "lucide-react";
 const testimonials = [
   {
     id: 1,
-    name: "Sarah Johnson",
-    role: "Marketing Director, EcoLife",
-    image: "https://randomuser.me/api/portraits/women/68.jpg",
+    name: "Priya Sharma",
+    role: "Operations Head, Elite Hospitality Group",
+    image: "/testimonial/Group1.png",
     rating: 5,
-    text: "Wather's branded water bottles transformed our corporate events. The quality is exceptional, and the customisation options are endless. Our clients still use them daily – that's real brand recall!",
+    text: "We were looking for a water brand that matched the standards of our properties. Neysa delivers excellent presentation, dependable quality, and timely supply every time.",
   },
   {
     id: 2,
-    name: "Michael Chen",
-    role: "Founder, HydrateCo",
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    name: "Rahul Mehra",
+    role: "Procurement Manager, Horizon Corporate Solutions",
+    image: "/testimonial/Group2.png",
     rating: 5,
-    text: "The geo-mapping insights helped us track engagement across multiple campaigns. A game-changer for understanding our audience. Plus, the bottles look stunning.",
+    text: "Neysa has become our preferred drinking water partner. The quality is consistently reliable, the packaging looks professional, and our employees appreciate the refreshing taste.",
   },
   {
     id: 3,
-    name: "Emma Rodriguez",
-    role: "Event Manager, Summit Events",
-    image: "https://randomuser.me/api/portraits/women/44.jpg",
+    name: "Amit Verma",
+    role: "Event Director, AV Events & Experiences",
+    image: "/testimonial/Group3.png",
     rating: 5,
-    text: "We've tried many promotional products, but nothing beats Wather. Their bottles create social media buzz organically – attendees love sharing them. Highly recommended!",
+    text: "From corporate conferences to large-scale events, Neysa has consistently met our requirements. The premium look of the bottles adds value to every event we manage, and the water quality is always top-notch.",
   },
   {
     id: 4,
-    name: "David Kim",
-    role: "CEO, PureBrands",
-    image: "https://randomuser.me/api/portraits/men/45.jpg",
+    name: "Neha Kapoor",
+    role: "Admin Manager, Innovate Tech Pvt. Ltd.",
+    image: "/testimonial/Group4.png",
     rating: 4,
-    text: "Cost-effective and durable. The customisation team brought our vision to life perfectly. Will definitely order again.",
+    text: "Our office needed a trusted hydration solution for daily consumption. Neysa offers the perfect combination of quality, affordability, and professional service. Our team enjoys the refreshing taste, and we appreciate the consistent delivery schedule.",
   },
   {
     id: 5,
-    name: "Olivia Martinez",
-    role: "Sustainability Lead, GreenFuture",
-    image: "https://randomuser.me/api/portraits/women/89.jpg",
+    name: "Rohit Bansal",
+    role: "Owner, Urban Mart Retail Chain",
+    image: "/testimonial/Group5.png",
     rating: 5,
-    text: "Aligning with our eco-values was seamless. Wather's commitment to sustainability matches ours. A partnership we're proud of.",
+    text: "Customers appreciate the clean design and refreshing taste. Neysa has quickly become one of the most trusted bottled water choices in our stores, and we receive positive feedback regularly.",
   },
 ];
 
@@ -103,7 +103,7 @@ export default function Testimonials() {
     <section
       ref={sectionRef}
       className="relative w-full overflow-hidden py-10 md:py-12"
-      style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e293b 100%)" }}
+      style={{ background: "#00a3b3" }}
     >
       {/* Subtle wave pattern overlay (optional, light) */}
       <div className="absolute inset-0 opacity-5">
@@ -152,7 +152,7 @@ export default function Testimonials() {
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ delay: 0.4, duration: 0.6 }}
           >
-            Trusted by leading brands – hear how Wather is transforming their marketing.
+            Trusted by businesses across industries for quality, consistency, and a premium hydration experience.
           </motion.p>
         </motion.div>
 

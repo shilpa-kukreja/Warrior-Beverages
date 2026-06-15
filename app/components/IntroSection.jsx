@@ -100,7 +100,7 @@
 //                     className={`
 //   w-full md:w-[550px] lg:w-[700px] xl:w-[750px]
 
- 
+
 
 //   p-6 md:p-8 lg:p-10
 
@@ -112,7 +112,7 @@
 //                         }
 // `}
 //                 >
-                    
+
 
 //                     {/* Heading */}
 //                     <h1 className="mt-2 text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
@@ -201,7 +201,7 @@
 
 //                 transition-all duration-300
 
-               
+
 //               "
 //                         >
 //                             Discover More
@@ -227,7 +227,7 @@ export default function IntroSection() {
     const contentRef = useRef(null);
     const [isVisible, setIsVisible] = useState(false);
 
-    const words = ["Wahter"];
+    const words = ["Neysa"];
 
     // Typing Animation
     useEffect(() => {
@@ -278,12 +278,12 @@ export default function IntroSection() {
     }, []);
 
     return (
-        <section className="relative w-full min-h-[500px] md:h-[500px] overflow-hidden">
+        <section className="relative w-full min-h-[500px] md:h-[600px] overflow-hidden">
             {/* Background Image - changed from fixed to absolute for better mobile scrolling */}
             <div className="absolute inset-0 -z-10">
                 <div className="relative w-full h-full">
                     <Image
-                        src="/about/about-bg.webp"
+                        src="/about/25444.png"
                         alt="Water background"
                         fill
                         priority
@@ -294,7 +294,7 @@ export default function IntroSection() {
             </div>
 
             {/* Content - adjusted alignment for mobile */}
-            <div className="relative z-10 flex items-center justify-center md:justify-end h-full min-h-[500px] px-4 sm:px-6 py-8 md:py-5">
+            <div className="relative z-10 flex items-center justify-center md:justify-end h-full min-h-[500px] px-4 sm:px-5 py-8 md:py-5">
                 <div
                     ref={contentRef}
                     className={`
@@ -323,25 +323,70 @@ export default function IntroSection() {
                     </h1>
 
                     {/* Description - better readability on mobile */}
-                    <p className="mt-3 sm:mt-4 text-sm sm:text-base text-gray-700 leading-relaxed">
-                        Wahter is founded by{" "}
-                        <strong className="text-[#304869] font-semibold">
-                            Mrs. Kashish A Nenwani & Mr. Amitt Nenwani
-                        </strong>
-                        , Global Indian of the Year 2020-21 recognised by AsiaOne Magazine.
-                        Wahter is a division of the renowned Shiva Group, originally founded
-                        in 1987 by{" "}
-                        <strong className="text-[#304869] font-semibold">
-                            Mr. Shiv Kumar Nenwani
-                        </strong>
-                        , a 1972 Electrical Engineer from MACT Bhopal and double Post
-                        graduate gold medalist from Punjab University, an enduring legacy in
-                        the making...
+                    <p className="mt-3 sm:mt-4 text-sm sm:text-base text-gray-700  text-justify leading-relaxed">
+                        Neysa is a{" "}
+                        <span className="font-semibold text-[#304869]">
+                            Premium Water
+                        </span>{" "}
+                        brand that prioritizes{" "}
+                        <span className="font-semibold text-[#304869]">
+                            quality, taste, and convenience
+                        </span>
+                        . Our Premium Water was created to bring together what consumers value most:{" "}
+                        <span className="font-semibold text-[#304869]">
+                            dependable quality
+                        </span>
+                        ,{" "}
+                        <span className="font-semibold text-[#304869]">
+                            refreshing taste
+                        </span>
+                        , and a{" "}
+                        <span className="font-semibold text-[#304869]">
+                            premium experience
+                        </span>{" "}
+                        that fits effortlessly into everyday life.
+
+                        Every bottle is{" "}
+                        <span className="font-semibold text-[#304869]">
+                            carefully purified
+                        </span>{" "}
+                        and{" "}
+                        <span className="font-semibold text-[#304869]">
+                            thoughtfully packaged
+                        </span>{" "}
+                        to meet the expectations of{" "}
+                        <span className="font-semibold text-[#304869]">
+                            modern consumers
+                        </span>{" "}
+                        who seek more than just drinking water. Whether you're{" "}
+                        <span className="font-semibold text-[#304869]">
+                            at work
+                        </span>
+                        ,{" "}
+                        <span className="font-semibold text-[#304869]">
+                            on the move
+                        </span>
+                        ,{" "}
+                        <span className="font-semibold text-[#304869]">
+                            hosting guests
+                        </span>
+                        , or simply{" "}
+                        <span className="font-semibold text-[#304869]">
+                            staying refreshed throughout the day
+                        </span>
+                        , Neysa delivers{" "}
+                        <span className="font-bold text-[#304869]">
+                            consistency you can trust
+                        </span>{" "}
+                        and{" "}
+                        <span className="font-bold text-[#304869]">
+                            quality you can feel in every sip.
+                        </span>
                     </p>
 
                     {/* Features Grid - responsive grid for mobile */}
                     <div className="mt-5 sm:mt-6 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
-                        {["Innovative", "Targeted", "Transparent", "High Efficacy"].map((item, idx) => (
+                        {["Pure & Refreshing", "Premium Packaging", " Quality Assured", "Everyday Value"].map((item, idx) => (
                             <div
                                 key={idx}
                                 className="
@@ -395,9 +440,9 @@ export default function IntroSection() {
                                 shadow-md
                                 cursor-pointer
                             "
-                            aria-label="Discover More"
+                            aria-label="Discover Neysa"
                         >
-                            Discover More
+                            Discover Neysa
                         </button>
                     </div>
                 </div>

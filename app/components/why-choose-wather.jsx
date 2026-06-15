@@ -8,24 +8,24 @@ import { Droplets } from "lucide-react";
 const leftFeatures = [
   {
     imageUrl: "/why-choose/1.png",
-    title: "Align with Values",
+    title: "Consistent Quality",
     subheading: "Eco-conscious Impact",
     description:
-      "With water bottles, you can ride the crest of a new marketing wave.",
+      "Every bottle is produced with strict quality checks to ensure a clean, refreshing taste and a dependable experience every time.",
   },
   {
     imageUrl: "/why-choose/advertising.png",
-    title: "Clutter Free Advertising",
+    title: "Advanced Purification",
     subheading: "Undisturbed Engagement",
     description:
-      "Branding on a bottle is a clutter-free form of advertising.",
+      "Processed through a multi-stage purification system to deliver water that meets high standards of safety, hygiene, and freshness.",
   },
   {
     imageUrl: "/why-choose/branding.png",
-    title: "Customisation & Branding",
+    title: "Premium Presentation",
     subheading: "Your Vision, Our Craft",
     description:
-      "Showcase our ability to customize the branding according to the client's vision and needs.",
+      "Designed with modern packaging that reflects the quality inside, making Neysa the perfect choice for homes, workplaces, travel, and events.",
   },
 ];
 
@@ -33,35 +33,35 @@ const leftFeatures = [
 const rightFeatures = [
   {
     imageUrl: "/why-choose/social-media.png",
-    title: "Social Media Buzz",
+    title: "Everyday Affordability",
     subheading: "Shareable Experience",
     description:
-      "Engaged individuals will likely share their branded water bottle experiences online.",
+      "Enjoy a premium drinking water experience without paying a premium price, making better hydration accessible to everyone.",
   },
   {
     imageUrl: "/why-choose/cost-effectiveness.png",
-    title: "Cost-Effectiveness",
+    title: "Trusted Manufacturing",
     subheading: "High ROI",
     description:
-      "Branded water bottles offer a cost-effective marketing solution with a lower cost.",
+      "Produced in hygienic facilities with a strong focus on quality control, consistency, and consumer confidence.",
   },
   {
     imageUrl: "/why-choose/insight.png",
-    title: "Data Insights",
+    title: "Made for Modern Lifestyles",
     subheading: "Actionable Analytics",
     description:
-      "Gather valuable consumer behaviour and interest data by utilising geo-mapping.",
+      "Whether you're working, travelling, exercising, or spending time with family, Neysa is crafted to keep pace with your day.",
   },
 ];
 
 // Different gradient backgrounds for each card (total 6 distinct)
 const cardGradients = [
-  "from-sky-50 to-blue-50  ",
-  "from-emerald-50 to-teal-50  ",
-  "from-amber-50 to-yellow-50 ",
-  "from-purple-50 to-indigo-50 ",
-  "from-rose-50 to-pink-50",
-  "from-indigo-50 to-violet-50 ",
+  "from-sky-50 to-blue-50 border border-sky-200 ",
+  "from-emerald-50 to-teal-50  border border-emerald-200",
+  "from-amber-50 to-yellow-50 border border-amber-200",
+  "from-purple-50 to-indigo-50 border border-purple-200",
+  "from-rose-50 to-pink-50 border border-rose-200",
+  "from-indigo-50 to-violet-50 border border-indigo-200",
 ];
 
 // Animation variants for cards
@@ -102,11 +102,11 @@ export default function WhyChooseWather() {
       className="relative w-full overflow-hidden bg-cover bg-center py-10 md:py-12"
       style={{
         backgroundImage:
-          "url('/why-choose/bg-mountain2.webp')",
+          "url('/why-choose/bg-why.png')",
       }}
     >
       {/* Dark overlay for readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white/50 via-white/50 to-white/50" />
+      {/* <div className="absolute inset-0 bg-gradient-to-b from-white/50 via-white/50 to-white/50" /> */}
 
       {/* Subtle wave pattern overlay */}
       <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 1200 800\' opacity=\'0.05\'%3E%3Cpath fill=\'none\' stroke=\'%23ffffff\' stroke-width=\'1\' d=\'M0 400 L200 350 L400 420 L600 380 L800 440 L1000 370 L1200 410\' /%3E%3C/svg%3E')] bg-repeat bg-cover" />
@@ -117,7 +117,7 @@ export default function WhyChooseWather() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          className="mb-16 text-center md:mb-24"
+          className="mb-8 text-center md:mb-10"
         >
           {/* <motion.div
             initial={{ scale: 0.9, opacity: 0 }}
@@ -137,7 +137,7 @@ export default function WhyChooseWather() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            Why Choose <span className="text-[#304869]">Wather</span>
+            Why Choose <span className="text-[#304869]">Neysa</span>
           </motion.h1>
 
           {/* <motion.h2
@@ -150,7 +150,7 @@ export default function WhyChooseWather() {
           </motion.h2> */}
 
           <motion.div
-            className="mx-auto mt-4 h-1 w-32 rounded-full bg-gradient-to-r from-sky-400 to-[#304869]"
+            className="mx-auto mt-4 h-1 w-32 rounded-full bg-gradient-to-r from-[#304869] to-[#304869]"
             initial={{ width: 0, opacity: 0 }}
             animate={isInView ? { width: "8rem", opacity: 1 } : {}}
             transition={{ delay: 0.4, duration: 0.8 }}
@@ -200,7 +200,7 @@ export default function WhyChooseWather() {
                   {/* <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-sky-600">
                     {feature.subheading}
                   </p> */}
-                  <p className="mt-2 text-sm leading-relaxed text-gray-600">
+                  <p className="mt-2 text-sm text-justify leading-relaxed text-gray-600">
                     {feature.description}
                   </p>
                 </div>
@@ -217,11 +217,11 @@ export default function WhyChooseWather() {
           >
             <div className="relative">
               {/* Enhanced glow effect behind the bottle */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-sky-400/30 to-emerald-400/30 blur-3xl" />
+              <div className="absolute inset-0 rounded-full  blur-3xl" />
               <div className="absolute -inset-4 rounded-full bg-white/5 blur-xl" />
               <motion.div animate={floatAnimation}>
                 <img
-                  src="/why-choose/bottle-collage.png"
+                  src="/why-choose/12.png"
                   alt="Premium branded water bottle"
                   className="relative z-10 h-[380px] w-auto max-w-none drop-shadow-2xl lg:h-[460px]"
                 />

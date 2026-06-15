@@ -4,19 +4,21 @@ import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
 
 const bottleImages = [
-  "/animated/3.png",
-  "/animated/7.png",
-  "/animated/9.png",
-  "/animated/10.png",
+  "/animated/2.png",
+  "/animated/2.png",
+  "/animated/2.png",
+
 ];
 
 const logoImages = [
-  "/logos/2.png",
-  "/logos/4.png",
-  "/logos/Logo.png",
-  "/logos/logo2.png",
-  "/logos/logo2.jpg",
-  "/logos/logos.png",
+  "/animated/Group1.png",
+  "/animated/Group2.png",
+  "/animated/Group3.png",
+  "/animated/Group4.png",
+  "/animated/Group5.png",
+  "/animated/Group6.png",
+  "/animated/Group7.png",
+  "/animated/Group8.png",
 ];
 
 export default function AnimatedSection() {
@@ -166,24 +168,24 @@ export default function AnimatedSection() {
   }, []);
 
   return (
-    <div className="relative w-full min-h-screen overflow-hidden bg-black">
+    <div className="relative w-full min-h-screen overflow-hidden ">
       {/* Background */}
       <div className="absolute inset-0">
         <Image
-          src="/animated/bg-mountain.webp"
+          src="/animated/1.jpg"
           alt="mountain background"
           fill
           priority
-          className="object-cover object-center brightness-[0.45]"
+          className="object-cover object-center brightness-[0.9]"
           sizes="100vw"
         />
 
         {/* Premium Dark Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/30 to-black/70" />
+        {/* <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/30 to-black/70" /> */}
       </div>
 
       {/* Bottom Glow */}
-      <div className="absolute bottom-[-180px] left-1/2 -translate-x-1/2 w-[1200px] h-[550px] bg-[#1aa6a6] opacity-20 blur-3xl rounded-full pointer-events-none" />
+      <div className="absolute bottom-[-180px] left-1/2 -translate-x-1/2 w-[1200px] h-[550px]   rounded-full pointer-events-none" />
 
       {/* Main Section */}
       <div className="absolute inset-0 flex items-end justify-center pb-[5%]">
@@ -204,14 +206,14 @@ export default function AnimatedSection() {
                   opacity: 0,
                 }}
               >
-                <div className="logo-card group">
-                  <div className="relative w-[55px] h-[55px]">
+                <div className="group flex items-center justify-center">
+                  <div className="relative w-[120px] h-[120px]">
                     <Image
                       src={src}
                       alt="brand logo"
                       fill
                       className="object-contain transition-transform duration-300 group-hover:scale-110"
-                      sizes="55px"
+                      sizes="120px"
                     />
                   </div>
                 </div>
@@ -239,7 +241,7 @@ export default function AnimatedSection() {
             className="absolute left-1/2 top-[72%] -translate-x-1/2 -translate-y-1/2 z-30 flex flex-col items-center"
           >
             {/* Bottle Glow */}
-            <div className="absolute w-[420px] h-[420px] bg-[#1aa6a6] opacity-20 blur-3xl rounded-full" />
+            {/* <div className="absolute w-[420px] h-[420px] bg-[#1aa6a6] opacity-20 blur-3xl rounded-full" /> */}
 
             {/* Bottle */}
             <div className="relative">

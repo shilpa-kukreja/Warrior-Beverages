@@ -79,7 +79,7 @@ export default function ContactSection() {
           className="mb-10 text-center"
         >
           <h2 className="text-3xl font-bold text-[#304869] md:text-5xl">
-            Put Your Logo Where It Matters – On AQTIVE Water
+            Contact Us
           </h2>
         </motion.div>
 
@@ -91,9 +91,9 @@ export default function ContactSection() {
             className="relative flex items-center justify-center bg-white"
           >
             <img
-              src="/home/Aqtive-Bottles.jpg"
+              src="/home/homeabout.png"
               alt="AQTIVE Water"
-              className="h-full w-full object-contain"
+              className="h-[700px] w-full "
             />
           </motion.div>
 
@@ -101,9 +101,9 @@ export default function ContactSection() {
             initial={{ opacity: 0, x: 80 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 1 }}
-            className="bg-[#EAE0EF] p-6 shadow-[0_15px_40px_rgba(0,0,0,0.08)] md:p-10 lg:p-10"
+            className="bg-[#304869] p-6 shadow-[#304869] md:p-10 lg:p-10"
           >
-            <h3 className="mb-5 text-3xl font-bold text-black md:text-4xl">
+            <h3 className="mb-5 text-3xl font-bold text-white md:text-4xl">
               Get In Touch
             </h3>
 
@@ -171,7 +171,7 @@ export default function ContactSection() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="bg-[#304869] px-14 py-4 text-lg font-bold uppercase tracking-wider text-white transition-all duration-300 hover:scale-105 hover:bg-[#304869] active:scale-95 disabled:cursor-not-allowed disabled:opacity-70"
+                  className="bg-[#18BDCD] px-14 py-4 text-lg font-bold uppercase tracking-wider text-white transition-all duration-300 hover:scale-105 hover:bg-[#18BDCD] active:scale-95 disabled:cursor-not-allowed disabled:opacity-70"
                 >
                   {isSubmitting ? "Submitting..." : submitted ? "Submitted ✓" : "Submit"}
                 </button>
