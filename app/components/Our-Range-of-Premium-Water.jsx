@@ -21,17 +21,17 @@ const products = [
   },
   {
     id: 2,
-    name: "Premium Water 250ML",
-    volume: "250ML",
-    price: "₹10",
-    image: "/productimage/250ml.png",
-  },
-  {
-    id: 3,
     name: "Premium Water 500ML",
     volume: "500ML",
     price: "₹20",
     image: "/productimage/500ml.png",
+  },
+  {
+    id: 3,
+    name: "Premium Water 250ML",
+    volume: "250ML",
+    price: "₹10",
+    image: "/productimage/250ml.png",
   },
 ];
 
