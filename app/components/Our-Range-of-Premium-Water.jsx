@@ -1,14 +1,14 @@
 "use client";
 
 import { motion, useInView } from "framer-motion";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, useCallback } from "react";
 import {
   ArrowRight,
   ChevronLeft,
   ChevronRight,
   ShoppingBag,
 } from "lucide-react";
-import QuoteModal from "./QuoteModal";   // <-- import the shared modal
+import QuoteModal from "./QuoteModal";
 import Link from "next/link";
 
 const products = [
@@ -17,31 +17,32 @@ const products = [
     name: "Premium Water 1L",
     volume: "1L",
     price: "₹30",
-    image: "/productimage/1.png",
+    image: "/productimage/1000ml.png",
   },
   {
     id: 2,
     name: "Premium Water 250ML",
     volume: "250ML",
     price: "₹10",
-    image: "/productimage/1.png",
+    image: "/productimage/250ml.png",
   },
   {
     id: 3,
     name: "Premium Water 500ML",
     volume: "500ML",
     price: "₹20",
-    image: "/productimage/1.png",
+    image: "/productimage/500ml.png",
   },
 ];
 
 export default function ProductShowcase() {
   const sectionRef = useRef(null);
-  const carouselRef = useRef(null);
+  const carouselContainerRef = useRef(null);
   const isInView = useInView(sectionRef, { once: false, margin: "-100px" });
 
-  const [currentStartIndex, setCurrentStartIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [visibleCount, setVisibleCount] = useState(3);
+  const [containerWidth, setContainerWidth] = useState(0);
   const [touchStartX, setTouchStartX] = useState(0);
   const [touchStartY, setTouchStartY] = useState(0);
   const [isSwiping, setIsSwiping] = useState(false);
@@ -50,30 +51,56 @@ export default function ProductShowcase() {
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
-  useEffect(() => {
-    const updateVisibleCount = () => {
-      const width = window.innerWidth;
-      if (width >= 1024) setVisibleCount(3);
-      else setVisibleCount(2);
-    };
-    updateVisibleCount();
-    window.addEventListener("resize", updateVisibleCount);
-    return () => window.removeEventListener("resize", updateVisibleCount);
+  // Responsive breakpoints
+  const updateVisibleCount = useCallback(() => {
+    const width = window.innerWidth;
+    if (width < 640) setVisibleCount(1);
+    else if (width < 1024) setVisibleCount(2);
+    else setVisibleCount(3);
   }, []);
 
+  // Recalculate container width on resize
+  const updateContainerWidth = useCallback(() => {
+    if (carouselContainerRef.current) {
+      setContainerWidth(carouselContainerRef.current.offsetWidth);
+    }
+  }, []);
+
+  useEffect(() => {
+    updateVisibleCount();
+    updateContainerWidth();
+    window.addEventListener("resize", () => {
+      updateVisibleCount();
+      updateContainerWidth();
+    });
+    return () => window.removeEventListener("resize", () => {});
+  }, [updateVisibleCount, updateContainerWidth]);
+
+  // Reset index when visibleCount changes (to avoid out-of-bounds)
+  useEffect(() => {
+    const maxStart = Math.max(0, products.length - visibleCount);
+    if (currentIndex > maxStart) setCurrentIndex(maxStart);
+  }, [visibleCount, currentIndex]);
+
+  const gap = 16; // 1rem in px
+  const itemWidth = containerWidth > 0
+    ? (containerWidth - (visibleCount - 1) * gap) / visibleCount
+    : 0;
+  const translateX = -currentIndex * (itemWidth + gap);
+
   const maxStartIndex = Math.max(0, products.length - visibleCount);
-  const canScrollLeft = currentStartIndex > 0;
-  const canScrollRight = currentStartIndex < maxStartIndex;
+  const canScrollLeft = currentIndex > 0;
+  const canScrollRight = currentIndex < maxStartIndex;
 
   const nextSlide = () => {
     if (canScrollRight) {
-      setCurrentStartIndex((prev) => Math.min(prev + 1, maxStartIndex));
+      setCurrentIndex((prev) => Math.min(prev + 1, maxStartIndex));
     }
   };
 
   const prevSlide = () => {
     if (canScrollLeft) {
-      setCurrentStartIndex((prev) => Math.max(prev - 1, 0));
+      setCurrentIndex((prev) => Math.max(prev - 1, 0));
     }
   };
 
@@ -113,7 +140,7 @@ export default function ProductShowcase() {
   };
 
   useEffect(() => {
-    const carousel = carouselRef.current;
+    const carousel = carouselContainerRef.current;
     if (!carousel) return;
     carousel.addEventListener("touchstart", handleTouchStart, { passive: false });
     carousel.addEventListener("touchmove", handleTouchMove, { passive: false });
@@ -123,11 +150,8 @@ export default function ProductShowcase() {
       carousel.removeEventListener("touchmove", handleTouchMove);
       carousel.removeEventListener("touchend", handleTouchEnd);
     };
-  }, [touchStartX, isSwiping, currentStartIndex, maxStartIndex]);
+  }, [touchStartX, isSwiping, currentIndex, maxStartIndex]);
 
-  const visibleProducts = products.slice(currentStartIndex, currentStartIndex + visibleCount);
-
-  // Open modal with product info
   const openQuoteModalForProduct = (product) => {
     setSelectedProduct(product);
     setIsQuoteModalOpen(true);
@@ -140,12 +164,19 @@ export default function ProductShowcase() {
 
   return (
     <section ref={sectionRef} className="relative w-full overflow-hidden py-8 sm:py-10 md:py-12">
-      {/* Video Background */}
+      {/* Video Background with better overlay */}
       <div className="absolute inset-0 z-0">
-        <video autoPlay loop muted playsInline className="h-full w-full object-cover" poster="...">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="h-full w-full object-cover"
+          poster="..."
+        >
           <source src="/video/Sequence 02.mp4" type="video/mp4" />
         </video>
-        {/* <div className="absolute inset-0 bg-black/30 md:bg-black/20" /> */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/40" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -158,11 +189,14 @@ export default function ProductShowcase() {
             className="text-center lg:text-left"
           >
             <h2 className="mt-2 text-3xl font-bold tracking-tight leading-tight text-white sm:text-4xl md:text-5xl">
-              Our  Range of <br />
+              Our Range of <br />
               <span className="text-[#304869]">Premium Water</span>
             </h2>
             <p className="mt-3 text-sm text-white/90 text-justify sm:text-base md:text-lg">
-              From quick refreshment on the go to everyday hydration at home, Neysa offers thoughtfully sized bottles designed to suit different lifestyles, occasions, and consumption needs. Every pack delivers the same trusted quality, refreshing taste, and premium experience.
+              From quick refreshment on the go to everyday hydration at home,
+              Neysa offers thoughtfully sized bottles designed to suit different
+              lifestyles, occasions, and consumption needs. Every pack delivers
+              the same trusted quality, refreshing taste, and premium experience.
             </p>
             <div className="mx-auto mt-3 h-1 w-20 rounded-full bg-[#304869] lg:mx-0" />
             <p className="mt-5 text-xs italic text-white/80 sm:text-sm">
@@ -180,7 +214,7 @@ export default function ProductShowcase() {
             </motion.button>
           </motion.div>
 
-          {/* RIGHT COLUMN - Carousel */}
+          {/* RIGHT COLUMN - Carousel with sliding */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -188,21 +222,24 @@ export default function ProductShowcase() {
             className="relative"
           >
             <div
-              ref={carouselRef}
+              ref={carouselContainerRef}
               className="overflow-hidden rounded-xl touch-pan-y"
               style={{ touchAction: "pan-y" }}
             >
               <div
-                className="grid transition-all duration-500 ease-out"
+                className="flex transition-transform duration-500 ease-out"
                 style={{
-                  gridTemplateColumns: `repeat(${visibleCount}, minmax(0, 1fr))`,
-                  gap: "1rem",
+                  transform: `translateX(${translateX}px)`,
+                  gap: `${gap}px`,
                 }}
               >
-                {visibleProducts.map((product) => (
+                {products.map((product) => (
                   <div
                     key={product.id}
-                    className="group relative overflow-hidden rounded-xl border border-white/20 bg-white/90 p-4 backdrop-blur-sm transition-all duration-300 hover:bg-white/95 hover:shadow-2xl sm:p-5"
+                    className="flex-shrink-0 rounded-xl border border-white/20 bg-white/90 p-4 backdrop-blur-sm transition-all duration-300 hover:bg-white/95 hover:shadow-2xl sm:p-5"
+                    style={{
+                      width: itemWidth > 0 ? `${itemWidth}px` : "auto",
+                    }}
                   >
                     <div className="relative z-10">
                       <div className="mb-3 flex justify-center sm:mb-4">
@@ -219,31 +256,23 @@ export default function ProductShowcase() {
                         <span className="rounded-full bg-[#304869]/10 px-2 py-0.5 text-xs font-semibold text-[#304869] sm:px-3">
                           {product.volume}
                         </span>
-
-
                       </div>
-
                       <div className="mb-4 text-center">
                         <span className="text-2xl font-bold text-[#304869]">
                           {product.price}
                         </span>
-                        <p className="text-xs text-gray-500">
-                          Starting Price
-                        </p>
+                        <p className="text-xs text-gray-500">Starting Price</p>
                       </div>
-                      <div className="flex justify-center">
+                      <div className="flex justify-center gap-2">
                         <button
                           onClick={() => openQuoteModalForProduct(product)}
-                          className="group/btn flex items-center gap-1 rounded-md bg-[#304869] px-3 py-1.5 text-xs font-semibold text-white shadow-md transition-all hover:shadow-lg active:scale-95 sm:px-4 sm:py-2"
+                          className="group/btn flex items-center gap-1 rounded-md bg-[#304869] px-3 py-1.5 text-xs font-semibold text-white shadow-md transition-all hover:shadow-lg hover:scale-105 active:scale-95 sm:px-4 sm:py-2"
                         >
-                          {/* <ShoppingBag className="h-3 w-3" /> */}
                           Enquiry Now
-                          {/* <ArrowRight className="h-3 w-3 transition-transform group-hover/btn:translate-x-1" /> */}
                         </button>
                         <Link href={`/products/${product.id}`}>
-                          <button className="group/btn flex items-center gap-1 rounded-md bg-white/20 px-3 py-1.5 text-xs font-semibold text-[#304869] shadow-md transition-all hover:shadow-lg active:scale-95 sm:px-4 sm:py-2">
+                          <button className="group/btn flex items-center gap-1 rounded-md border border-[#304869] bg-transparent px-3 py-1.5 text-xs font-semibold text-[#304869] shadow-md transition-all hover:bg-[#304869]/10 hover:scale-105 active:scale-95 sm:px-4 sm:py-2">
                             View Details
-                            {/* <ArrowRight className="h-3 w-3 transition-transform group-hover/btn:translate-x-1" /> */}
                           </button>
                         </Link>
                       </div>
@@ -253,6 +282,7 @@ export default function ProductShowcase() {
               </div>
             </div>
 
+            {/* Navigation Arrows (only if more than visibleCount) */}
             {products.length > visibleCount && visibleCount > 1 && (
               <>
                 <button
@@ -274,17 +304,18 @@ export default function ProductShowcase() {
               </>
             )}
 
-            {/* Dots indicator remains unchanged */}
+            {/* Dots indicator */}
             {maxStartIndex > 0 && (
               <div className="mt-4 flex justify-center gap-2">
                 {Array.from({ length: maxStartIndex + 1 }).map((_, idx) => (
                   <button
                     key={idx}
-                    onClick={() => setCurrentStartIndex(idx)}
-                    className={`h-1.5 rounded-full transition-all ${idx === currentStartIndex
-                      ? "w-5 bg-[#304869]"
-                      : "w-1.5 bg-white/50 hover:bg-white/80"
-                      }`}
+                    onClick={() => setCurrentIndex(idx)}
+                    className={`h-1.5 rounded-full transition-all ${
+                      idx === currentIndex
+                        ? "w-6 bg-[#304869]"
+                        : "w-1.5 bg-white/50 hover:bg-white/80"
+                    }`}
                   />
                 ))}
               </div>
@@ -299,7 +330,6 @@ export default function ProductShowcase() {
         onClose={closeQuoteModal}
         productName={selectedProduct?.name}
         productVolume={selectedProduct?.volume}
-
       />
     </section>
   );

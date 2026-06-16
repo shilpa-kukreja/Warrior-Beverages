@@ -16,7 +16,7 @@ export async function POST(req) {
 
     // Email content
     const mailOptions = {
-      from: `"Warrior Beverages Website" <${process.env.EMAIL_USER}>`,
+      from: `"Neysa Website" <${process.env.EMAIL_USER}>`,
       to: 'shubshukla2332@gmail.com', // Replace with your actual Gmail
       subject: `New Quote Request from ${name}`,
       html: `

@@ -25,7 +25,7 @@ export async function POST(request) {
 
     const adminEmail = process.env.ADMIN_EMAIL;
     const fromEmail = process.env.FROM_EMAIL || process.env.SMTP_USER;
-    const siteName = 'Wather';
+    const siteName = 'Neysa';
     const currentDate = new Date().toLocaleString();
 
     // Send welcome email to subscriber
@@ -57,11 +57,11 @@ export async function POST(request) {
           <div class="container">
             <div class="header">
               <div class="logo">
-                💧 W<span>a</span>ther
+                💧 N<span>y</span>esa
               </div>
             </div>
             <div class="content">
-              <h1>Welcome to the <span class="highlight">Wather</span> Family! 💙</h1>
+              <h1>Welcome to the <span class="highlight">Neysa</span> Family! 💙</h1>
               <p>Thank you for subscribing to our newsletter. You're now part of a community that values <strong>pure hydration</strong> and <strong>powerful branding</strong>.</p>
               <p>Here's what you can expect from us:</p>
               <ul style="margin: 16px 0; padding-left: 20px;">
@@ -71,7 +71,7 @@ export async function POST(request) {
                 <li>🚀 Early access to new product launches</li>
               </ul>
               <div style="text-align: center;">
-                <a href="${process.env.NEXT_PUBLIC_SITE_URL || 'https://wather.com'}/products" class="button">Explore Our Products →</a>
+                <a href="${process.env.NEXT_PUBLIC_SITE_URL || 'https://Nyesa.com'}/products" class="button">Explore Our Products →</a>
               </div>
               <p style="margin-top: 24px; font-size: 14px; color: #475569;">If you have any questions, feel free to reply to this email. We'd love to hear from you!</p>
             </div>
@@ -79,15 +79,15 @@ export async function POST(request) {
               <p>&copy; ${new Date().getFullYear()} Wather. All rights reserved.<br>
               Pure hydration, powerful branding — sustainable bottles that make your brand unforgettable.</p>
               <p style="margin-top: 10px;">
-                <a href="${process.env.NEXT_PUBLIC_SITE_URL || 'https://wather.com'}/unsubscribe" style="color: #94a3b8; text-decoration: underline;">Unsubscribe</a> 
-                | <a href="${process.env.NEXT_PUBLIC_SITE_URL || 'https://wather.com'}/privacy-policy" style="color: #94a3b8; text-decoration: underline;">Privacy Policy</a>
+                <a href="${process.env.NEXT_PUBLIC_SITE_URL || 'https://Neysa.com'}/unsubscribe" style="color: #94a3b8; text-decoration: underline;">Unsubscribe</a> 
+                | <a href="${process.env.NEXT_PUBLIC_SITE_URL || 'https://.Neysa.com'}/privacy-policy" style="color: #94a3b8; text-decoration: underline;">Privacy Policy</a>
               </p>
             </div>
           </div>
         </body>
         </html>
       `,
-      text: `Welcome to Wather!\n\nThank you for subscribing! You'll now receive exclusive offers, branding tips, and updates about our sustainable bottles.\n\nVisit our website: ${process.env.NEXT_PUBLIC_SITE_URL || 'https://wather.com'}\n\n- The Wather Team`,
+      text: `Welcome to Neysa!\n\nThank you for subscribing! You'll now receive exclusive offers, branding tips, and updates about our sustainable bottles.\n\nVisit our website: ${process.env.NEXT_PUBLIC_SITE_URL || 'https://wather.com'}\n\n- The Wather Team`,
     };
 
     // Send notification to admin

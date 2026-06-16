@@ -26,19 +26,19 @@ const newsArticles = [
     date: "jun 2026",
     category: "Sustainability",
     image:
-      "/news/2.webp",
+      "/news/1.jpg",
     readTime: "5 Min Read",
     featured: true,
   },
   {
     id: 2,
-    title: "Latest study shows companies using custom water bottles see 34% higher engagement in wellnessWhy Premium Packaging Influences Consumer Trust.",
+    title: "Why Premium Packaging Influences Consumer Trust",
     excerpt:
       "In today's competitive market, packaging plays a much larger role than many people realize. Long before consumers experience a product, they form opinions based on appearance, design, and presentation.",
     date: "june 2026",
     category: "Insights",
     image:
-      "/news/3.webp",
+      "/news/1(1).jpg",
     readTime: "3 min read",
     featured: false,
   },
@@ -50,7 +50,7 @@ const newsArticles = [
     date: "June 2026",
     category: "Partnership",
     image:
-      "/news/4.webp",
+      "/news/1(2).jpg",
     readTime: "4 Min Read",
     featured: false,
   },
@@ -62,7 +62,7 @@ const newsArticles = [
     date: "June 2026",
     category: "Innovation",
     image:
-      "/news/6.webp",
+      "/news/1(4).jpg",
     readTime: "5 min read",
     featured: false,
   },
@@ -74,7 +74,7 @@ const newsArticles = [
     date: "june 2026",
     category: "Success Stories",
     image:
-      "/news/marketing-case-study.webp",
+      "/news/1(5).jpg",
     readTime: "6 min read",
     featured: false,
   },
@@ -86,7 +86,7 @@ const newsArticles = [
     date: "june 2026",
     category: "Company News",
     image:
-      "/news/2.webp",
+      "/news/1(6).jpg",
     readTime: "2 min read",
     featured: false,
   },
@@ -196,13 +196,11 @@ export default function LatestNewsPage() {
           >
             <div className="grid grid-cols-1 lg:grid-cols-2">
               <div className="relative h-64 lg:h-[400px]">
-                <Image
+                <img
                   src={featuredArticle.image}
                   alt={featuredArticle.title}
-                  fill
                   className="object-cover transition-transform duration-700 group-hover:scale-100"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  priority
+                  loading="lazy" 
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
               </div>
@@ -254,12 +252,10 @@ export default function LatestNewsPage() {
                 className="group flex flex-col overflow-hidden border border-gray-200 rounded-xl bg-white shadow-lg transition-all duration-300 hover:shadow-xl"
               >
                 <div className="relative h-48 overflow-hidden">
-                  <Image
+                  <img
                     src={article.image}
                     alt={article.title}
-                    fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                   <div className="absolute left-4 top-4 rounded-full bg-white/90 px-2 py-1 text-xs font-semibold text-gray-800 backdrop-blur-sm">
                     {article.category}

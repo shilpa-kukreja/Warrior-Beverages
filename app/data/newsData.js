@@ -1,143 +1,409 @@
 export const newsArticles = [
-  {
-    id: 1,
-    title: "How to Choose Safe Packaged Drinking Water in India",
-    slug: "how-to-choose-safe-packaged-drinking-water-in-india",
-    excerpt:
-      "Our new EcoCollect series turns ocean waste into premium branded bottles, reducing marine plastic by 2 million kg annually.",
-    fullContent: `
-      <p>In a groundbreaking move for sustainable packaging, Wather has unveiled the EcoCollect series — the first branded water bottle made entirely from ocean-bound plastic. This initiative aims to remove over 2 million kilograms of plastic from coastal areas each year.</p>
-      
-      <h2>Turning Pollution into Purpose</h2>
-      <p>Each EcoCollect bottle is crafted from plastic waste collected within 50km of shorelines in Southeast Asia. The material is sorted, cleaned, and transformed into high-grade rPET that meets food-contact safety standards.</p>
-      
-      <blockquote>
-        “We're proving that sustainability and premium branding can coexist. Our clients no longer have to choose between eco-consciousness and beautiful design.”
-        — Sarah Chen, CEO of Wather
-      </blockquote>
-      
-      <h2>Key Features</h2>
-      <ul>
-        <li>100% ocean-bound plastic (OBP) certified</li>
-        <li>Leak-proof, vacuum-insulated options</li>
-        <li>Full-color wrap printing available</li>
-        <li>Donates 5% of profits to ocean cleanup</li>
-      </ul>
-      
-      <p>The EcoCollect series is available for corporate pre-orders starting June 2025. Early partners include几家 Fortune 500 companies committed to eliminating single-use plastics from their events.</p>
-    `,
-    date: "May 28, 2025",
-    category: "Sustainability",
-    image: "/news/2.webp",
-    readTime: "4 min read",
-    featured: true,
-    author: {
-      name: "Emma Rodriguez",
-      avatar: "/authors/emma.jpg",
-      title: "Sustainability Editor"
-    }
-  },
-  {
-    id: 2,
-    title: "How Hydration Branding Boosts Employee Wellness",
-    slug: "hydration-branding-boosts-employee-wellness",
-    excerpt:
-      "Latest study shows companies using custom water bottles see 34% higher engagement in wellness programs.",
-    fullContent: `
-      <p>A new study conducted by the Corporate Wellness Institute reveals that branded reusable water bottles are among the most effective low-cost tools for improving employee health metrics.</p>
-      
-      <h2>The Data Speaks</h2>
-      <p>Over 12 months, researchers tracked 5,000 employees across 20 companies. Those who received custom Wather bottles with their company logo showed:</p>
-      <ul>
-        <li><strong>34% higher participation</strong> in wellness challenges</li>
-        <li><strong>28% reduction</strong> in single-use plastic bottle purchases</li>
-        <li><strong>41% improvement</strong> in daily water intake goals</li>
-      </ul>
-      
-      <h2>Why It Works</h2>
-      <p>Branded bottles act as constant visual reminders. When employees feel connected to their company's wellness mission, they're more likely to adopt healthy habits. Plus, the pride of carrying a sleek, eco-friendly bottle boosts morale.</p>
-      
-      <p>Download the full case study to learn how to implement a hydration wellness program at your organization.</p>
-    `,
-    date: "May 22, 2025",
-    category: "Insights",
-    image: "/news/3.webp",
-    readTime: "3 min read",
-    featured: false,
-    author: {
-      name: "Dr. Michael Lee",
-      avatar: "/authors/michael.jpg",
-      title: "Workplace Psychologist"
-    }
-  },
-  {
-    id: 3,
-    title: "Wather Partners with Global Climate Summit 2025",
-    slug: "wather-partners-global-climate-summit-2025",
-    excerpt:
-      "Providing 50,000 reusable bottles to delegates, eliminating single-use plastic at the world's largest climate event.",
-    fullContent: `
-      <p>The Global Climate Summit 2025 has chosen Wather as its official hydration partner. The event, expected to draw 50,000 attendees from 150+ countries, will be completely single-use plastic free.</p>
-      
-      <h2>Leading by Example</h2>
-      <p>Each delegate will receive a custom Wather bottle made from 70% recycled stainless steel. Refill stations powered by solar energy will be placed throughout the venue.</p>
-      
-      <p>“This partnership demonstrates that large-scale events can be both sustainable and stylish,” said Summit Director Maria Gonzalez.</p>
-      
-      <h2>Impact Projection</h2>
-      <p>By eliminating single-use plastic bottles, the summit will prevent approximately 1.5 million plastic bottles from entering landfills and oceans. The initiative is expected to inspire other global events to follow suit.</p>
-    `,
-    date: "May 18, 2025",
-    category: "Partnership",
-    image: "/news/4.webp",
-    readTime: "5 min read",
-    featured: false,
-    author: {
-      name: "James Okafor",
-      avatar: "/authors/james.jpg",
-      title: "Partnerships Lead"
-    }
-  },
-  // Add remaining articles (4,5,6) with similar fullContent
-  {
-    id: 4,
-    title: "New Customization Tech: Full-Color Wrap Printing",
-    slug: "full-color-wrap-printing-technology",
-    excerpt: "Revolutionary 360° printing allows unlimited color designs with zero waste – perfect for complex brand identities.",
-    fullContent: `<p>Wather has unveiled a patent-pending printing technology that wraps full-color designs seamlessly around cylindrical bottles...</p>`,
-    date: "May 10, 2025",
-    category: "Innovation",
-    image: "/news/6.webp",
-    readTime: "3 min read",
-    featured: false,
-    author: { name: "Lisa Wang", title: "Product Innovation Director" }
-  },
-  {
-    id: 5,
-    title: "Case Study: How a Startup Gained 10k Instagram Followers",
-    slug: "startup-gained-10k-instagram-followers",
-    excerpt: "One branded bottle campaign generated over 5,000 user-generated posts and a 240% ROI for a fitness brand.",
-    fullContent: `<p>When fitness startup “PureMove” launched their branded Wather bottles, they didn't expect a viral explosion...</p>`,
-    date: "May 5, 2025",
-    category: "Success Stories",
-    image: "/news/marketing-case-study.webp",
-    readTime: "6 min read",
-    featured: false,
-    author: { name: "Ryan Patel", title: "Marketing Analyst" }
-  },
-  {
-    id: 6,
-    title: "Wather Receives B Corp Certification",
-    slug: "wather-b-corp-certification",
-    excerpt: "Recognized for meeting highest standards of social and environmental performance, transparency, and accountability.",
-    fullContent: `<p>After a rigorous 18-month assessment, Wather has officially joined the B Corp community...</p>`,
-    date: "April 28, 2025",
-    category: "Company News",
-    image: "/news/2.webp",
-    readTime: "2 min read",
-    featured: false,
-    author: { name: "Nadia Khan", title: "Impact Officer" }
+{
+  id: 1,
+  title: "How to Choose Safe Packaged Drinking Water in India",
+  slug: "how-to-choose-safe-packaged-drinking-water-in-india",
+  excerpt:
+    "When purchasing packaged drinking water, most consumers focus on convenience and availability. However, not every bottle offers the same level of quality, purification, and consistency. Understanding what makes a reliable drinking water brand can help you make a more informed choice.",
+
+  fullContent: `
+    <p>
+      When purchasing packaged drinking water, most consumers focus on convenience and availability. However, not every bottle offers the same level of quality, purification, and consistency. With numerous options available in the market, understanding what makes a reliable drinking water brand can help you make a more informed choice.
+    </p>
+
+    <p>
+      Whether you're buying water for your home, office, retail store, hotel, restaurant, or event, selecting the right brand is essential for ensuring a refreshing and dependable experience.
+    </p>
+
+    <h2>Why Water Quality Matters</h2>
+
+    <p>
+      Drinking water is something we consume every day, making quality an important consideration. A trusted packaged drinking water brand focuses on maintaining high standards throughout the purification, packaging, and distribution process.
+    </p>
+
+    <p>
+      Consumers today are becoming more aware of product quality and expect brands to deliver reliability with every purchase.
+    </p>
+
+    <h2>Check the Purification Process</h2>
+
+    <p>
+      One of the first things to consider is how the water is treated before reaching the bottle.
+    </p>
+
+    <p>
+      Reliable manufacturers often use multiple purification stages, including filtration, Reverse Osmosis (RO), UV treatment, and quality monitoring procedures to maintain consistency and freshness.
+    </p>
+
+    <h2>Evaluate Packaging Standards</h2>
+
+    <p>
+      Packaging often provides the first impression of a product.
+    </p>
+
+    <p>
+      A professionally designed bottle reflects attention to hygiene, presentation, and consumer experience. Clear labeling, secure sealing, and proper product information are all indicators of a quality-focused brand.
+    </p>
+
+    <h2>Consistency Builds Confidence</h2>
+
+    <p>
+      Consumers trust brands that deliver the same experience every time. Consistent taste, quality, and presentation are often signs of strong manufacturing and quality-control processes.
+    </p>
+
+    <h2>Final Thoughts</h2>
+
+    <p>
+      Choosing packaged drinking water should be about more than just convenience. By considering purification standards, packaging quality, transparency, and consistency, consumers can confidently select a brand that prioritizes quality and trust.
+    </p>
+  `,
+
+  date: "June 2026",
+  category: "Water Safety",
+  image: "/news/1.jpg",
+  readTime: "5 Min Read",
+  featured: true,
+
+  author: {
+    name: "Neysa Editorial Team",
+    avatar: "/authors/emma.jpg",
+    title: "Water Quality Expert"
   }
+},
+{
+  id: 2,
+  title: "Why Premium Packaging Influences Consumer Trust",
+  slug: "why-premium-packaging-influences-consumer-trust",
+  excerpt:
+    "In today's competitive market, packaging plays a much larger role than many people realize. Long before consumers experience a product, they form opinions based on appearance, design, and presentation.",
+
+  fullContent: `
+    <p>
+      In today's competitive market, packaging plays a much larger role than many people realize. Long before consumers experience a product, they form opinions based on appearance, design, and presentation.
+    </p>
+
+    <p>
+      This is especially true in the packaged drinking water industry, where packaging often influences purchasing decisions and brand perception.
+    </p>
+
+    <h2>The Power of First Impressions</h2>
+
+    <p>
+      Consumers typically make buying decisions within seconds.
+    </p>
+
+    <p>
+      A clean, modern, and professionally designed bottle immediately creates a sense of quality and reliability. Premium packaging helps brands stand out while communicating confidence and attention to detail.
+    </p>
+
+    <h2>Packaging Reflects Brand Standards</h2>
+
+    <p>
+      Consumers naturally associate attractive packaging with better quality.
+    </p>
+
+    <p>
+      When a company invests in thoughtful design and presentation, it signals commitment to maintaining high standards throughout manufacturing and distribution.
+    </p>
+
+    <h2>Beyond Visual Appeal</h2>
+
+    <p>
+      Premium packaging also improves functionality.
+    </p>
+
+    <p>
+      Features such as comfortable grip, portability, secure sealing, and convenience contribute to a better user experience.
+    </p>
+
+    <h2>Building Long-Term Loyalty</h2>
+
+    <p>
+      Consistent presentation helps strengthen brand recognition and trust. When consumers repeatedly encounter a product that looks professional and delivers a reliable experience, they are more likely to become loyal customers.
+    </p>
+
+    <h2>Final Thoughts</h2>
+
+    <p>
+      Packaging is more than a design element. It is an important part of the overall customer experience and a powerful tool for building trust in the packaged drinking water industry.
+    </p>
+  `,
+
+  date: "June 2026",
+  category: "Consumer Insights",
+  image: "/news/1(1).jpg",
+  readTime: "5 Min Read",
+  featured: false,
+
+  author: {
+    name: "Neysa Editorial Team",
+    avatar: "/authors/michael.jpg",
+    title: "Brand & Consumer Insights"
+  }
+}
+,
+{
+  id: 3,
+  title: "The Importance of Staying Hydrated Throughout the Day",
+  slug: "importance-of-staying-hydrated-throughout-the-day",
+  excerpt:
+    "Water is one of the most essential components of everyday life. Despite its importance, many people do not consume enough water throughout the day, especially when managing busy schedules.",
+
+  fullContent: `
+    <p>
+      Water is one of the most essential components of everyday life. Despite its importance, many people do not consume enough water throughout the day, especially when managing busy schedules.
+    </p>
+
+    <p>
+      Whether you're working, travelling, exercising, or spending time outdoors, maintaining proper hydration helps support a more comfortable and active lifestyle.
+    </p>
+
+    <h2>Why Hydration Is Important</h2>
+
+    <p>
+      Water plays a role in many daily functions. It helps the body stay refreshed and supports overall wellbeing throughout the day.
+    </p>
+
+    <p>
+      Busy routines often lead people to overlook hydration, making it important to develop healthy drinking habits.
+    </p>
+
+    <h2>Common Situations That Increase Water Needs</h2>
+
+    <p>
+      Several daily activities may increase the need for hydration:
+    </p>
+
+    <ul>
+      <li>Exercise and physical activity</li>
+      <li>Warm weather conditions</li>
+      <li>Travel and commuting</li>
+      <li>Long office hours</li>
+      <li>Outdoor events</li>
+    </ul>
+
+    <h2>Simple Hydration Tips</h2>
+
+    <p>
+      Maintaining hydration does not need to be complicated.
+    </p>
+
+    <ul>
+      <li>Carry a bottle while travelling</li>
+      <li>Keep water nearby at work</li>
+      <li>Drink regularly throughout the day</li>
+      <li>Increase intake during hot weather</li>
+      <li>Stay hydrated before and after workouts</li>
+    </ul>
+
+    <h2>Creating Healthy Habits</h2>
+
+    <p>
+      Making hydration a priority can contribute to a more comfortable daily routine. Small habits practiced consistently often make the biggest difference.
+    </p>
+
+    <h2>Final Thoughts</h2>
+
+    <p>
+      Staying hydrated is one of the simplest ways to support everyday wellbeing. Making water easily accessible encourages healthier hydration habits and a more refreshing lifestyle.
+    </p>
+  `,
+
+  date: "June 2026",
+  category: "Health & Wellness",
+  image: "/news/1(2).jpg",
+  readTime: "4 Min Read",
+  featured: false,
+
+  author: {
+    name: "Neysa Editorial Team",
+    avatar: "/authors/james.jpg",
+    title: "Health & Wellness Contributor"
+  }
+},
+
+  // Add remaining articles (4,5,6) with similar fullContent
+{
+  id: 4,
+  title: "Why Offices Need a Reliable Drinking Water Partner",
+  slug: "why-offices-need-a-reliable-drinking-water-partner",
+  excerpt:
+    "Every workplace depends on reliable essentials, and drinking water is among the most important. From employee comfort to visitor experience, access to quality drinking water contributes significantly to a professional environment.",
+
+  fullContent: `
+    <p>
+      Every workplace depends on reliable essentials, and drinking water is among the most important. From employee comfort to visitor experience, access to quality drinking water contributes significantly to a professional environment.
+    </p>
+
+    <h2>Reliable Supply Matters</h2>
+
+    <p>
+      Running out of drinking water can create unnecessary inconvenience.
+    </p>
+
+    <p>
+      A dependable water supplier ensures businesses maintain a consistent supply without interruptions, helping operations run smoothly.
+    </p>
+
+    <h2>Supporting Employee Comfort</h2>
+
+    <p>
+      Employees spend a significant portion of their day at work. Providing easy access to quality drinking water demonstrates care and contributes to a positive workplace environment.
+    </p>
+
+    <h2>Creating a Professional Impression</h2>
+
+    <p>
+      Clients, visitors, and business partners often notice the small details.
+    </p>
+
+    <p>
+      Premium packaged drinking water can enhance workplace presentation and reinforce a professional image.
+    </p>
+
+    <h2>Benefits of Partnering with a Trusted Supplier</h2>
+
+    <ul>
+      <li>Consistent product quality</li>
+      <li>Timely delivery</li>
+      <li>Reliable availability</li>
+      <li>Professional packaging</li>
+      <li>Better workplace experience</li>
+    </ul>
+
+    <h2>Final Thoughts</h2>
+
+    <p>
+      Choosing the right drinking water partner helps businesses maintain consistency, convenience, and confidence while creating a more comfortable environment for employees and visitors.
+    </p>
+  `,
+
+  date: "June 2026",
+  category: "Business Solutions",
+  image: "/news/1(4).jpg",
+  readTime: "5 Min Read",
+  featured: false,
+
+  author: {
+    name: "Neysa Editorial Team",
+    title: "Corporate Solutions Contributor"
+  }
+}
+,
+{
+  id: 5,
+  title: "What Hotels and Restaurants Look for in a Water Brand",
+  slug: "what-hotels-and-restaurants-look-for-in-a-water-brand",
+  excerpt:
+    "In the hospitality industry, every detail contributes to the guest experience. From service quality to presentation standards, businesses seek water brands that combine quality, reliability, and professionalism.",
+
+  fullContent: `
+    <p>
+      In the hospitality industry, every detail contributes to the guest experience. From service quality to presentation standards, businesses strive to create memorable experiences that reflect their brand values.
+    </p>
+
+    <p>
+      Packaged drinking water is no exception.
+    </p>
+
+    <h2>Consistent Quality Is Essential</h2>
+
+    <p>
+      Guests expect the same experience every time they visit a property.
+    </p>
+
+    <p>
+      Hotels and restaurants therefore prefer water brands that maintain dependable quality across every bottle.
+    </p>
+
+    <h2>Presentation Matters</h2>
+
+    <p>
+      The appearance of a water bottle can influence how guests perceive a brand.
+    </p>
+
+    <p>
+      Modern packaging complements hospitality environments and helps create a polished dining or accommodation experience.
+    </p>
+
+    <h2>Reliable Supply Supports Operations</h2>
+
+    <p>
+      Hospitality businesses require uninterrupted product availability.
+    </p>
+
+    <p>
+      Reliable suppliers help ensure hotels and restaurants can consistently meet guest expectations.
+    </p>
+
+    <h2>Factors Hospitality Businesses Consider</h2>
+
+    <ul>
+      <li>Product quality</li>
+      <li>Packaging design</li>
+      <li>Supply reliability</li>
+      <li>Brand reputation</li>
+      <li>Customer support</li>
+    </ul>
+
+    <h2>Final Thoughts</h2>
+
+    <p>
+      Hospitality businesses seek partners who combine quality, presentation, and reliability. A trusted water brand helps strengthen the overall guest experience while supporting operational efficiency.
+    </p>
+  `,
+
+  date: "June 2026",
+  category: "Hospitality Insights",
+  image: "/news/1(5).jpg",
+  readTime: "5 Min Read",
+  featured: false,
+
+  author: {
+    name: "Neysa Editorial Team",
+    title: "Hospitality Industry Contributor"
+  }
+}
+,
+
+ {
+  id: 6,
+  title: "Packaged Drinking Water vs Ordinary Drinking Water: Understanding the Difference",
+  slug: "packaged-drinking-water-vs-ordinary-drinking-water",
+  excerpt:
+    "Many consumers use the terms drinking water and packaged drinking water interchangeably. However, there are important differences in how they are processed, monitored, and delivered.",
+  fullContent: `
+    <p>Many consumers use the terms drinking water and packaged drinking water interchangeably. However, there are important differences in how packaged drinking water is processed, monitored, and delivered.</p>
+
+    <p>Understanding these differences can help consumers make informed decisions.</p>
+
+    <h2>Purification Processes</h2>
+    <p>Packaged drinking water typically undergoes multiple purification stages before reaching consumers.</p>
+    <p>These processes help maintain consistency, cleanliness, and quality standards.</p>
+
+    <h2>Hygienic Packaging</h2>
+    <p>Unlike ordinary water sources, packaged drinking water is sealed and protected during transportation and storage.</p>
+    <p>This helps maintain product integrity until consumption.</p>
+
+    <h2>Quality Monitoring</h2>
+    <p>Manufacturers often conduct quality checks throughout production to maintain consistency and compliance with established standards.</p>
+
+    <h2>Convenience and Accessibility</h2>
+    <p>Packaged drinking water offers portability and convenience, making it suitable for travel, offices, events, hospitality businesses, and daily use.</p>
+
+    <h2>Final Thoughts</h2>
+    <p>While both serve the purpose of hydration, packaged drinking water offers additional benefits through purification, packaging, quality monitoring, and convenience.</p>
+  `,
+  date: "June 2026",
+  category: "Health & Education",
+  image: "/news/1(6).jpg",
+  readTime: "6 min read",
+  featured: false,
+  author: {
+    name: "Editorial Team",
+    title: "Content Writer"
+  }
+}
 ];
 
 export function getNewsArticle(id) {

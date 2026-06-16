@@ -28,86 +28,86 @@ const faqCategories = [
 const faqs = [
   {
     id: 1,
-    question: "What is the minimum order quantity for custom bottles?",
+    question: "What is Neysa Premium Water?",
     answer:
-      "Our minimum order quantity is 100 bottles. However, we offer special pricing and sample programs for smaller quantities. Contact our sales team for custom orders.",
+      "Neysa Premium Water is a premium packaged drinking water brand committed to delivering purity, consistency, and refreshment through advanced purification processes and high-quality packaging.",
     category: "ordering",
   },
   {
     id: 2,
-    question: "How long does it take to produce and ship my order?",
+    question: " How is Neysa Premium Water purified?",
     answer:
-      "Standard production takes 10-14 business days after artwork approval. Shipping adds 3-7 business days depending on your location. Expedited options are available.",
+      "Our water undergoes a multi-stage purification process that may include filtration, Reverse Osmosis (RO), UV treatment, and other quality-control procedures to ensure a clean and refreshing drinking experience.",
     category: "shipping",
   },
   {
     id: 3,
-    question: "What payment methods do you accept?",
+    question: " Is Neysa suitable for everyday consumption?",
     answer:
-      "We accept all major credit cards (Visa, Mastercard, Amex), PayPal, bank transfers, and wire payments. For large orders, we offer net-30 terms to qualified businesses.",
+      "Yes. Neysa Premium Water is designed for daily hydration and is suitable for home, office, travel, hospitality, and event consumption.",
     category: "payment",
   },
   {
     id: 4,
-    question: "Can I get a sample bottle before placing a bulk order?",
+    question: "What bottle sizes are available?",
     answer:
-      "Yes! We offer sample bottles with your custom branding for a small fee. The sample fee is fully refundable when you place a bulk order of 500+ units.",
+      "Neysa Premium Water is available in multiple pack sizes, including 250ml, 500ml, and 1L bottles, catering to different hydration needs and occasions.",
     category: "ordering",
   },
   {
     id: 5,
-    question: "What is your return policy?",
+    question: "Where can I buy Neysa Premium Water?",
     answer:
-      "We offer a 30-day satisfaction guarantee. If you're not happy with your bottles, contact us for a replacement or refund. Custom-printed items must be unused and in original packaging.",
+      "Neysa Premium Water is available through authorized retailers, distributors, supermarkets, convenience stores, hospitality partners, and selected business channels.",
     category: "returns",
   },
   {
     id: 6,
-    question: "Are your bottles eco-friendly and BPA-free?",
+    question: "Does Neysa supply water for offices and businesses?",
     answer:
-      "Absolutely. All Wather bottles are made from 100% food-grade, BPA-free stainless steel or recycled ocean-bound plastic. We are a certified B Corp and carbon-neutral company.",
+      "Yes. We provide packaged drinking water solutions for corporate offices, institutions, retail chains, hospitality businesses, and various commercial establishments.",
     category: "sustainability",
   },
   {
     id: 7,
-    question: "Can I track my order?",
+    question: "Can Neysa provide water for events and gatherings?",
     answer:
-      "Yes. Once your order ships, you'll receive a tracking number via email. You can also log into your account to view real-time shipping status.",
+      "Absolutely. We offer reliable supply solutions for conferences, weddings, exhibitions, corporate events, social gatherings, and other large-scale occasions.",
     category: "shipping",
   },
   {
     id: 8,
-    question: "Do you offer design assistance?",
+    question: "What makes Neysa different from other bottled water brands?",
     answer:
-      "Our in-house design team is ready to help! We provide free mockups and artwork optimization to ensure your branding looks perfect on the bottles.",
+      "Neysa combines dependable quality, modern packaging, consistent standards, and everyday affordability to deliver a premium hydration experience without a premium price tag.",
     category: "ordering",
   },
   {
     id: 9,
-    question: "What is your warranty on bottles?",
+    question: "How does Neysa maintain product quality?",
     answer:
-      "All bottles come with a 2-year warranty against manufacturing defects. We'll replace any faulty bottle at no cost.",
+      "We follow strict quality-control measures throughout purification, packaging, storage, and distribution to ensure consistency and reliability in every bottle.",
     category: "returns",
   },
   {
     id: 10,
-    question: "Do you ship internationally?",
+    question: "Does Neysa offer distributorship opportunities?",
     answer:
-      "Yes, we ship to over 50 countries worldwide. Shipping rates and delivery times vary by destination. Duties and taxes may apply.",
+      "Yes. We welcome distribution partners who are interested in growing with a trusted premium packaged drinking water brand. Please contact our team for partnership details.",
     category: "shipping",
   },
   {
     id: 11,
-    question: "Can I customize the bottle shape and color?",
+    question: "How can retailers partner with Neysa?",
     answer:
-      "Yes. We offer a wide range of bottle shapes (sport, slim, wide-mouth) and over 20 colors. Full-color wrap printing is also available for complex designs.",
+      "Retailers interested in stocking Neysa Premium Water can connect with our sales team to discuss product availability, supply requirements, and partnership opportunities.",
     category: "sustainability",
   },
   {
     id: 12,
-    question: "How do I care for my Wather bottle?",
+    question: "How can I contact Neysa Premium Water?",
     answer:
-      "Hand wash with mild soap and warm water. Do not microwave. The bottle is dishwasher-safe (top rack only) but hand washing preserves the print quality longer.",
+      "You can reach our team through the Contact Us page, phone number, email address, or enquiry form available on our website. We are always happy to assist with product, partnership, and business-related queries.",
     category: "sustainability",
   },
 ];

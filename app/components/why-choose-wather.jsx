@@ -7,21 +7,21 @@ import { Droplets } from "lucide-react";
 // Left side features (3 items) - using image URLs instead of icons
 const leftFeatures = [
   {
-    imageUrl: "/why-choose/1.png",
+    imageUrl: "/why-choose/ConsistentQuality.png",
     title: "Consistent Quality",
     subheading: "Eco-conscious Impact",
     description:
       "Every bottle is produced with strict quality checks to ensure a clean, refreshing taste and a dependable experience every time.",
   },
   {
-    imageUrl: "/why-choose/advertising.png",
+    imageUrl: "/why-choose/AdvancedPurification.png",
     title: "Advanced Purification",
     subheading: "Undisturbed Engagement",
     description:
       "Processed through a multi-stage purification system to deliver water that meets high standards of safety, hygiene, and freshness.",
   },
   {
-    imageUrl: "/why-choose/branding.png",
+    imageUrl: "/why-choose/PremiumPresentation.png",
     title: "Premium Presentation",
     subheading: "Your Vision, Our Craft",
     description:
@@ -32,21 +32,21 @@ const leftFeatures = [
 // Right side features (3 items)
 const rightFeatures = [
   {
-    imageUrl: "/why-choose/social-media.png",
+    imageUrl: "/why-choose/EverydayAffordability.png",
     title: "Everyday Affordability",
     subheading: "Shareable Experience",
     description:
       "Enjoy a premium drinking water experience without paying a premium price, making better hydration accessible to everyone.",
   },
   {
-    imageUrl: "/why-choose/cost-effectiveness.png",
+    imageUrl: "/why-choose/TrustedManufacturing.png",
     title: "Trusted Manufacturing",
     subheading: "High ROI",
     description:
       "Produced in hygienic facilities with a strong focus on quality control, consistency, and consumer confidence.",
   },
   {
-    imageUrl: "/why-choose/insight.png",
+    imageUrl: "/why-choose/MadeforModernLifestyles.png",
     title: "Made for Modern Lifestyles",
     subheading: "Actionable Analytics",
     description:

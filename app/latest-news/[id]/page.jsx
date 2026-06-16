@@ -143,15 +143,13 @@ export default function NewsDetailPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl shadow-xl mb-8"
+            className="relative   w-full overflow-hidden rounded-2xl shadow-xl mb-8"
           >
-            <Image
+            <img
               src={article.image}
               alt={article.title}
-              fill
-              className="object-cover"
-              priority
-              sizes="(max-width: 568px) 100vw, 1000px"
+              className="object-cover w-full h-full"
+    
             />
             {/* Category badge overlay */}
             <div className="absolute top-4 left-4 z-10">

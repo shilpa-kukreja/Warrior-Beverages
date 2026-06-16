@@ -15,81 +15,164 @@ export default function PrivacyPolicy() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-4xl font-bold text-gray-900 md:text-5xl">Privacy Policy</h1>
-            <p className="mt-2 text-sm text-gray-500">Last updated: {new Date().toLocaleDateString()}</p>
-            
+            <h1 className="text-4xl font-bold text-gray-900 md:text-5xl">
+              Privacy Policy
+            </h1>
+            <p className="mt-2 text-sm text-gray-500">
+              Last Updated: June 2026
+            </p>
+
             <div className="mt-8 space-y-6 text-gray-700">
+
               <section>
-                <h2 className="text-2xl font-semibold text-[#304869]">1. Introduction</h2>
+                <h2 className="text-2xl font-semibold text-[#304869]">
+                  Privacy Policy for Neysa Premium Water
+                </h2>
                 <p className="mt-2 leading-relaxed">
-                  Welcome to Warrior Beverages ("we", "our", "us"). We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
+                  At Neysa Premium Water, we value your privacy and are committed
+                  to protecting the personal information you share with us. This
+                  Privacy Policy explains how we collect, use, store, and
+                  safeguard your information when you visit our website, submit
+                  an enquiry, or interact with our services. By using our
+                  website, you agree to the terms outlined in this Privacy Policy.
                 </p>
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-[#304869]">2. Information We Collect</h2>
-                <p className="mt-2 leading-relaxed">We may collect the following types of information:</p>
+                <h2 className="text-2xl font-semibold text-[#304869]">
+                  Information We Collect
+                </h2>
+                <p className="mt-2 leading-relaxed">
+                  We may collect information that you voluntarily provide, including:
+                </p>
                 <ul className="mt-2 list-inside list-disc space-y-1 pl-4">
-                  <li>Personal identification information (name, email address, phone number, company name)</li>
-                  <li>Business information (order preferences, custom branding requirements)</li>
-                  <li>Technical data (IP address, browser type, device information)</li>
+                  <li>Full Name</li>
+                  <li>Email Address</li>
+                  <li>Phone Number</li>
+                  <li>Company Name</li>
+                  <li>Business Information</li>
+                  <li>Enquiry Details</li>
+                  <li>Contact form or partnership request data</li>
+                </ul>
+                <p className="mt-3 leading-relaxed">
+                  We may also collect non-personal information such as IP address,
+                  browser type, device information, website usage data, cookies,
+                  and analytics data.
+                </p>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-semibold text-[#304869]">
+                  How We Use Your Information
+                </h2>
+                <ul className="mt-2 list-inside list-disc space-y-1 pl-4">
+                  <li>Respond to enquiries and requests</li>
+                  <li>Provide product and service information</li>
+                  <li>Process distributorship and partnership applications</li>
+                  <li>Improve website and user experience</li>
+                  <li>Send important updates and communications</li>
+                  <li>Maintain website security and functionality</li>
+                  <li>Comply with legal requirements</li>
+                </ul>
+                <p className="mt-3 leading-relaxed">
+                  We use your information only for legitimate business purposes
+                  and do not sell personal data to third parties.
+                </p>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-semibold text-[#304869]">
+                  Cookies and Tracking Technologies
+                </h2>
+                <p className="mt-2 leading-relaxed">
+                  Our website uses cookies to enhance user experience and analyze
+                  performance. Cookies help us understand visitor behavior,
+                  improve functionality, personalize experience, and measure traffic.
+                  You may disable cookies in your browser settings, but some features
+                  may not function properly.
+                </p>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-semibold text-[#304869]">
+                  Information Sharing
+                </h2>
+                <p className="mt-2 leading-relaxed">
+                  Neysa Premium Water does not sell, rent, or trade personal information.
+                  We may share data only with authorized service providers, technology
+                  partners, legal authorities when required, or business partners
+                  involved in fulfilling customer requests.
+                </p>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-semibold text-[#304869]">
+                  Data Security
+                </h2>
+                <p className="mt-2 leading-relaxed">
+                  We implement reasonable security measures to protect your data.
+                  However, no online system is 100% secure, and users share information
+                  at their own risk.
+                </p>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-semibold text-[#304869]">
+                  Third-Party Links
+                </h2>
+                <p className="mt-2 leading-relaxed">
+                  Our website may contain links to external websites. We are not
+                  responsible for their privacy practices and encourage users to
+                  review their policies separately.
+                </p>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-semibold text-[#304869]">
+                  Your Rights
+                </h2>
+                <ul className="mt-2 list-inside list-disc space-y-1 pl-4">
+                  <li>Access your personal data</li>
+                  <li>Request correction of information</li>
+                  <li>Request deletion of data</li>
+                  <li>Withdraw consent</li>
+                  <li>Object to processing</li>
                 </ul>
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-[#304869]">3. How We Use Your Information</h2>
-                <p className="mt-2 leading-relaxed">We use the information we collect to:</p>
-                <ul className="mt-2 list-inside list-disc space-y-1 pl-4">
-                  <li>Process and fulfill your orders for premium spring water and branded bottles</li>
-                  <li>Respond to your inquiries, quote requests, and customer service needs</li>
-                  <li>Improve our website, products, and marketing efforts</li>
-                  <li>Send you promotional offers (you may opt out at any time)</li>
-                </ul>
-              </section>
-
-              <section>
-                <h2 className="text-2xl font-semibold text-[#304869]">4. Sharing Your Information</h2>
+                <h2 className="text-2xl font-semibold text-[#304869]">
+                  Children's Privacy
+                </h2>
                 <p className="mt-2 leading-relaxed">
-                  We do not sell, trade, or rent your personal information to third parties. We may share your data with trusted service providers who assist us in operating our website or fulfilling orders (e.g., delivery partners, email services), under strict confidentiality agreements.
+                  Our services are not intended for children under 18, and we do
+                  not knowingly collect data from minors.
                 </p>
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-[#304869]">5. Data Security</h2>
+                <h2 className="text-2xl font-semibold text-[#304869]">
+                  Changes to This Privacy Policy
+                </h2>
                 <p className="mt-2 leading-relaxed">
-                  We implement industry-standard security measures to protect your personal information. However, no method of transmission over the internet is 100% secure. While we strive to protect your data, we cannot guarantee absolute security.
+                  We may update this policy at any time. Changes will be posted
+                  on this page with a revised date. Continued use of the website
+                  indicates acceptance of changes.
                 </p>
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-[#304869]">6. Your Rights</h2>
+                <h2 className="text-2xl font-semibold text-[#304869]">
+                  Contact Us
+                </h2>
                 <p className="mt-2 leading-relaxed">
-                  You have the right to access, update, or delete your personal information. To exercise these rights, please contact us at <a href="mailto:privacy@warriorbev.com" className="text-[#304869] underline">privacy@warriorbev.com</a>.
+                  Neysa Premium Water<br />
+                  Email: info@neysapremiumwater.com<br />
+                  Phone: +91 XXXXX XXXXX<br />
+                  Website: www.neysapremiumwater.com
                 </p>
               </section>
 
-              <section>
-                <h2 className="text-2xl font-semibold text-[#304869]">7. Cookies</h2>
-                <p className="mt-2 leading-relaxed">
-                  Our website uses cookies to enhance user experience. You can set your browser to refuse cookies, but some features may not function properly.
-                </p>
-              </section>
-
-              <section>
-                <h2 className="text-2xl font-semibold text-[#304869]">8. Changes to This Policy</h2>
-                <p className="mt-2 leading-relaxed">
-                  We may update this Privacy Policy from time to time. Any changes will be posted on this page with a revised "Last updated" date.
-                </p>
-              </section>
-
-              <section>
-                <h2 className="text-2xl font-semibold text-[#304869]">9. Contact Us</h2>
-                <p className="mt-2 leading-relaxed">
-                  If you have any questions about this Privacy Policy, please contact us at:<br />
-                  Email: <a href="mailto:support@warriorbev.com" className="text-[#304869] underline">support@warriorbev.com</a><br />
-                  Phone: +91 75288 75288
-                </p>
-              </section>
             </div>
           </motion.div>
         </div>

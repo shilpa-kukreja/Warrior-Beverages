@@ -49,7 +49,7 @@ export async function POST(req) {
     }
 
     const adminMailOptions = {
-      from: `"Wather Website" <${process.env.EMAIL_USER}>`,
+      from: `"Neysa Website" <${process.env.EMAIL_USER}>`,
       to: process.env.ADMIN_EMAIL,
       subject: adminSubject,
       html: adminHtml,
@@ -61,7 +61,7 @@ export async function POST(req) {
     if (isContactPageForm) {
       const { name, email, message } = data;
       userMailOptions = {
-        from: `"Wather" <${process.env.EMAIL_USER}>`,
+        from: `"Neysa Website" <${process.env.EMAIL_USER}>`,
         to: email,
         subject: 'We received your message – Wather',
         html: `

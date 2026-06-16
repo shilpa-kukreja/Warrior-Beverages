@@ -68,7 +68,7 @@ export default function AboutPage() {
   const values = [
     { icon: Shield, title: "Quality Without Compromise", description: "We believe every bottle should deliver the same standard of purity, freshness, and reliability. Quality is not just a promise, it's the foundation of everything we do." },
     { icon: Sparkles, title: "Trust in Every Drop", description: "From purification to packaging, every step is guided by transparency, consistency, and a commitment to earning consumer confidence every day." },
-    { icon: Users, title: "Customer-Centric Approach", description: "Whether serving individuals, retailers, hospitality partners, or businesses, we focus on understanding needs and delivering an experience that exceeds expectations." },
+    { icon: Users, title: "Customer-Centric Approach", description: "Neysa serving individuals, retailers, hospitality partners, or businesses, we focus on understanding needs and delivering an experience that exceeds expectations." },
   ];
 
   // Team data
@@ -226,7 +226,7 @@ export default function AboutPage() {
       <section className="relative py-12 md:py-12 bg-black/5">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900">Why Choose Wather</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Why Choose Neysa</h2>
             <div className="mx-auto mt-2 h-0.5 w-16 rounded-full bg-[#304869]" />
             <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
               Crafted for Quality. Trusted for Consistency.

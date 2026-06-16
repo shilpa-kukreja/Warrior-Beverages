@@ -51,7 +51,7 @@ export default function ProductDetailPage() {
       <>
         <Navbar />
         <div className="min-h-screen flex items-center justify-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#861981]" />
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#304869]" />
         </div>
         <Footer />
       </>
@@ -71,7 +71,7 @@ export default function ProductDetailPage() {
             <div className="flex items-center gap-2 text-sm text-gray-500">
               <Link href="/" className="hover:text-[#861981]">Home</Link>
               <span>/</span>
-              <Link href="/products" className="hover:text-[#861981]">Products</Link>
+              <Link href="/products" className="hover:text-[#304869]">Products</Link>
               <span>/</span>
               <span className="text-gray-800 font-medium">{product.name}</span>
             </div>
@@ -103,7 +103,7 @@ export default function ProductDetailPage() {
                       key={idx}
                       onClick={() => setSelectedImage(idx)}
                       className={`relative h-20 w-20 flex-shrink-0 overflow-hidden rounded-lg border-2 transition-all ${
-                        selectedImage === idx ? "border-[#861981]" : "border-transparent opacity-70"
+                        selectedImage === idx ? "border-[#304869]" : "border-transparent opacity-70"
                       }`}
                     >
                       <Image src={img} alt={`Thumb ${idx + 1}`} fill className="object-cover" />
@@ -125,14 +125,21 @@ export default function ProductDetailPage() {
                 <span className="text-sm text-gray-500">(24 reviews)</span>
                 <span className="text-sm text-green-600 font-medium">In Stock</span>
               </div>
+
               <div className="mt-4 flex flex-wrap gap-2">
-                <span className="rounded-full bg-[#861981]/10 px-3 py-1 text-xs font-semibold text-[#861981]">
+                <span className="rounded-full bg-[#304869]/10 px-3 py-1 text-xs font-semibold text-[304869]">
                   {product.volume}
                 </span>
                 <span className="rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold text-gray-700">
                   {product.material}
                 </span>
               </div>
+              <div className="mt-6 flex items-center gap-4">
+                <span className="text-2xl font-bold text-gray-900">₹{product.price}</span>
+                {product.originalPrice && (
+                  <span className="text-sm text-gray-500 line-through">₹{product.originalPrice}</span>
+                )}
+              </div>  
               <p className="mt-6 text-gray-600 leading-relaxed">{product.description}</p>
 
               {/* Specifications */}
@@ -175,7 +182,7 @@ export default function ProductDetailPage() {
               <div className="mt-8 flex flex-wrap gap-4">
                 <button
                   onClick={() => setIsQuoteModalOpen(true)}
-                  className="flex-1 rounded-lg bg-[#861981] px-6 py-3 font-semibold text-white transition hover:bg-[#5a0f56] active:scale-95"
+                  className="flex-1 rounded-lg bg-[#304869] px-6 py-3 font-semibold text-white transition hover:bg-[#304869] active:scale-95"
                 >
                   Get Quote
                 </button>
@@ -193,16 +200,16 @@ export default function ProductDetailPage() {
               {/* Trust Badges */}
               <div className="mt-8 flex flex-wrap gap-6 pt-6 border-t border-gray-100">
                 <div className="flex items-center gap-2 text-sm text-gray-500">
-                  <Shield className="h-5 w-5 text-[#861981]" />
-                  <span>2 Year Warranty</span>
+                  <Shield className="h-5 w-5 text-[#304869]" />
+                  <span>Trusted Purity</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-gray-500">
-                  <Truck className="h-5 w-5 text-[#861981]" />
-                  <span>Free Shipping over $100</span>
+                  <Truck className="h-5 w-5 text-[#304869]" />
+                  <span>Quality Controlled</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-gray-500">
-                  <Droplet className="h-5 w-5 text-[#861981]" />
-                  <span>BPA Free</span>
+                  <Droplet className="h-5 w-5 text-[#304869]" />
+                  <span>Refreshingly Consistent</span>
                 </div>
               </div>
 
@@ -250,11 +257,11 @@ export default function ProductDetailPage() {
                         className="object-cover transition-transform group-hover:scale-105"
                       />
                     </div>
-                    <h3 className="mt-3 text-lg font-semibold text-gray-900 group-hover:text-[#861981]">
+                    <h3 className="mt-3 text-lg font-semibold text-gray-900 group-hover:text-[#304869]">
                       {related.name}
                     </h3>
                     <p className="text-sm text-gray-500">{related.volume}</p>
-                    <button className="mt-3 w-full rounded-md bg-gray-100 py-2 text-sm font-medium text-gray-700 transition group-hover:bg-[#861981] group-hover:text-white">
+                    <button className="mt-3 w-full rounded-md bg-gray-100 py-2 text-sm font-medium text-gray-700 transition group-hover:bg-[#304869] group-hover:text-white">
                       View Details
                     </button>
                   </Link>

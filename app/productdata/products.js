@@ -1,69 +1,85 @@
 export const products = [
+ {
+  id: 1,
+  name: "Neysa Premium Water 1L",
+  slug: "neysa-premium-water-1l",
+  price: 30,
+  volume: "1L",
+  material: "Premium Food-Grade Bottle Material",
+  color: "Clear / Customizable",
+  temperature: "Suitable for chilled storage",
+  dimensions: "Standard 1L Bottle Size",
+  weight: "Approx. 180g",
+  features: [
+    "Ideal for all-day hydration",
+    "Perfect for offices and families",
+    "Convenient for travel and outdoor use",
+    "Advanced purification standards",
+    "Consistent freshness in every bottle"
+  ],
+  description:
+    "Designed for extended hydration throughout the day, the 1L Neysa Premium Water bottle is the ideal choice for offices, homes, travel, events, and active lifestyles. With dependable quality and refreshing taste, it helps keep you hydrated during long workdays and busy schedules.",
+  image: "/productimage/1000ml.png",
+  gallery: [
+    "/productimage/1000ml.png",
+  
+  ],
+  inStock: true
+},
+ {
+  id: 2,
+  name: "Neysa Premium Water 250ML",
+  slug: "neysa-premium-water-250ml",
+  price: 10,
+  volume: "250ML",
+  material: "Premium Food-Grade Bottle Material",
+  color: "Clear",
+  temperature: "Best served chilled",
+  dimensions: "Standard 250ML Bottle Size",
+  weight: "Approx. 120g",
+  features: [
+    "Convenient single-serve pack",
+    "Easy to carry and distribute",
+    "Ideal for events and hospitality",
+    "Hygienically packed for freshness",
+    "Consistent quality and refreshing taste"
+  ],
+  description:
+    "Perfectly sized for convenience, the 250ML bottle is designed for events, meetings, hospitality services, travel, and on-the-go refreshment. Compact yet dependable, it delivers the same trusted purity and refreshing taste that defines every bottle of Neysa Premium Water.",
+  image: "/productimage/500ml.png",
+  gallery: [
+    "/productimage/500ml.png",
+    
+  ],
+  inStock: true,
+},
   {
-    id: 1,
-    name: "Water Bottle 1L Round",
-    slug: "water-bottle-1l-round",
-    volume: "1L",
-    material: "Tritan™ Copolyester (BPA-free)",
-    color: "Clear / Customizable",
-    temperature: "-20°C to 100°C",
-    dimensions: "Ø 7.5cm × 26cm",
-    weight: "180g",
-    features: [
-      "Leak-proof screw cap",
-      "Wide mouth for easy cleaning",
-      "Suitable for hot/cold beverages",
-      "Fits most car cup holders",
-    ],
-    description: "Our classic 1L round bottle combines durability with elegance. Made from premium Tritan™, it's shatter-resistant, dishwasher safe, and perfect for daily hydration. The transparent body lets you see your water level, while the ergonomic design ensures comfortable grip.",
-    image: "/productimage/1L-Round-Bottle.png",
-    gallery: [
-      "/productimage/1L-Round-Bottle.png",
-      "/productimage/250ML-Round-Bottle.png",
-      "/productimage/Product-500ML-Bottles.png",
-    ],
-    inStock: true,
-  },
-  {
-    id: 2,
-    name: "Water Bottle 250ML",
-    slug: "water-bottle-250ml",
-    volume: "250ML",
-    material: "Stainless Steel 304",
-    color: "Matte Black / Rose Gold",
-    temperature: "-10°C to 95°C",
-    dimensions: "Ø 5.5cm × 15cm",
-    weight: "120g",
-    features: [
-      "Vacuum insulated (keeps cold 12h / hot 6h)",
-      "Sweat-proof exterior",
-      "Perfect for kids or travel size",
-    ],
-    description: "Compact and stylish, the 250ml bottle is ideal for short trips, kids' lunchboxes, or as a promotional giveaway. Despite its small size, it offers double-wall insulation to keep drinks at the right temperature.",
-    image: "/productimage/250ML-Round-Bottle.png",
-    gallery: [],
-    inStock: true,
-  },
-  {
-    id: 3,
-    name: "Water Bottle 500ML",
-    slug: "water-bottle-500ml",
-    volume: "500ML",
-    material: "Aluminum with BPA-free liner",
-    color: "Sleek Silver / Customizable",
-    temperature: "0°C to 80°C",
-    dimensions: "Ø 6cm × 20cm",
-    weight: "150g",
-    features: [
-      "Lightweight and durable",
-      "Eco-friendly aluminum body",
-      "Custom branding options",
-    ],    
-    description: "Our 500ml aluminum bottle is the perfect balance of size and portability. The BPA-free liner ensures your water tastes pure, while the customizable exterior allows you to showcase your brand in style.",
-    image: "/productimage/Product-500ML-Bottles.png",
-    gallery: [],
-    inStock: true,
-  },
+  id: 3,
+  name: "Neysa Premium Water 500ML",
+  slug: "neysa-premium-water-500ml",
+  price: 20,
+  volume: "500ML",
+  material: "Premium Food-Grade Bottle Material",
+  color: "Clear",
+  temperature: "Best served chilled",
+  dimensions: "Standard 500ML Bottle Size",
+  weight: "Approx. 150g",
+  features: [
+    "Convenient everyday hydration",
+    "Easy to carry while travelling",
+    "Suitable for work, fitness, and leisure",
+    "Premium packaging with secure sealing",
+    "Clean and refreshing drinking experience"
+  ],
+  description:
+    "The perfect balance between portability and hydration, the 500ML bottle is ideal for daily use, office environments, travel, fitness activities, and outdoor routines. Designed for modern lifestyles, it offers refreshing hydration whenever and wherever you need it.",
+  image: "/productimage/250ml.png",
+  gallery: [
+    "/productimage/250ml.png",
+    
+  ],
+  inStock: true,
+}
 ];
 
 export function getProductById(id) {

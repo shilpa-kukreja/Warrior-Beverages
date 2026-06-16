@@ -36,7 +36,7 @@ export default function ContactSection() {
     setError("");
 
     try {
-      const res = await fetch("/api/contact", {
+      const res = await fetch("/api/send-contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -71,7 +71,7 @@ export default function ContactSection() {
       ref={sectionRef}
       className="relative overflow-hidden bg-white py-10 lg:py-12"
     >
-      <div className="mx-auto max-w-[1800px] px-4 md:px-8">
+      <div className="mx-auto max-w-[1800px] px-2 md:px-8">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -93,7 +93,7 @@ export default function ContactSection() {
             <img
               src="/home/homeabout.png"
               alt="AQTIVE Water"
-              className="h-[700px] w-full "
+              className="sm:h-[700px] h-[500px] w-full "
             />
           </motion.div>
 
