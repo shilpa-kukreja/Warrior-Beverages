@@ -354,7 +354,7 @@
 
 //   const handleSubscribe = async (e) => {
 //     e.preventDefault();
-    
+
 //     // Validate email
 //     if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
 //       setSubscribeStatus({
@@ -576,7 +576,7 @@
 //                 )}
 //               </button>
 //             </form>
-            
+
 //             {/* Professional status messages */}
 //             {subscribeStatus && (
 //               <motion.div
@@ -596,7 +596,7 @@
 //                 <span>{subscribeStatus.message}</span>
 //               </motion.div>
 //             )}
-            
+
 //             <div className="pt-2 space-y-2">
 //               <div className="flex items-center justify-center md:justify-start gap-2 text-xs md:text-sm text-white/60">
 //                 <Phone className="h-3 w-3 text-[#18BDCD]" />
@@ -829,7 +829,7 @@ export default function Footer() {
         {/* Dark overlay for better text contrast */}
         <div className="absolute inset-0 bg-black/50 backdrop-blur-[1px]" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40" />
-        
+
         {/* Subtle texture overlay */}
         <div className="absolute inset-0 opacity-[0.04] bg-[url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'0.1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] bg-repeat" />
       </div>
@@ -853,14 +853,13 @@ export default function Footer() {
             </p>
             <div className="flex justify-center md:justify-start gap-3 pt-1">
               {[
-                { icon: FaFacebookF, hover: "hover:bg-[#1877f2]", label: "Facebook" },
-                { icon: FaTwitter, hover: "hover:bg-sky-500", label: "Twitter" },
-                { icon: FaInstagram, hover: "hover:bg-pink-500", label: "Instagram" },
-                { icon: FaLinkedinIn, hover: "hover:bg-blue-600", label: "LinkedIn" },
+                { icon: FaFacebookF, hover: "hover:bg-[#1877f2]", label: "Facebook" , href: "https://www.facebook.com/warriorbeverages.in/"},
+                { icon: FaInstagram, hover: "hover:bg-pink-500", label: "Instagram" , href: "https://www.instagram.com/warriorbeverages.bharat/"},
+                { icon: FaLinkedinIn, hover: "hover:bg-blue-600", label: "LinkedIn" , href: "https://www.linkedin.com/company/warrior-beverages/"},
               ].map((Social, idx) => (
                 <a
                   key={idx}
-                  href="#"
+                  href={Social.href}
                   className={`rounded-full bg-white/10 p-2.5 text-white/80 transition-all ${Social.hover} hover:text-white hover:scale-110 hover:shadow-lg active:scale-95 backdrop-blur-sm border border-white/10`}
                   aria-label={Social.label}
                 >
@@ -881,16 +880,14 @@ export default function Footer() {
               </h3>
               {isMobile && (
                 <ChevronDown
-                  className={`h-5 w-5 text-white/70 transition-transform duration-300 ${
-                    openSections.quickLinks ? "rotate-180" : ""
-                  }`}
+                  className={`h-5 w-5 text-white/70 transition-transform duration-300 ${openSections.quickLinks ? "rotate-180" : ""
+                    }`}
                 />
               )}
             </button>
             <ul
-              className={`space-y-2.5 overflow-hidden transition-all duration-300 ${
-                isMobile && !openSections.quickLinks ? "max-h-0" : "max-h-96"
-              }`}
+              className={`space-y-2.5 overflow-hidden transition-all duration-300 ${isMobile && !openSections.quickLinks ? "max-h-0" : "max-h-96"
+                }`}
             >
               {quickLinks.map((item) => (
                 <li key={item.name}>
@@ -917,16 +914,14 @@ export default function Footer() {
               </h3>
               {isMobile && (
                 <ChevronDown
-                  className={`h-5 w-5 text-white/70 transition-transform duration-300 ${
-                    openSections.services ? "rotate-180" : ""
-                  }`}
+                  className={`h-5 w-5 text-white/70 transition-transform duration-300 ${openSections.services ? "rotate-180" : ""
+                    }`}
                 />
               )}
             </button>
             <ul
-              className={`space-y-2.5 overflow-hidden transition-all duration-300 ${
-                isMobile && !openSections.services ? "max-h-0" : "max-h-96"
-              }`}
+              className={`space-y-2.5 overflow-hidden transition-all duration-300 ${isMobile && !openSections.services ? "max-h-0" : "max-h-96"
+                }`}
             >
               {services.map((item) => (
                 <li key={item.name}>
@@ -977,11 +972,10 @@ export default function Footer() {
               <motion.div
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
-                className={`flex items-center justify-center md:justify-start gap-2 text-sm p-2.5 rounded-xl backdrop-blur-sm ${
-                  subscribeStatus.type === "success"
+                className={`flex items-center justify-center md:justify-start gap-2 text-sm p-2.5 rounded-xl backdrop-blur-sm ${subscribeStatus.type === "success"
                     ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/20"
                     : "bg-red-500/20 text-red-300 border border-red-500/20"
-                }`}
+                  }`}
               >
                 {subscribeStatus.type === "success" ? (
                   <CheckCircle className="h-4 w-4 flex-shrink-0" />
@@ -997,19 +991,22 @@ export default function Footer() {
                 <span className="rounded-full bg-[#18BDCD]/20 p-1.5 text-[#18BDCD]">
                   <Phone className="h-4 w-4" />
                 </span>
-                <span>+1 (800) 123-4567</span>
+                <span>+918796756457</span>
+                <span> | 0120-4799924</span>
               </div>
               <div className="flex items-center justify-center md:justify-start gap-2.5 text-sm md:text-base text-white/80">
                 <span className="rounded-full bg-[#18BDCD]/20 p-1.5 text-[#18BDCD]">
                   <Mail className="h-4 w-4" />
                 </span>
-                <span>hello@neysa.com</span>
+                <span>connect@warriorbeverages.in</span>
               </div>
               <div className="flex items-center justify-center md:justify-start gap-2.5 text-sm md:text-base text-white/80">
                 <span className="rounded-full bg-[#18BDCD]/20 p-1.5 text-[#18BDCD]">
                   <MapPin className="h-4 w-4" />
                 </span>
-                <span>123 Water Ave, Eco-City</span>
+                <span>D-25/1 Meerut Road Industrial Area,
+                  Ghaziabad 201003
+                </span>
               </div>
             </div>
           </motion.div>
@@ -1045,7 +1042,7 @@ export default function Footer() {
           />
         </a>
         <a
-          href="https://wa.me/971526806400?text=Hello%20Insight%20Integrators,%20I%20would%20like%20to%20discuss%20compliance%20advisory."
+          href="https://wa.me/8796756457?text=Hello%20Neysa,%20I%20am%20interested%20in%20your%20services.%20Can%20you%20provide%20more%20information%20about%20your%20products%3F%20Thank%20you%20for%20your%20time."
           aria-label="WhatsApp"
           className="group relative flex h-14 w-14 items-center justify-center rounded-full bg-[#25d366] shadow-[0_12px_30px_rgba(37,211,102,0.35)] transition-all duration-300 hover:scale-110 hover:shadow-[0_16px_40px_rgba(37,211,102,0.5)]"
         >

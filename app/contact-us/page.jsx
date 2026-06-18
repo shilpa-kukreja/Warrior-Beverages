@@ -218,8 +218,8 @@ export default function ContactPage() {
                     <div>
                       <p className="font-medium text-gray-900">Headquarters</p>
                       <p className="text-gray-600">
-                        123 Water Avenue, Eco-City,<br />
-                        California, CA 90210, USA
+                        D-25/1 Meerut Road Industrial Area,<br />
+                       Ghaziabad 201003
                       </p>
                     </div>
                   </div>
@@ -227,7 +227,8 @@ export default function ContactPage() {
                     <Phone className="h-5 w-5 text-[#304869] mt-0.5" />
                     <div>
                       <p className="font-medium text-gray-900">Phone</p>
-                      <p className="text-gray-600">+1 (555) 123-4567</p>
+                      <p className="text-gray-600">+918796756457</p>
+                      <p className="text-gray-600">+0120-4799924</p>
                       <p className="text-sm text-gray-500">Mon-Fri, 9am-6pm PST</p>
                     </div>
                   </div>
@@ -235,8 +236,7 @@ export default function ContactPage() {
                     <Mail className="h-5 w-5 text-[#304869] mt-0.5" />
                     <div>
                       <p className="font-medium text-gray-900">Email</p>
-                      <p className="text-gray-600">hello@wather.com</p>
-                      <p className="text-gray-600">support@wather.com</p>
+                      <p className="text-gray-600">connect@warriorbeverages.in</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -255,7 +255,7 @@ export default function ContactPage() {
                 <p className="mt-1 text-gray-600">Follow us for updates, tips, and inspiration.</p>
                 <div className="mt-6 flex gap-4">
                   <a
-                    href="#"
+                    href="https://www.facebook.com/warriorbeverages.in/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="rounded-full bg-gray-100 p-3 text-gray-600 transition-all hover:bg-[#304869] hover:text-white"
@@ -263,7 +263,7 @@ export default function ContactPage() {
                   >
                     <FaFacebook className="h-5 w-5" />
                   </a>
-                  <a
+                  {/* <a
                     href="#"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -271,9 +271,9 @@ export default function ContactPage() {
                     aria-label="Twitter"
                   >
                     <FaTwitter className="h-5 w-5" />
-                  </a>
+                  </a> */}
                   <a
-                    href="#"
+                    href="https://www.instagram.com/warriorbeverages.bharat/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="rounded-full bg-gray-100 p-3 text-gray-600 transition-all hover:bg-[#304869] hover:text-white"
@@ -282,7 +282,7 @@ export default function ContactPage() {
                     <FaInstagram className="h-5 w-5" />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/company/warrior-beverages/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="rounded-full bg-gray-100 p-3 text-gray-600 transition-all hover:bg-[#304869] hover:text-white"
@@ -304,7 +304,7 @@ export default function ContactPage() {
             >
               <div className="overflow-hidden rounded-xl shadow-xl">
                 <div className="relative h-80 w-full">
-                  <iframe
+                  {/* <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.893396943399!2d-118.2460523!3d34.0546227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1650000000000!5m2!1sen!2sus"
                     width="100%"
                     height="100%"
@@ -314,7 +314,10 @@ export default function ContactPage() {
                     referrerPolicy="no-referrer-when-downgrade"
                     className="absolute inset-0 h-full w-full"
                     title="Wather Office Location"
-                  />
+                  /> */}
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.2784419946984!2d77.43461667501013!3d28.681316281864564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf1a50ad81cd9%3A0xc0bd7b56ae93f040!2s25%2F1A%2C%20D-25%2F1A%2C%20Meerut%20Rd%20Industrial%20Area%2C%20Meerut%20Road%20Industrial%20Area%2C%20Ghaziabad%2C%20Uttar%20Pradesh%20201001!5e0!3m2!1sen!2sin!4v1781759164413!5m2!1sen!2sin" 
+                  width="100%" height="100%" style={{border:0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"  className="absolute inset-0 h-full w-full"
+                    title="Neysa Office Location" />
                 </div>
               </div>
             </motion.div>

@@ -268,7 +268,7 @@ export default function IntroSection() {
                     setIsVisible(false);
                 }
             },
-            { threshold: 0.2 } // Lower threshold for earlier trigger on mobile
+            { threshold: 0.2 }
         );
 
         if (contentRef.current) {
@@ -278,12 +278,12 @@ export default function IntroSection() {
     }, []);
 
     return (
-        <section className="relative w-full min-h-[500px] md:h-[600px] overflow-hidden">
-            {/* Background Image - changed from fixed to absolute for better mobile scrolling */}
-            <div className="absolute inset-0 -z-10">
+        <section className="relative w-full min-h-screen overflow-hidden">
+            {/* Fixed background image */}
+            <div className="fixed inset-0 -z-10">
                 <div className="relative w-full h-full">
                     <Image
-                        src="/about/25444.png"
+                        src="/about/25444.jpeg"
                         alt="Water background"
                         fill
                         priority
@@ -293,26 +293,26 @@ export default function IntroSection() {
                 </div>
             </div>
 
-            {/* Content - adjusted alignment for mobile */}
-            <div className="relative z-10 flex items-center justify-center md:justify-end h-full min-h-[500px] px-4 sm:px-5 py-8 md:py-5">
+            {/* Scrollable content - always centered */}
+            <div className="relative z-10 flex items-center  justify-center h-full min-h-screen px-4 sm:px-5 py-8 md:py-5">
                 <div
                     ref={contentRef}
                     className={`
                         w-full 
-                        max-w-full md:max-w-[550px] lg:max-w-[700px] xl:max-w-[750px]
+                        max-w-full md:max-w-[550px] lg:max-w-[750px] 
                         p-5 sm:p-6 md:p-8 lg:p-10
-                        bg-white/90 backdrop-blur-sm md:bg-transparent md:backdrop-blur-none
-                        rounded-2xl md:rounded-none
-                        shadow-lg md:shadow-none
+                        bg-white/90 backdrop-blur-sm
+                        rounded-2xl
+                        shadow-lg
                         transition-all duration-700 ease-out
-                        ${isVisible
-                            ? "translate-x-0 opacity-100 scale-100"
-                            : "md:translate-x-40 translate-x-0 opacity-100 md:opacity-0 scale-100"
+                        ${
+                            isVisible
+                                ? "translate-x-0 opacity-100 scale-100"
+                                : "translate-x-0 opacity-100 scale-100"  // no slide, just fade
                         }
                     `}
                 >
-                    {/* Heading - mobile optimized */}
-                    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
+                    <h1 className="text-2xl sm:text-3xl  md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
                         Introducing{" "}
                         <span className="inline-flex flex-wrap items-center gap-1 text-[#304869]">
                             <span className="inline-block min-w-[120px] sm:min-w-[150px] md:min-w-[180px]">
@@ -322,55 +322,29 @@ export default function IntroSection() {
                         </span>
                     </h1>
 
-                    {/* Description - better readability on mobile */}
-                    <p className="mt-3 sm:mt-4 text-sm sm:text-base text-gray-700  text-justify leading-relaxed">
+                    <p className="mt-3 sm:mt-4 text-sm sm:text-base text-gray-700 text-left leading-relaxed">
                         Neysa is a{" "}
-                        <span className="font-semibold text-[#304869]">
-                            Premium Water
-                        </span>{" "}
-                        brand that prioritizes{" "}
+                        <span className="font-semibold text-[#304869]">Premium Water</span> brand
+                        that prioritizes{" "}
                         <span className="font-semibold text-[#304869]">
                             quality, taste, and convenience
                         </span>
                         . Our Premium Water was created to bring together what consumers value most:{" "}
-                        <span className="font-semibold text-[#304869]">
-                            dependable quality
-                        </span>
-                        ,{" "}
-                        <span className="font-semibold text-[#304869]">
-                            refreshing taste
-                        </span>
-                        , and a{" "}
-                        <span className="font-semibold text-[#304869]">
-                            premium experience
-                        </span>{" "}
-                        that fits effortlessly into everyday life.
-
+                        <span className="font-semibold text-[#304869]">dependable quality</span>,{" "}
+                        <span className="font-semibold text-[#304869]">refreshing taste</span>, and a{" "}
+                        <span className="font-semibold text-[#304869]">premium experience</span> that
+                        fits effortlessly into everyday life.
+                        <br />
                         Every bottle is{" "}
-                        <span className="font-semibold text-[#304869]">
-                            carefully purified
-                        </span>{" "}
-                        and{" "}
-                        <span className="font-semibold text-[#304869]">
-                            thoughtfully packaged
-                        </span>{" "}
-                        to meet the expectations of{" "}
-                        <span className="font-semibold text-[#304869]">
-                            modern consumers
-                        </span>{" "}
-                        who seek more than just drinking water. Whether you're{" "}
-                        <span className="font-semibold text-[#304869]">
-                            at work
-                        </span>
-                        ,{" "}
-                        <span className="font-semibold text-[#304869]">
-                            on the move
-                        </span>
-                        ,{" "}
-                        <span className="font-semibold text-[#304869]">
-                            hosting guests
-                        </span>
-                        , or simply{" "}
+                        <span className="font-semibold text-[#304869]">carefully purified</span> and{" "}
+                        <span className="font-semibold text-[#304869]">thoughtfully packaged</span> to
+                        meet the expectations of{" "}
+                        <span className="font-semibold text-[#304869]">modern consumers</span> who
+                        seek more than just drinking water. Whether you're{" "}
+                        <span className="font-semibold text-[#304869]">at work</span>,{" "}
+                        <span className="font-semibold text-[#304869]">on the move</span>,{" "}
+                        <span className="font-semibold text-[#304869]">hosting guests</span>, or
+                        simply{" "}
                         <span className="font-semibold text-[#304869]">
                             staying refreshed throughout the day
                         </span>
@@ -384,46 +358,46 @@ export default function IntroSection() {
                         </span>
                     </p>
 
-                    {/* Features Grid - responsive grid for mobile */}
                     <div className="mt-5 sm:mt-6 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
-                        {["Pure & Refreshing", "Premium Packaging", " Quality Assured", "Everyday Value"].map((item, idx) => (
-                            <div
-                                key={idx}
-                                className="
-                                    flex items-center gap-2 sm:gap-3
-                                    rounded-xl
-                                    border border-gray-100
-                                    bg-white/80 backdrop-blur-sm
-                                    hover:bg-[#304869]/10
-                                    px-3 sm:px-4 py-2 sm:py-2.5
-                                    transition-all duration-300
-                                    active:scale-95 md:hover:-translate-y-1 md:hover:shadow-lg
-                                    cursor-pointer
-                                "
-                            >
-                                <div className="flex-shrink-0 flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-[#304869]/10">
-                                    <svg
-                                        className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#304869]"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        viewBox="0 0 24 24"
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth={2}
-                                            d="M5 13l4 4L19 7"
-                                        />
-                                    </svg>
+                        {["Pure & Refreshing", "Premium Packaging", "Quality Assured", "Everyday Value"].map(
+                            (item, idx) => (
+                                <div
+                                    key={idx}
+                                    className="
+                                        flex items-center gap-2 sm:gap-3
+                                        rounded-xl
+                                        border border-gray-100
+                                        bg-white/80 backdrop-blur-sm
+                                        hover:bg-[#304869]/10
+                                        px-3 sm:px-4 py-2 sm:py-2.5
+                                        transition-all duration-300
+                                        active:scale-95 md:hover:-translate-y-1 md:hover:shadow-lg
+                                        cursor-pointer
+                                    "
+                                >
+                                    <div className="flex-shrink-0 flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-[#304869]/10">
+                                        <svg
+                                            className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#304869]"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                strokeWidth={2}
+                                                d="M5 13l4 4L19 7"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <span className="text-gray-700 font-medium text-xs sm:text-sm md:text-base">
+                                        {item}
+                                    </span>
                                 </div>
-                                <span className="text-gray-700 font-medium text-xs sm:text-sm md:text-base">
-                                    {item}
-                                </span>
-                            </div>
-                        ))}
+                            )
+                        )}
                     </div>
 
-                    {/* Button - improved touch target */}
                     <div className="mt-6 sm:mt-8">
                         <button
                             className="

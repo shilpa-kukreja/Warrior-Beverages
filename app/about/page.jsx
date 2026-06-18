@@ -50,7 +50,7 @@ export default function AboutPage() {
 
   // Stats data
   const stats = [
-    { icon: Users, value: "50,000+", label: "Bottles Delivered Daily" },
+    { icon: Users, value: "15,000+", label: "Bottles Delivered Daily" },
     { icon: Award, value: "100+", label: "Retail & Business Partners" },
     { icon: Globe, value: "3+", label: "Pack Sizes Available" },
     { icon: Heart, value: "100%", label: "Quality Focused" },
@@ -73,9 +73,9 @@ export default function AboutPage() {
 
   // Team data
   const team = [
-    { name: "Sarah Johnson", role: "Founder & CEO", image: "https://randomuser.me/api/portraits/women/68.jpg", bio: "Sustainability advocate with 15+ years in branding." },
-    { name: "Michael Chen", role: "Creative Director", image: "https://randomuser.me/api/portraits/men/32.jpg", bio: "Award-winning designer, passionate about eco-innovation." },
-    { name: "Emma Rodriguez", role: "Head of Operations", image: "https://randomuser.me/api/portraits/women/44.jpg", bio: "Ensures seamless delivery and client satisfaction." },
+    { name: "Adarsh Raj Singh", role: "Founder & CEO", image: "https://randomuser.me/api/portraits/women/68.jpg", bio: "Adarsh Raj Singh is the Founder & CEO of Warrior Beverages Private Limited. With over 12 years of experience in SaaS and entrepreneurship, he brings a strong background in business development, technology, and brand building. He leads the vision behind Neysa, focused on creating a trusted and premium beverage brand for the Indian market." },
+    { name: "Ranjit Bajaj ", role: "Strategic Mentor", image: "https://randomuser.me/api/portraits/men/32.jpg", bio: "Ranjit Bajaj serves as Strategic Mentor to Warrior Beverages Private Limited. An accomplished entrepreneur and business leader, he brings extensive experience in building organizations, developing brands, and driving growth. His strategic guidance and industry insights support Warrior Beverages in its journey to build Neysa into a trusted and nationally recognized beverage brand." },
+    { name: "Raj Kumar Rathore", role: "Head of Operations", image: "https://randomuser.me/api/portraits/women/44.jpg", bio: "Raj Kumar Rathore serves as Head of Operations at Warrior Beverages Private Limited. With over 14 years of experience in retail and distribution, he brings deep expertise in supply chain management, market operations, and channel development. His operational leadership plays a key role in ensuring efficient execution and supporting the growth of Neysa Premium Water." },
   ];
 
   return (
@@ -318,7 +318,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mt-4">{member.name}</h3>
                 <p className="text-[#304869] text-sm mb-2">{member.role}</p>
-                <p className="text-gray-500 text-sm">{member.bio}</p>
+                <p className="text-gray-500 text-sm text-justify">{member.bio}</p>
               </motion.div>
             ))}
           </motion.div>
