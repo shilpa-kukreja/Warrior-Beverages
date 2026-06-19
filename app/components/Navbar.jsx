@@ -361,13 +361,13 @@ export default function Navbar() {
                         onClick={closeMobileMenu}
                         className="text-lg font-bold text-[#304869] hover:underline"
                       >
-                        +91 75288 75288
+                        +91 8796756457
                       </a>
                     </div>
                   </div>
                   <div className="mt-4 pt-3 text-sm text-gray-500">
                     <p className="flex items-center gap-1">
-                      <span>📧</span> sales@warriorbev.com
+                      <span>📧</span> connect@warriorbeverages.in
                     </p>
                   </div>
                 </div>
