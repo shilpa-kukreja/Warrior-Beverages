@@ -22,6 +22,7 @@ import {
 } from "lucide-react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Link from "next/link";
 
 export default function AboutPage() {
   // Animation variants
@@ -340,13 +341,13 @@ export default function AboutPage() {
                 Experience premium-quality packaged drinking water crafted for modern lifestyles. Whether you're a retailer, distributor, business, or individual consumer, we're here to deliver trusted hydration you can rely on.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-              <button className="inline-flex items-center gap-2 rounded-lg bg-[#304869] px-8 py-3 text-white font-semibold shadow-md hover:shadow-lg hover:scale-100 transition-all">
+             <Link href="/contact-us"><button className="inline-flex items-center gap-2 rounded-lg bg-[#304869] px-8 py-3 text-white font-semibold shadow-md hover:shadow-lg hover:scale-100 transition-all">
                 Get in Touch
                 <ChevronRight className="h-4 w-4" />
-              </button>
-              <button className="inline-flex items-center gap-2 rounded-lg border border-gray-300 bg-white px-8 py-3 text-gray-700 font-semibold shadow-sm hover:shadow-md hover:bg-gray-50 transition-all">
+              </button></Link> 
+              <Link href="/contact-us"><button className="inline-flex items-center gap-2 rounded-lg border border-gray-300 bg-white px-8 py-3 text-gray-700 font-semibold shadow-sm hover:shadow-md hover:bg-gray-50 transition-all">
                Contact Our Team
-              </button>
+              </button></Link>
             </div>
           </motion.div>
         </div>

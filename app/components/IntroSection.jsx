@@ -217,6 +217,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function IntroSection() {
     const [displayText, setDisplayText] = useState("");
@@ -398,7 +399,7 @@ export default function IntroSection() {
                         )}
                     </div>
 
-                    <div className="mt-6 sm:mt-8">
+                 <Link href="/about" className="mt-6 sm:mt-8">   <div className="mt-6 sm:mt-8">
                         <button
                             className="
                                 w-full sm:w-auto
@@ -419,6 +420,7 @@ export default function IntroSection() {
                             Discover Neysa
                         </button>
                     </div>
+                    </Link> 
                 </div>
             </div>
         </section>

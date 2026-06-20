@@ -203,7 +203,7 @@ export default function ProductShowcase() {
               Choose Purity, Choose Quality –{" "}
               <strong className="text-[#304869]">Choose Neysa Water</strong>
             </p>
-            <motion.button
+         <Link href="/contact-us" target="_blank">   <motion.button
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.6, duration: 0.5 }}
@@ -211,7 +211,7 @@ export default function ProductShowcase() {
             >
               Contact Us
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </motion.button>
+            </motion.button></Link> 
           </motion.div>
 
           {/* RIGHT COLUMN - Carousel with sliding */}
