@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Neysa Premium  Water",
+  title: "Neysa Premium Water",
   description: "Neysa Premium  Water is a premium packaged drinking water brand committed to delivering purity, consistency, and refreshment through advanced purification processes and high-quality packaging.",
 };
 

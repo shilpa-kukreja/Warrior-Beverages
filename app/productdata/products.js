@@ -26,8 +26,37 @@ export const products = [
   ],
   inStock: true
 },
- {
+ 
+  {
   id: 2,
+  name: "Neysa Premium Water 500ML",
+  slug: "neysa-premium-water-500ml",
+  price: 20,
+  volume: "500ML",
+  material: "Premium Food-Grade Bottle Material",
+  color: "Clear",
+  temperature: "Best served chilled",
+  dimensions: "Standard 500ML Bottle Size",
+  weight: "Approx. 150g",
+  features: [
+    "Convenient everyday hydration",
+    "Easy to carry while travelling",
+    "Suitable for work, fitness, and leisure",
+    "Premium packaging with secure sealing",
+    "Clean and refreshing drinking experience"
+  ],
+  description:
+    "The perfect balance between portability and hydration, the 500ML bottle is ideal for daily use, office environments, travel, fitness activities, and outdoor routines. Designed for modern lifestyles, it offers refreshing hydration whenever and wherever you need it.",
+  image: "/productimage/250ml.png",
+  gallery: [
+    "/productimage/250ml.png",
+    
+  ],
+  inStock: true,
+},
+
+{
+  id: 3,
   name: "Neysa Premium Water 250ML",
   slug: "neysa-premium-water-250ml",
   price: 10,
@@ -53,33 +82,6 @@ export const products = [
   ],
   inStock: true,
 },
-  {
-  id: 3,
-  name: "Neysa Premium Water 500ML",
-  slug: "neysa-premium-water-500ml",
-  price: 20,
-  volume: "500ML",
-  material: "Premium Food-Grade Bottle Material",
-  color: "Clear",
-  temperature: "Best served chilled",
-  dimensions: "Standard 500ML Bottle Size",
-  weight: "Approx. 150g",
-  features: [
-    "Convenient everyday hydration",
-    "Easy to carry while travelling",
-    "Suitable for work, fitness, and leisure",
-    "Premium packaging with secure sealing",
-    "Clean and refreshing drinking experience"
-  ],
-  description:
-    "The perfect balance between portability and hydration, the 500ML bottle is ideal for daily use, office environments, travel, fitness activities, and outdoor routines. Designed for modern lifestyles, it offers refreshing hydration whenever and wherever you need it.",
-  image: "/productimage/250ml.png",
-  gallery: [
-    "/productimage/250ml.png",
-    
-  ],
-  inStock: true,
-}
 ];
 
 export function getProductById(id) {

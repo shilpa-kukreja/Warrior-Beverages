@@ -167,9 +167,11 @@ export default function PrivacyPolicy() {
                 </h2>
                 <p className="mt-2 leading-relaxed">
                   Neysa Premium Water<br />
-                  Email: info@neysapremiumwater.com<br />
-                  Phone: +91 XXXXX XXXXX<br />
-                  Website: www.neysapremiumwater.com
+                  Email: connect@warriorbeverages.in
+                  {/* info@neysapremiumwater.com */}
+                  <br />
+                  Phone: +91 8796756457<br />
+                  Website: www.warriorbeverages.in
                 </p>
               </section>
 

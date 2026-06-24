@@ -853,9 +853,9 @@ export default function Footer() {
             </p>
             <div className="flex justify-center md:justify-start gap-3 pt-1">
               {[
-                { icon: FaFacebookF, hover: "hover:bg-[#1877f2]", label: "Facebook" , href: "https://www.facebook.com/warriorbeverages.in/"},
-                { icon: FaInstagram, hover: "hover:bg-pink-500", label: "Instagram" , href: "https://www.instagram.com/warriorbeverages.bharat/"},
-                { icon: FaLinkedinIn, hover: "hover:bg-blue-600", label: "LinkedIn" , href: "https://www.linkedin.com/company/warrior-beverages/"},
+                { icon: FaFacebookF, hover: "hover:bg-[#1877f2]", label: "Facebook", href: "https://www.facebook.com/warriorbeverages.in/" },
+                { icon: FaInstagram, hover: "hover:bg-pink-500", label: "Instagram", href: "https://www.instagram.com/warriorbeverages.bharat/" },
+                { icon: FaLinkedinIn, hover: "hover:bg-blue-600", label: "LinkedIn", href: "https://www.linkedin.com/company/warrior-beverages/" },
               ].map((Social, idx) => (
                 <a
                   key={idx}
@@ -973,8 +973,8 @@ export default function Footer() {
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 className={`flex items-center justify-center md:justify-start gap-2 text-sm p-2.5 rounded-xl backdrop-blur-sm ${subscribeStatus.type === "success"
-                    ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/20"
-                    : "bg-red-500/20 text-red-300 border border-red-500/20"
+                  ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/20"
+                  : "bg-red-500/20 text-red-300 border border-red-500/20"
                   }`}
               >
                 {subscribeStatus.type === "success" ? (
@@ -1000,14 +1000,25 @@ export default function Footer() {
                 </span>
                 <span>connect@warriorbeverages.in</span>
               </div>
+
               <div className="flex items-center justify-center md:justify-start gap-2.5 text-sm md:text-base text-white/80">
                 <span className="rounded-full bg-[#18BDCD]/20 p-1.5 text-[#18BDCD]">
                   <MapPin className="h-4 w-4" />
                 </span>
-                <span>D-25/1 Meerut Road Industrial Area,
+                <span> Regional Office - D-25/1 Meerut Road Industrial Area,
                   Ghaziabad 201003
                 </span>
+                
               </div>
+
+              <div className="flex items-center justify-center md:justify-start gap-2.5 text-sm md:text-base text-white/80">
+                <span className="rounded-full bg-[#18BDCD]/20 p-1.5 text-[#18BDCD]">
+                  <MapPin className="h-4 w-4" />
+                </span>
+                <span>Headquarters - G-4/1/F/F, Sunder Nagari, Near SDM Court, North East Delhi, Delhi, India -110093
+                </span>
+              </div>
+
             </div>
           </motion.div>
         </motion.div>

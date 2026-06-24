@@ -229,7 +229,7 @@ export default function ContactPage() {
                       <p className="font-medium text-gray-900">Phone</p>
                       <p className="text-gray-600">+918796756457</p>
                       <p className="text-gray-600">+0120-4799924</p>
-                      <p className="text-sm text-gray-500">Mon-Fri, 9am-6pm PST</p>
+                      <p className="text-sm text-gray-500">Mon-Fri, 9am-6pm IST</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
