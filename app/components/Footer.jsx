@@ -1041,7 +1041,7 @@ export default function Footer() {
       {/* Floating action buttons */}
       <div className="fixed bottom-6 right-6 z-[100] flex flex-col gap-4">
         <a
-          href="tel:+971526806400"
+          href="tel:+918588073934"
           aria-label="Call Us"
           className="group relative flex h-14 w-14 items-center justify-center rounded-full bg-[#1b3163] shadow-[0_12px_30px_rgba(27,49,99,0.35)] transition-all duration-300 hover:scale-110 hover:shadow-[0_16px_40px_rgba(27,49,99,0.5)]"
         >

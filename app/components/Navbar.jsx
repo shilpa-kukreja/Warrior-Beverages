@@ -230,6 +230,7 @@ const navItems = [
   { name: "LATEST NEWS", href: "/latest-news" },
   { name: "CONTACT US", href: "/contact-us" },
   { name: "FAQ", href: "/faq" },
+  { name: "Distributor", href: "/distributor"}
 ];
 
 export default function Navbar() {
