@@ -986,40 +986,43 @@ export default function Footer() {
               </motion.div>
             )}
 
-            <div className="pt-2 space-y-2.5">
-              <div className="flex items-center justify-center md:justify-start gap-2.5 text-sm md:text-base text-white/80">
-                <span className="rounded-full bg-[#18BDCD]/20 p-1.5 text-[#18BDCD]">
-                  <Phone className="h-4 w-4" />
-                </span>
-                <span>+918796756457</span>
-                <span> | 0120-4799924</span>
-              </div>
-              <div className="flex items-center justify-center md:justify-start gap-2.5 text-sm md:text-base text-white/80">
-                <span className="rounded-full bg-[#18BDCD]/20 p-1.5 text-[#18BDCD]">
-                  <Mail className="h-4 w-4" />
-                </span>
-                <span>connect@warriorbeverages.in</span>
-              </div>
+       <div className="pt-2 space-y-2.5">
+  <div className="flex items-start justify-center md:justify-start gap-2.5 text-sm md:text-base text-white/80">
+    <span className="rounded-full bg-[#18BDCD]/20 p-1.5 text-[#18BDCD] flex-shrink-0 mt-0.5">
+      <Phone className="h-4 w-4" />
+    </span>
+    <span className="break-words flex-1 text-left">
+      +918796756457 | 0120-4799924
+    </span>
+  </div>
 
-              <div className="flex items-center justify-center md:justify-start gap-2.5 text-sm md:text-base text-white/80">
-                <span className="rounded-full bg-[#18BDCD]/20 p-1.5 text-[#18BDCD]">
-                  <MapPin className="h-4 w-4" />
-                </span>
-                <span> Regional Office - D-25/1 Meerut Road Industrial Area,
-                  Ghaziabad 201003
-                </span>
-                
-              </div>
+  <div className="flex items-start justify-center md:justify-start gap-2.5 text-sm md:text-base text-white/80">
+    <span className="rounded-full bg-[#18BDCD]/20 p-1.5 text-[#18BDCD] flex-shrink-0 mt-0.5">
+      <Mail className="h-4 w-4" />
+    </span>
+    <span className="break-words flex-1 text-left">
+      connect@warriorbeverages.in
+    </span>
+  </div>
 
-              <div className="flex items-center justify-center md:justify-start gap-2.5 text-sm md:text-base text-white/80">
-                <span className="rounded-full bg-[#18BDCD]/20 p-1.5 text-[#18BDCD]">
-                  <MapPin className="h-4 w-4" />
-                </span>
-                <span>Headquarters - G-4/1/F/F, Sunder Nagari, Near SDM Court, North East Delhi, Delhi, India -110093
-                </span>
-              </div>
+  <div className="flex items-start justify-center md:justify-start gap-2.5 text-sm md:text-base text-white/80">
+    <span className="rounded-full bg-[#18BDCD]/20 p-1.5 text-[#18BDCD] flex-shrink-0 mt-0.5">
+      <MapPin className="h-4 w-4" />
+    </span>
+    <span className="break-words flex-1 text-left">
+      Regional Office - D-25/1 Meerut Road Industrial Area, Ghaziabad 201003
+    </span>
+  </div>
 
-            </div>
+  <div className="flex items-start justify-center md:justify-start gap-2.5 text-sm md:text-base text-white/80">
+    <span className="rounded-full bg-[#18BDCD]/20 p-1.5 text-[#18BDCD] flex-shrink-0 mt-0.5">
+      <MapPin className="h-4 w-4" />
+    </span>
+    <span className="break-words flex-1 text-left">
+      Headquarters - G-4/1/F/F, Sunder Nagari, Near SDM Court, North East Delhi, Delhi, India -110093
+    </span>
+  </div>
+</div>
           </motion.div>
         </motion.div>
 
