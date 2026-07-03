@@ -195,7 +195,6 @@
 //     </>
 //   );
 // }
-
 "use client";
 
 import { useState, useEffect } from "react";
@@ -204,22 +203,55 @@ import { usePathname } from "next/navigation";
 import { createPortal } from "react-dom";
 import QuoteModal from "./QuoteModal";
 
-// Simple SVG icons
+// Simple SVG icons (unchanged)
 const MenuIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="w-6 h-6">
-    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth={1.8}
+    stroke="currentColor"
+    className="w-6 h-6"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+    />
   </svg>
 );
 
 const CloseIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="w-6 h-6">
-    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth={1.8}
+    stroke="currentColor"
+    className="w-6 h-6"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M6 18L18 6M6 6l12 12"
+    />
   </svg>
 );
 
 const PhoneIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.6} stroke="currentColor" className="w-5 h-5">
-    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-2.25a2.25 2.25 0 0 0-2.25-2.25h-2.25a9 9 0 0 1-9-9V2.25A2.25 2.25 0 0 0 2.25 0h-2.25a2.25 2.25 0 0 0-2.25 2.25v2.25Z" />
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth={1.6}
+    stroke="currentColor"
+    className="w-5 h-5"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-2.25a2.25 2.25 0 0 0-2.25-2.25h-2.25a9 9 0 0 1-9-9V2.25A2.25 2.25 0 0 0 2.25 0h-2.25a2.25 2.25 0 0 0-2.25 2.25v2.25Z"
+    />
   </svg>
 );
 
@@ -230,7 +262,6 @@ const navItems = [
   { name: "LATEST NEWS", href: "/latest-news" },
   { name: "CONTACT US", href: "/contact-us" },
   { name: "FAQ", href: "/faq" },
-  { name: "Distributor", href: "/distributor"}
 ];
 
 export default function Navbar() {
@@ -241,7 +272,7 @@ export default function Navbar() {
   const pathname = usePathname();
   const isHomePage = pathname === "/";
 
-  // Handle scroll effect
+  // Scroll effect
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 10;
@@ -253,12 +284,11 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [scrolled]);
 
-  // Set mounted for portal
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  // Prevent scroll when mobile menu or modal is open
+  // Lock body scroll when mobile menu or modal is open
   useEffect(() => {
     if (mobileMenuOpen || isQuoteModalOpen) {
       document.body.style.overflow = "hidden";
@@ -270,7 +300,7 @@ export default function Navbar() {
     };
   }, [mobileMenuOpen, isQuoteModalOpen]);
 
-  // Close on ESC key
+  // ESC key closes both
   useEffect(() => {
     const handleEsc = (e) => {
       if (e.key === "Escape") {
@@ -292,17 +322,17 @@ export default function Navbar() {
 
   const closeQuoteModal = () => setIsQuoteModalOpen(false);
 
-  // Helper to check if link is active
   const isActive = (href) => {
     if (href === "/") return pathname === "/";
     return pathname.startsWith(href);
   };
 
-  // Mobile drawer component
+  // Mobile drawer component – improved spacing and font size
   const MobileDrawer = () => {
     if (!mounted) return null;
     return createPortal(
       <>
+        {/* Overlay */}
         <div
           className={`fixed inset-0 bg-black/50 backdrop-blur-sm transition-all duration-300 z-[100] ${
             mobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
@@ -310,16 +340,20 @@ export default function Navbar() {
           onClick={closeMobileMenu}
           aria-hidden="true"
         />
+        {/* Drawer */}
         <div
           className={`fixed top-0 right-0 h-full w-full max-w-sm bg-white shadow-2xl z-[101] transform transition-transform duration-300 ease-out ${
             mobileMenuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
           <div className="flex flex-col h-full overflow-y-auto">
+            {/* Header */}
             <div className="flex items-center justify-between p-5 border-b border-gray-100">
-              <div className="flex flex-col">
-                <img src="/logos/lOGO4.png" alt="Warrior Beverages Logo" className="w-8 h-8 mb-1" />
-              </div>
+              <img
+                src="/logos/lOGO4.png"
+                alt="Warrior Beverages Logo"
+                className="w-28"
+              />
               <button
                 onClick={closeMobileMenu}
                 className="p-2 rounded-full text-gray-500 hover:bg-gray-100 transition-colors"
@@ -328,8 +362,10 @@ export default function Navbar() {
                 <CloseIcon />
               </button>
             </div>
-            <nav className="flex-1 py-8 px-6">
-              <ul className="space-y-5">
+
+            {/* Navigation – reduced spacing and font size */}
+            <nav className="flex-1 py-6 px-6">
+              <ul className="space-y-2">  {/* was space-y-4 */}
                 {navItems.map((item) => {
                   const active = isActive(item.href);
                   return (
@@ -337,10 +373,11 @@ export default function Navbar() {
                       <Link
                         href={item.href}
                         onClick={closeMobileMenu}
-                        className={`block py-2 text-lg font-semibold transition-colors ${
+                        className={`block py-2 text-base font-semibold transition-colors ${
+                          // text-base instead of text-lg, py-2 instead of py-2.5
                           active
-                            ? "text-[#304869] border-r-4 border-[#304869] pr-4"
-                            : "text-gray-700 hover:text-[#304869]"
+                            ? "text-[#304869] border-l-4 border-[#304869] pl-3"
+                            : "text-gray-700 hover:text-[#304869] pl-3"
                         }`}
                       >
                         {item.name}
@@ -349,43 +386,66 @@ export default function Navbar() {
                   );
                 })}
               </ul>
+
+              {/* Contact info – aligned and well ordered */}
               <div className="mt-10 pt-6 border-t border-gray-100">
                 <div className="bg-gradient-to-br from-[#304869]/5 to-[#304869]/10 rounded-2xl p-5">
-                  <div className="flex items-center gap-4">
-                    <div className="bg-[#304869] p-3 rounded-full text-white shadow-md">
-                      <PhoneIcon />
+                  <div className="flex flex-col gap-4">
+                    {/* Phone */}
+                    <div className="flex items-center gap-3">
+                      <div className="bg-[#304869] p-2 rounded-full text-white shadow-md">
+                        <PhoneIcon />
+                      </div>
+                      <div>
+                        <p className="text-xs text-gray-500 font-medium uppercase tracking-wide">
+                          24/7 Support
+                        </p>
+                        <a
+                          href="tel:+918796756457"
+                          onClick={closeMobileMenu}
+                          className="text-lg font-bold text-[#304869] hover:underline"
+                        >
+                          +91 8796756457
+                        </a>
+                      </div>
                     </div>
-                    <div>
-                      <p className="text-xs text-gray-500 font-medium uppercase tracking-wide">24/7 Support</p>
+                    {/* Email */}
+                    <div className="flex items-center gap-3">
+                      <span className="text-[#304869] text-lg">📧</span>
                       <a
-                        href="tel:+917528875288"
+                        href="mailto:connect@warriorbeverages.in"
                         onClick={closeMobileMenu}
-                        className="text-lg font-bold text-[#304869] hover:underline"
+                        className="text-sm text-gray-600 hover:text-[#304869] transition-colors"
                       >
-                        +91 8796756457
+                        connect@warriorbeverages.in
                       </a>
                     </div>
                   </div>
-                  <div className="mt-4 pt-3 text-sm text-gray-500">
-                    <p className="flex items-center gap-1">
-                      <span>📧</span> connect@warriorbeverages.in
-                    </p>
-                  </div>
                 </div>
               </div>
-              <div className="mt-6">
+
+              {/* Action buttons */}
+              <div className="mt-6 space-y-3">
                 <button
                   onClick={openQuoteModal}
                   className="flex w-full items-center justify-center gap-2 rounded-xl bg-[#304869] px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-[#304869]/30 transition-all hover:scale-[1.02] active:scale-95"
                 >
                   Get a Quote
                 </button>
+                <Link href="/distributor">
+                  <button
+                    onClick={closeMobileMenu}
+                    className="flex w-full items-center justify-center gap-2 rounded-xl bg-[#304869] px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-[#304869]/30 transition-all hover:scale-[1.02] active:scale-95"
+                  >
+                    Become a Distributor
+                  </button>
+                </Link>
               </div>
             </nav>
           </div>
         </div>
       </>,
-      document.body
+      document.body,
     );
   };
 
@@ -396,15 +456,19 @@ export default function Navbar() {
           !isHomePage
             ? "bg-white shadow-md"
             : scrolled
-            ? "bg-white shadow-md"
-            : "bg-transparent backdrop-blur-sm"
+              ? "bg-white shadow-md"
+              : "bg-transparent backdrop-blur-sm"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
             <Link href="/" className="flex flex-col leading-tight">
-                <img src="/logos/lOGO4.png" alt="Warrior Beverages Logo" className="w-28  mb-1" />
+              <img
+                src="/logos/lOGO4.png"
+                alt="Warrior Beverages Logo"
+                className="w-28 mb-1"
+              />
             </Link>
 
             {/* Desktop Navigation */}
@@ -430,14 +494,22 @@ export default function Navbar() {
               </ul>
             </nav>
 
-            {/* Desktop CTA Button - opens modal */}
-            <button
-              onClick={openQuoteModal}
-              className="hidden lg:flex items-center gap-2 rounded-md bg-[#304869] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#304869]/30 transition-all duration-300 hover:scale-105 relative overflow-hidden group"
-            >
-              <span className="relative z-10">Get Quote</span>
-              <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12"></span>
-            </button>
+            {/* Desktop Buttons */}
+            <div className="hidden lg:flex items-center gap-3">
+              <button
+                onClick={openQuoteModal}
+                className="flex items-center gap-2 rounded-md bg-[#304869] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#304869]/30 transition-all duration-300 hover:scale-105 relative overflow-hidden group"
+              >
+                <span className="relative z-10">Get Quote</span>
+                <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12"></span>
+              </button>
+              <Link href="/distributor">
+                <button className="group relative overflow-hidden rounded-md bg-[#304869] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#304869]/30 transition-all duration-300 hover:scale-105">
+                  <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12"></span>
+                  <span className="relative z-10">Become a Distributor</span>
+                </button>
+              </Link>
+            </div>
 
             {/* Mobile Actions */}
             <div className="flex items-center gap-2 lg:hidden">
